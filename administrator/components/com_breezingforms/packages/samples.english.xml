@@ -1,0 +1,2172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FacileFormsPackage id="samples.english" type="autoincrement" version="1.7.2 Stable (build 731) [Trinity]">
+	<name>samples.english</name>
+	<title>ClassicMode Sample Package</title>
+	<version>0.0.1</version>
+	<creationDate>2010-06-22 00:14:24</creationDate>
+	<author>Markus Bopp</author>
+	<authorEmail>markus.bopp@crosstec.de</authorEmail>
+	<authorUrl>http://www.crosstec.de</authorUrl>
+	<description>These are the original samples that come with BreezingForms (former FacileForms)</description>
+	<copyright>This BreezingForms package is released under the GNU/GPL license</copyright>
+	<form id="38">
+		<package>Samples</package>
+		<name>SampleContactForm</name>
+		<title>Contact form</title>
+		<description>This sample is a basic contact form everybody should be able to master. It does not require any scripting skills to make such a form.</description>
+		<width>400</width>
+		<height>450</height>
+		<dblog>2</dblog>
+		<script2cond>1</script2cond>
+		<script2id>157</script2id>
+		<script2name>ff_submittedhome</script2name>
+		<element id="1023">
+			<name>cf_name</name>
+			<title>Name</title>
+			<type>Text</type>
+			<posx>51</posx>
+			<posy>48</posy>
+			<width>300</width>
+			<widthmode>1</widthmode>
+			<height>255</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag1>1</script1flag1>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter your name.</script3msg>
+		</element>
+		<element id="1024">
+			<name>cf_nametext</name>
+			<title>Name:</title>
+			<posx>5</posx>
+			<posy>50</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Name:</data1>
+		</element>
+		<element id="1025">
+			<name>cf_email</name>
+			<title>Email</title>
+			<type>Text</type>
+			<posx>51</posx>
+			<posy>78</posy>
+			<width>300</width>
+			<widthmode>1</widthmode>
+			<height>255</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script3cond>1</script3cond>
+			<script3id>165</script3id>
+			<script3name>ff_validemail</script3name>
+			<script3msg>Please enter your valid email address.</script3msg>
+		</element>
+		<element id="1026">
+			<name>cf_emailtext</name>
+			<title>Email:</title>
+			<posx>5</posx>
+			<posy>80</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Email:</data1>
+		</element>
+		<element id="1027">
+			<name>cf_note</name>
+			<title>Note</title>
+			<type>Tooltip</type>
+			<posx>367</posx>
+			<posy>80</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>We confirm that your email address will be only used for handling this contact request\x2C and it will not be made availabe to any 3rd party.</data2>
+		</element>
+		<element id="1028">
+			<name>cf_messagetext</name>
+			<title>Your message:</title>
+			<posx>5</posx>
+			<posy>108</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Your Message:</data1>
+		</element>
+		<element id="1029">
+			<name>cf_message</name>
+			<title>Message</title>
+			<type>Textarea</type>
+			<posx>10</posx>
+			<posy>128</posy>
+			<width>380</width>
+			<widthmode>1</widthmode>
+			<height>180</height>
+			<heightmode>1</heightmode>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter your message.</script3msg>
+		</element>
+		<element id="1030">
+			<name>test</name>
+			<title>Test</title>
+			<posx>10</posx>
+			<posy>20</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>The text to display</data1>
+		</element>
+		<element id="1031">
+			<name>cf_submit</name>
+			<title>Submit</title>
+			<type>Regular Button</type>
+			<posx>287</posx>
+			<posy>348</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Submit</data2>
+			<script2cond>1</script2cond>
+			<script2id>164</script2id>
+			<script2name>ff_validate_submit</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1032">
+			<name>seccode</name>
+			<title>Enter security code</title>
+			<type>Captcha</type>
+			<posx>11</posx>
+			<posy>321</posy>
+			<width>0</width>
+			<widthmode>1</widthmode>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+		</element>
+	</form>
+	<form id="39">
+		<package>Samples</package>
+		<name>SampleTabNavigation</name>
+		<title>Using tabs for page navigation</title>
+		<description>Demonstrates how you can build a dialog with tabs for each page. It also shows another reasonable use of rectangles besides framing and highlighting contents.</description>
+		<width>470</width>
+		<height>420</height>
+		<pages>3</pages>
+		<emailntf>0</emailntf>
+		<emaillog>0</emaillog>
+		<dblog>0</dblog>
+		<element id="1033">
+			<name>pane1page1</name>
+			<title>Page 1</title>
+			<type>Rectangle</type>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>450</width>
+			<height>400</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#eeeeee</data2>
+		</element>
+		<element id="1034">
+			<name>pane1page2</name>
+			<title>Page 2</title>
+			<type>Rectangle</type>
+			<posx>160</posx>
+			<posy>10</posy>
+			<width>151</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1035">
+			<name>pane1page3</name>
+			<title>Page 3</title>
+			<type>Rectangle</type>
+			<posx>309</posx>
+			<posy>10</posy>
+			<width>151</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1036">
+			<name>pane1legend1</name>
+			<title>Legend 1</title>
+			<posx>55</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Welcome</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1037">
+			<name>pane1legend2</name>
+			<title>Legend 2</title>
+			<posx>210</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ca href=\x22javascript:ff_switchpage(2)\x22\x3EDetails\x3C/a\x3E</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1038">
+			<name>pane1legend3</name>
+			<title>Legend 3</title>
+			<posx>360</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ca href=\x22javascript:ff_switchpage(3)\x22\x3EThe Rest\x3C/a\x3E</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1039">
+			<name>pane1intro</name>
+			<title>Intro</title>
+			<posx>30</posx>
+			<posy>70</posy>
+			<width>410</width>
+			<height>300</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch1\x3ETab Sample\x3C/h1\x3E\r\n\x3Cp\x3EThis demonstrates how you can build a dialogue with tabs for each page. It also shows another reasonable use of rectangles besides framing and highlighting contents.\x3C/p\x3E</data1>
+		</element>
+		<element id="1040">
+			<name>pane1next</name>
+			<title>Next</title>
+			<type>Icon</type>
+			<posx>415</posx>
+			<posy>345</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{mossite}/administrator/images/next.png</data1>
+			<data2>\x3Cfont size=\x222\x22\x3E\x3Cstrong\x3ENext\x3C/strong\x3E\x3C/font\x3E</data2>
+			<data3>{mossite}/administrator/images/next_f2.png</data3>
+			<script2cond>1</script2cond>
+			<script2id>139</script2id>
+			<script2name>ff_nextpage</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1041">
+			<page>2</page>
+			<name>pane2page2</name>
+			<title>Page 2</title>
+			<type>Rectangle</type>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>450</width>
+			<height>400</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#eeeeee</data2>
+		</element>
+		<element id="1042">
+			<page>2</page>
+			<name>pane2page1</name>
+			<title>Page 1</title>
+			<type>Rectangle</type>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>151</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1043">
+			<page>2</page>
+			<name>pane2page3</name>
+			<title>Page 3</title>
+			<type>Rectangle</type>
+			<posx>309</posx>
+			<posy>10</posy>
+			<width>151</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1044">
+			<page>2</page>
+			<name>pane2legend1</name>
+			<title>Legend 1</title>
+			<posx>55</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ca href=\x22javascript:ff_switchpage(1)\x22\x3EWelcome\x3C/a\x3E</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1045">
+			<page>2</page>
+			<name>pane2legend2</name>
+			<title>Legend 2</title>
+			<posx>210</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Details</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1046">
+			<page>2</page>
+			<name>pane2legend3</name>
+			<title>Legend 3</title>
+			<posx>360</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ca href=\x22javascript:ff_switchpage(3)\x22\x3EThe Rest\x3C/a\x3E</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1047">
+			<page>2</page>
+			<name>pane2picture</name>
+			<title>Picture</title>
+			<type>Image</type>
+			<posx>100</posx>
+			<posy>100</posy>
+			<width>200</width>
+			<height>200</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>{mossite}/administrator/images/credits.png</data1>
+			<data2>Credits</data2>
+		</element>
+		<element id="1048">
+			<page>2</page>
+			<name>pane2next</name>
+			<title>Next</title>
+			<type>Icon</type>
+			<posx>415</posx>
+			<posy>345</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{mossite}/administrator/images/next.png</data1>
+			<data2>\x3Cfont size=\x222\x22\x3E\x3Cstrong\x3ENext\x3C/strong\x3E\x3C/font\x3E</data2>
+			<data3>{mossite}/administrator/images/next_f2.png</data3>
+			<script2cond>1</script2cond>
+			<script2id>139</script2id>
+			<script2name>ff_nextpage</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1049">
+			<page>2</page>
+			<name>pane2back</name>
+			<title>Back</title>
+			<type>Icon</type>
+			<posx>20</posx>
+			<posy>345</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{mossite}/administrator/images/back.png</data1>
+			<data2>\x3Cfont size=\x222\x22\x3E\x3Cstrong\x3EBack\x3C/strong\x3E\x3C/font\x3E</data2>
+			<data3>{mossite}/administrator/images/back_f2.png</data3>
+			<script2cond>1</script2cond>
+			<script2id>143</script2id>
+			<script2name>ff_previouspage</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1050">
+			<page>3</page>
+			<name>pane3page3</name>
+			<title>Page 3</title>
+			<type>Rectangle</type>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>450</width>
+			<height>400</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#eeeeee</data2>
+		</element>
+		<element id="1051">
+			<page>3</page>
+			<name>pane3page1</name>
+			<title>Page 1</title>
+			<type>Rectangle</type>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>151</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1052">
+			<page>3</page>
+			<name>pane3page2</name>
+			<title>Page 2</title>
+			<type>Rectangle</type>
+			<posx>159</posx>
+			<posy>10</posy>
+			<width>151</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1px solid #aaaaaa</data1>
+			<data2>#dddddd</data2>
+		</element>
+		<element id="1053">
+			<page>3</page>
+			<name>pane3legend1</name>
+			<title>Legend 1</title>
+			<posx>55</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ca href=\x22javascript:ff_switchpage(1)\x22\x3EWelcome\x3C/a\x3E</data1>
+		</element>
+		<element id="1054">
+			<page>3</page>
+			<name>pane3legend2</name>
+			<title>Legend 2</title>
+			<posx>210</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ca href=\x22javascript:ff_switchpage(2)\x22\x3EDetails\x3C/a\x3E</data1>
+		</element>
+		<element id="1055">
+			<page>3</page>
+			<name>pane3legend3</name>
+			<title>Legend 3</title>
+			<posx>360</posx>
+			<posy>17</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>The Rest</data1>
+		</element>
+		<element id="1056">
+			<page>3</page>
+			<name>pane3text</name>
+			<title>Text</title>
+			<posx>130</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch3\x3E....will go here.\x3C/h3\x3E</data1>
+		</element>
+		<element id="1057">
+			<page>3</page>
+			<name>pane3back</name>
+			<title>Back</title>
+			<type>Icon</type>
+			<posx>20</posx>
+			<posy>345</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{mossite}/administrator/images/back.png</data1>
+			<data2>\x3Cfont size=\x222\x22\x3E\x3Cstrong\x3EBack\x3C/strong\x3E\x3C/font\x3E</data2>
+			<data3>{mossite}/administrator/images/back_f2.png</data3>
+			<script2cond>1</script2cond>
+			<script2id>143</script2id>
+			<script2name>ff_previouspage</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+	</form>
+	<form id="40">
+		<package>Samples</package>
+		<name>SampleCountrySelect</name>
+		<title>Country selection</title>
+		<description>Shows the interaction between logically connected select lists\x2C as well as dynamic replacement of select list options. Not really stuff for rookies.</description>
+		<width>320</width>
+		<height>240</height>
+		<emailntf>0</emailntf>
+		<emaillog>0</emaillog>
+		<dblog>0</dblog>
+		<element id="1058">
+			<name>CselHeading</name>
+			<title>Heading</title>
+			<posx>5</posx>
+			<posy>0</posy>
+			<width>310</width>
+			<height>100</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch3\x3EAdvanced Country Selection\x3C/h3\x3E\r\n\x3Cp\x3EThis sample demonstrates the interaction between logically connected select lists\x2C as well as dynamic replacement of select list options.\x3C/p\x3E</data1>
+		</element>
+		<element id="1059">
+			<name>CselRegionCaption</name>
+			<title>Region:</title>
+			<posx>5</posx>
+			<posy>130</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ERegion:\x3C/strong\x3E</data1>
+		</element>
+		<element id="1060">
+			<name>CselRegion</name>
+			<title>Region</title>
+			<type>Select List</type>
+			<logging>0</logging>
+			<posx>145</posx>
+			<posy>128</posy>
+			<width>150</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>1\x3BSelect Region\x3Bnone\r\n0\x3BAsia\x3Basia\r\n0\x3BAfrica\x3Bafrica\r\n0\x3BAustralia\x3Baustralia\r\n0\x3BEurope\x3Beurope\r\n0\x3BMiddle East\x3Bmiddleeast\r\n0\x3BLatin America\x3Blamerica\r\n0\x3BNorth America\x3Bnamerica\r\n0\x3BSouth America\x3Bsamerica</data2>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag1>1</script1flag1>
+			<script2cond>2</script2cond>
+			<script2code>function ff_CselRegion_action(element\x2C action)\r\n{\r\n    country = ff_getElementByName(\x27CselCountry\x27)\x3B\r\n    state   = ff_getElementByName(\x27CselState\x27)\x3B\r\n\r\n    var africaArray = new Array(\r\n        \x27Ethiopia\x27\x2C \x27Somalia\x27\x2C \x27South Africa\x27\x2C \x27Other\x27\r\n    )\x3B\r\n\r\n    var middleeastArray = new Array(\r\n        \x27Egypt\x27\x2C \x27Iran\x27\x2C \x27Israel\x27\x2C \x27Kuwait\x27\x2C \x27Lebanon\x27\x2C \x27Morocco\x27\x2C\r\n        \x27Saudi Arabia\x27\x2C \x27Syria\x27\x2C \x27Turkey\x27\x2C \x27U.A.Emirates\x27\x2C \x27Other\x27\r\n    )\x3B\r\n\r\n    var asiaArray = new Array(\r\n        \x27Armenia\x27\x2C \x27Bangladesh\x27\x2C \x27Cambodia\x27\x2C \x27China\x27\x2C \x27India\x27\x2C \x27Indonesia\x27\x2C\r\n        \x27Japan\x27\x2C \x27Malaysia\x27\x2C \x27Myanmar\x27\x2C \x27Nepal\x27\x2C \x27Pakistan\x27\x2C \x27Philippines\x27\x2C\r\n        \x27Singapore\x27\x2C \x27South Korea\x27\x2C \x27Sri Lanka\x27\x2C \x27Taiwan\x27\x2C \x27Thailand\x27\x2C\r\n        \x27Uzbekistan\x27\x2C \x27Vietnam\x27\x2C \x27Other\x27\r\n    )\x3B\r\n\r\n    var europeArray = new Array(\r\n        \x27Albania\x27\x2C \x27Austria\x27\x2C \x27Belarus\x27\x2C \x27Belgium\x27\x2C \x27Bosnia\x27\x2C \x27Bulgaria\x27\x2C\r\n        \x27Croatia\x27\x2C \x27Cyprus\x27\x2C \x27Czech Rep.\x27\x2C \x27Denmark\x27\x2C \x27Estonia\x27\x2C \x27Finland\x27\x2C\r\n        \x27France\x27\x2C \x27Germany\x27\x2C \x27Greece\x27\x2C \x27Hungary\x27\x2C \x27Iceland\x27\x2C \x27Ireland\x27\x2C\r\n        \x27Italy\x27\x2C \x27Latvia\x27\x2C \x27Liechtenstein\x27\x2C \x27Lithuania\x27\x2C \x27Luxembourg\x27\x2C\r\n        \x27Macedonia\x27\x2C \x27Malta\x27\x2C \x27Monaco\x27\x2C \x27Netherlands\x27\x2C \x27Norway\x27\x2C \x27Poland\x27\x2C\r\n        \x27Portugal\x27\x2C \x27Romania\x27\x2C \x27Russia\x27\x2C \x27Slovakia\x27\x2C \x27Slovenia\x27\x2C \x27Spain\x27\x2C\r\n        \x27Sweden\x27\x2C \x27Switzerland\x27\x2C \x27Ukraine\x27\x2C \x27United Kingdom\x27\x2C \x27Other\x27\r\n    )\x3B\r\n\r\n    var australiaArray = new Array(\x27Australia\x27\x2C \x27New Zealand\x27\x2C \x27Other\x27)\x3B\r\n\r\n    var lamericaArray = new Array(\r\n        \x27Costa Rica\x27\x2C \x27Cuba\x27\x2C \x27El Salvador\x27\x2C \x27Guatemala\x27\x2C \x27Haiti\x27\x2C \x27Jamaica\x27\x2C\r\n        \x27Mexico\x27\x2C \x27Panama\x27\x2C \x27Other\x27\r\n    )\x3B\r\n\r\n    var namericaArray =  new Array(\x27Canada\x27\x2C \x27USA\x27\x2C \x27Other\x27)\x3B\r\n\r\n    var samericaArray =  new Array(\r\n        \x27Argentina\x27\x2C \x27Bolivia\x27\x2C \x27Brazil\x27\x2C \x27Chile\x27\x2C \x27Colombia\x27\x2C \x27Ecuador\x27\x2C\r\n        \x27Paraguay\x27\x2C \x27Peru\x27\x2C \x27Suriname\x27\x2C \x27Uruguay\x27\x2C \x27Venezuela\x27\x2C \x27Other\x27\r\n    )\x3B\r\n\r\n    if (element.value == \x27none\x27) {\r\n        // drop countries\r\n        while (country.options.length \x3E 0)\r\n            country.options[country.options.length-1] = null\x3B\r\n    } else {\r\n        // get the matching array\r\n        var selectedArray = eval(element.value+\x27Array\x27)\x3B\r\n\r\n        // drop supernumerous option\r\n        while (selectedArray.length \x3C country.options.length-1)\r\n            country.options[country.options.length-1] = null\x3B\r\n\r\n        // add the new options\r\n        country.options[0] = new Option(\x27Select Country\x27\x2C \x27none\x27\x2C true\x2C true)\x3B\r\n        for (var i=0\x3B i \x3C selectedArray.length\x3B i++)\r\n            country.options[i+1] =\r\n                new Option(selectedArray[i]\x2C selectedArray[i])\x3B\r\n    } // if\r\n\r\n    // drop states\r\n    while (state.options.length \x3E 0)\r\n        state.options[state.options.length-1] = null\x3B\r\n} // ff_CselRegion_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>2</script3cond>
+			<script3code>function ff_CselRegion_validation(element\x2C message)\r\n{\r\n    if (element.value==\x27none\x27) {\r\n        if (message==\x27\x27) message = \x22Please select region.\x5Cn\x22\x3B\r\n        ff_validationFocus(element.name)\x3B\r\n        return message\x3B\r\n    }\r\n    return \x27\x27\x3B\r\n}</script3code>
+		</element>
+		<element id="1061">
+			<name>CselCountryCaption</name>
+			<title>Country:</title>
+			<posx>5</posx>
+			<posy>155</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ECountry:\x3C/strong\x3E</data1>
+		</element>
+		<element id="1062">
+			<name>CselCountry</name>
+			<title>Country</title>
+			<type>Select List</type>
+			<logging>0</logging>
+			<posx>145</posx>
+			<posy>153</posy>
+			<width>150</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<script2cond>2</script2cond>
+			<script2code>function ff_CselCountry_action(element\x2C action)\r\n{\r\n    state   = ff_getElementByName(\x27CselState\x27)\x3B\r\n\r\n    var stateArray = new Array(\r\n        \x27Alabama\x27\x2C \x27Alaska\x27\x2C \x27Arizona\x27\x2C \x27Arkansas\x27\x2C \x27California\x27\x2C \x27Colorado\x27\x2C\r\n        \x27Connecticut\x27\x2C \x27Delaware\x27\x2C \x27Columbia\x27\x2C \x27Florida\x27\x2C \x27Georgia\x27\x2C \x27Hawaii\x27\x2C\r\n        \x27Idaho\x27\x2C \x27Illinois\x27\x2C \x27Indiana\x27\x2C \x27Iowa\x27\x2C \x27Kansas\x27\x2C \x27Kentucky\x27\x2C\r\n        \x27Louisiana\x27\x2C \x27Maine\x27\x2C \x27Maryland\x27\x2C \x27Massachusetts\x27\x2C \x27Michigan\x27\x2C\r\n        \x27Minnesota\x27\x2C \x27Mississippi\x27\x2C \x27Missouri\x27\x2C \x27Montana\x27\x2C \x27Nebraska\x27\x2C\r\n        \x27Nevada\x27\x2C \x27New Hampshire\x27\x2C \x27New Jersey\x27\x2C \x27New Mexico\x27\x2C \x27New York\x27\x2C\r\n        \x27North Carolina\x27\x2C \x27North Dakota\x27\x2C \x27Ohio\x27\x2C \x27Oklahoma\x27\x2C \x27Oregon\x27\x2C\r\n        \x27Pennsylvania\x27\x2C \x27Rhode Island\x27\x2C \x27South Carolina\x27\x2C \x27South Dakota\x27\x2C\r\n        \x27Tennessee\x27\x2C \x27Texas\x27\x2C \x27Utah\x27\x2C \x27Vermont\x27\x2C \x27Virginia\x27\x2C \x27Washington\x27\x2C\r\n        \x27West Virginia\x27\x2C \x27Wisconsin\x27\x2C \x27Wyoming\x27\r\n    )\x3B\r\n    if (element.value==\x27USA\x27) {\r\n        // drop supernumerous option\r\n        while (stateArray.length \x3C state.options.length-1)\r\n            state.options[state.options.length-1] = null\x3B\r\n\r\n        // add the new options\r\n	    state.options[0] = new Option(\x27Select State\x27\x2C \x27none\x27\x2C true\x2C true)\x3B\r\n        for (var i=0\x3B i \x3C stateArray.length\x3B i++)\r\n            state.options[i+1] = new Option(stateArray[i]\x2C stateArray[i])\x3B\r\n    } else {\r\n        while (state.options.length \x3E 0)\r\n            state.options[(state.options.length - 1)] = null\x3B\r\n    } // if\r\n} //ff_CselCountry_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>2</script3cond>
+			<script3code>function ff_CselCountry_validation(element\x2C message)\r\n{\r\n    if (element.value==\x27none\x27 || element.value==\x27\x27) {\r\n        if (message==\x27\x27) message = \x22Please select country.\x5Cn\x22\x3B\r\n        ff_validationFocus(element.name)\x3B\r\n        return message\x3B\r\n    }\r\n    return \x27\x27\x3B\r\n}</script3code>
+		</element>
+		<element id="1063">
+			<name>CselStateCaption</name>
+			<title>State:</title>
+			<posx>5</posx>
+			<posy>180</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EState (USA only):\x3C/strong\x3E</data1>
+		</element>
+		<element id="1064">
+			<name>CselState</name>
+			<title>State</title>
+			<type>Select List</type>
+			<logging>0</logging>
+			<posx>145</posx>
+			<posy>178</posy>
+			<width>150</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<script3cond>2</script3cond>
+			<script3code>function ff_CselState_validation(element\x2C message)\r\n{\r\n    if (ff_getElementByName(\x27CselCountry\x27).value==\x27USA\x27)\r\n        if (element.value==\x27none\x27 || element.value==\x27\x27) {\r\n            if (message==\x27\x27) message = \x22Please select state.\x5Cn\x22\x3B\r\n            ff_validationFocus(element.name)\x3B\r\n            return message\x3B\r\n        }\r\n    return \x27\x27\x3B\r\n}</script3code>
+		</element>
+		<element id="1065">
+			<name>CselValidateButton</name>
+			<title>Validate Button</title>
+			<type>Regular Button</type>
+			<posx>50</posx>
+			<posy>210</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Validate Country Selection</data2>
+			<script2cond>1</script2cond>
+			<script2id>162</script2id>
+			<script2name>ff_validate_page</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+	</form>
+	<form id="41">
+		<package>Samples</package>
+		<name>SamplePieceApp</name>
+		<title>Piece sending mail</title>
+		<description>Shows how a piece can be used to send a mail to an arbitraty address. \r\nIt takes the fields email\x2C subject and message from the form to send a mail.</description>
+		<width>350</width>
+		<height>400</height>
+		<emailntf>0</emailntf>
+		<emaillog>0</emaillog>
+		<dblog>0</dblog>
+		<script2cond>1</script2cond>
+		<script2id>155</script2id>
+		<script2name>ff_showsubmitted</script2name>
+		<piece3cond>2</piece3cond>
+		<piece3code>// declare globals used in this piece\r\nglobal $mosConfig_mailfrom\x2C $mosConfig_fromname\x3B\r\n\r\n// include FacileForms standard library\r\n$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B\r\n\r\n// send the mail\r\n$this-\x3EsendMail(\r\n    $mosConfig_mailfrom\x2C                // email addr of submitter (1)\r\n    $mosConfig_fromname.\x27 - Message\x27\x2C   // name of submitter (1)\r\n    ff_getSubmit(\x27email\x27)\x2C              // email of recipient (2)\r\n    ff_getSubmit(\x27subject\x27)\x2C            // subject of the mail (3)\r\n    ff_getSubmit(\x27message\x27)             // body of the mail (3)\r\n)\x3B\r\n\r\n/*--------------------------------------------------------------------\r\nNotes:\r\n\r\n(1) In this sample we use the site admin as submitter of the email\x2C\r\n    but basicly you could use anything. Note that many mail servers \r\n    however impose constraints about the submitters email address and\r\n    in case refuse to sent the mail to prevent from spamming. (This\r\n    will mostly be reported as \x27relaying denied\x27).\r\n\r\n(2) Recipient can also be an array of email addresses if you want to \r\n    send the same mail to multiple recipients. Note that all email\r\n    adresses will however be visible to all recipients\x2C so maybe\r\n    it is better to call $this-\x3EsendMail for each recipient \r\n    individually.\r\n\r\n(3) Subject and body could of cause also be composed here in the \r\n    piece instead of taking it completely from the submitted values.\r\n--------------------------------------------------------------------*/</piece3code>
+		<element id="1066">
+			<name>email_txt</name>
+			<title>Recipient:</title>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Email to:</data1>
+		</element>
+		<element id="1067">
+			<name>email</name>
+			<title>Recipient</title>
+			<type>Text</type>
+			<posx>10</posx>
+			<posy>25</posy>
+			<width>51</width>
+			<height>128</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag1>1</script1flag1>
+			<script3cond>1</script3cond>
+			<script3id>165</script3id>
+			<script3name>ff_validemail</script3name>
+			<script3msg>Please enter a valid email address.</script3msg>
+		</element>
+		<element id="1068">
+			<name>subject_txt</name>
+			<title>Subject:</title>
+			<posx>10</posx>
+			<posy>55</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Subject:</data1>
+		</element>
+		<element id="1069">
+			<name>subject</name>
+			<title>Subject</title>
+			<type>Text</type>
+			<posx>10</posx>
+			<posy>70</posy>
+			<width>51</width>
+			<height>128</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter the subject.</script3msg>
+		</element>
+		<element id="1070">
+			<name>message_txt</name>
+			<title>Message:</title>
+			<posx>10</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Message:</data1>
+		</element>
+		<element id="1071">
+			<name>message</name>
+			<title>Message</title>
+			<type>Textarea</type>
+			<posx>10</posx>
+			<posy>115</posy>
+			<width>38</width>
+			<height>15</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter the message.</script3msg>
+		</element>
+		<element id="1072">
+			<name>submit_mail</name>
+			<title>Submit</title>
+			<type>Regular Button</type>
+			<posx>10</posx>
+			<posy>370</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Submit</data2>
+			<script2cond>1</script2cond>
+			<script2id>164</script2id>
+			<script2name>ff_validate_submit</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+	</form>
+	<form id="42">
+		<package>Samples</package>
+		<name>SampleEmbeddedCode</name>
+		<title>Embedded php code</title>
+		<description>Demonstrates the use of embedded php code in various ways.</description>
+		<width>180</width>
+		<height>300</height>
+		<emailntf>0</emailntf>
+		<dblog>0</dblog>
+		<script1cond>2</script1cond>
+		<script1code>function ff_SampleEmbeddedCode_init()\r\n{\r\n    alert(\r\n        \x27This sample shows some applications of embedded php code:\x5Cn\x27+\r\n        \x27\x5Cn\x27+\r\n        \x27- Code in static text as personalized welcome\x5Cn\x27+\r\n        \x27- Options of the select list are populated by a sql query\x5Cn\x27+\r\n        \x27- A hidden input submitting the user id\x5Cn\x27+\r\n        \x27\x5Cn\x27+\r\n        \x27Embedded php code can be used in parameters of forms\x2C elements \x27+\r\n        \x27and scripts that have a multiline textarea for editing.\x27\r\n    )\x3B\r\n} // ff_SampleEmbeddedCode_init</script1code>
+		<script2cond>1</script2cond>
+		<script2id>155</script2id>
+		<script2name>ff_showsubmitted</script2name>
+		<piece1cond>1</piece1cond>
+		<piece1id>99</piece1id>
+		<piece1name>ff_InitLib</piece1name>
+		<element id="1073">
+			<name>welcome</name>
+			<title>Welcome</title>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch2\x3EWelcome \x3C?php \r\nglobal $my\x3B \r\nif ($my-\x3Ename != \x27\x27) return $my-\x3Ename\x3B else return \x27Visitor\x27\x3B\r\n?\x3E\x3C/h2\x3E</data1>
+		</element>
+		<element id="1074">
+			<name>userlist</name>
+			<title>Userlist</title>
+			<type>Select List</type>
+			<posx>10</posx>
+			<posy>75</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>10</data1>
+			<data2>1\x3BSelect user\x3Bnone\r\n\x3C?php\r\n/*\r\n  This php code is executed while the page is created.\r\n  It queries the userlist by sql and creates options for the select list.\r\n*/\r\n$users = ff_select(\x22select name\x2C username from #__users order by name\x22)\x3B\r\n$options = \x27\x27\x3B\r\nif ($users)\r\n    foreach ($users as $user) \r\n        $options .= \x220\x3B$user-\x3Ename\x3B$user-\x3Eusername\x5Cn\x22\x3B\r\nreturn $options\x3B\r\n?\x3E</data2>
+			<script3cond>2</script3cond>
+			<script3code>function ff_userlist_validation(element\x2C message)\r\n{\r\n    if (element.value==\x27none\x27 || element.value==\x27\x27) {\r\n        ff_validationFocus(element.name)\x3B\r\n        return message\x3B\r\n    } // if\r\n    return \x27\x27\x3B\r\n} // ff_userlist_validation</script3code>
+			<script3msg>Please select a mambo user!</script3msg>
+		</element>
+		<element id="1075">
+			<name>submit</name>
+			<title>Submit</title>
+			<type>Regular Button</type>
+			<posx>10</posx>
+			<posy>260</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>5</data1>
+			<data2>Submit</data2>
+			<script2cond>1</script2cond>
+			<script2id>164</script2id>
+			<script2name>ff_validate_submit</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1076">
+			<name>username</name>
+			<title>Username</title>
+			<type>Hidden Input</type>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php \r\n    global $my\x3B \r\n    return $my-\x3Eusername\x3B \r\n?\x3E</data1>
+		</element>
+	</form>
+	<form id="43">
+		<package>Samples</package>
+		<name>SamplePizzaShop</name>
+		<title>Pizza shop</title>
+		<description>A complete pizza order form with all bells and whistles. Only the selection of pizzas is very limited. And dont blame me if it doesn\x27t arrive in time \x3B)</description>
+		<width>400</width>
+		<height>400</height>
+		<pages>6</pages>
+		<emailntf>0</emailntf>
+		<script2cond>2</script2cond>
+		<script2code>function ff_SamplePizzaShop_submitted(status)\r\n{\r\n    if (status != 0) {\r\n        alert(\r\n            \x22Sorry\x2C but submission of you entries unfotunately failed.\x5Cn\x22+\r\n            \x22We will check this problem and hope on your understanding.\x5Cn\x22+\r\n            \x22You will be redirected to the home page now.\x22\r\n        )\x3B\r\n        ff_returnHome()\x3B\r\n    } else\r\n        ff_switchpage(ff_getPageByName(\x27pst_picture\x27))\x3B // thank you\r\n} // ff_SamplePizzaShop_submitted</script2code>
+		<element id="1077">
+			<name>psi_lights</name>
+			<title>Lights</title>
+			<type>Image</type>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>100</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>{ff_images}/pizzashop/lights.jpg</data1>
+			<data2>Lights Picture</data2>
+		</element>
+		<element id="1078">
+			<name>psi_ticker</name>
+			<title>Ticker</title>
+			<posx>10</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cmarquee scrollamount=\x223\x22 scrolldelay=\x2210\x22\x3E  \x3Cb\x3E+++ Happy hours monday to friday from 4 a.m. to 6 a.m +++ Every pizza half price! +++ Dont miss this! +++\x3C/b\x3E  \x3C/marquee\x3E</data1>
+		</element>
+		<element id="1079">
+			<name>psi_standard</name>
+			<title>Standard Pizzas</title>
+			<type>Graphic Button</type>
+			<posx>40</posx>
+			<posy>150</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{ff_images}/pizzashop/quattro.jpg</data1>
+			<data2>\x3Cstrong\x3EOrder standard pizzas\x3C/strong\x3E</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psi_standard_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            ff_switchpage(ff_getPageByName(\x27pss_title\x27))\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psi_standard_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1080">
+			<name>psi_custom</name>
+			<title>Custom Pizzas</title>
+			<type>Graphic Button</type>
+			<posx>190</posx>
+			<posy>275</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{ff_images}/pizzashop/design.jpg</data1>
+			<data2>\x3Cstrong\x3ECreate my own pizza\x3C/strong\x3E</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psi_custom_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            ff_switchpage(ff_getPageByName(\x27psc_title\x27))\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psi_custom_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1081">
+			<page>2</page>
+			<name>pss_title</name>
+			<title>Title</title>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ccenter\x3E\x3Ch1\x3EOur Standard Pizzas\x3C/h1\x3E\x3Ch1\x3E\x3C/h1\x3E\x3C/center\x3E</data1>
+		</element>
+		<element id="1082">
+			<page>2</page>
+			<name>pss_regular</name>
+			<title>Regular</title>
+			<posx>280</posx>
+			<posy>60</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ERegular\x3C/strong\x3E</data1>
+		</element>
+		<element id="1083">
+			<page>2</page>
+			<name>pss_large</name>
+			<title>Large</title>
+			<posx>350</posx>
+			<posy>60</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ELarge\x3C/strong\x3E</data1>
+		</element>
+		<element id="1084">
+			<page>2</page>
+			<name>pss_margherita_image</name>
+			<title>Margherita Image</title>
+			<type>Image</type>
+			<posx>0</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>{ff_images}/pizzashop/margherita.jpg</data1>
+		</element>
+		<element id="1085">
+			<page>2</page>
+			<name>pss_margherita_text</name>
+			<title>Margherita Text</title>
+			<posx>110</posx>
+			<posy>100</posy>
+			<width>100</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EMargherita\x3C/strong\x3E\x3Cbr\x3E  \x3Cfont size=\x22-2\x22\x3EPizza sauce\x2C Mozarella\x3C/font\x3E</data1>
+		</element>
+		<element id="1086">
+			<page>2</page>
+			<name>pss_margherita_regular_price</name>
+			<title>Margherita Regular Price</title>
+			<posx>280</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>$5.99</data1>
+		</element>
+		<element id="1087">
+			<page>2</page>
+			<name>pss_margherita_regular</name>
+			<title>Margherita Regular Order</title>
+			<type>Text</type>
+			<posx>280</posx>
+			<posy>120</posy>
+			<width>2</width>
+			<height>2</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag2>1</script1flag2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_pss_margherita_regular_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27change\x27:\r\n            ff_pss_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_pss_margherita_regular_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>138</script3id>
+			<script3name>ff_integer_or_empty</script3name>
+			<script3msg>Please enter a number for margherita regular.</script3msg>
+		</element>
+		<element id="1088">
+			<page>2</page>
+			<name>pss_margherita_large_price</name>
+			<title>Martgherita Large Price</title>
+			<posx>350</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>$8.99</data1>
+		</element>
+		<element id="1089">
+			<page>2</page>
+			<name>pss_margherita_large</name>
+			<title>Margherita Large Order</title>
+			<type>Text</type>
+			<posx>350</posx>
+			<posy>120</posy>
+			<width>2</width>
+			<height>2</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script2cond>2</script2cond>
+			<script2code>function ff_pss_margherita_large_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27change\x27:\r\n            ff_pss_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_pss_margherita_large_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>138</script3id>
+			<script3name>ff_integer_or_empty</script3name>
+			<script3msg>Please enter a number for margherita large.</script3msg>
+		</element>
+		<element id="1090">
+			<page>2</page>
+			<name>pss_quattro_image</name>
+			<title>Quattro Image</title>
+			<type>Image</type>
+			<posx>0</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>{ff_images}/pizzashop/quattro.jpg</data1>
+		</element>
+		<element id="1091">
+			<page>2</page>
+			<name>pss_quattro_text</name>
+			<title>Quattro Text</title>
+			<posx>110</posx>
+			<posy>200</posy>
+			<width>120</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EQuattro Staggione\x3C/strong\x3E\x3Cbr\x3E  \x3Cfont size=\x22-2\x22\x3EPizza sauce\x2C Mozarella\x2C Pepperoni\x2C Mushrooms\x2C Garlic\x3C/font\x3E</data1>
+		</element>
+		<element id="1092">
+			<page>2</page>
+			<name>pss_quattro_regular_price</name>
+			<title>Quattro Regular Price</title>
+			<posx>280</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>$7.99</data1>
+		</element>
+		<element id="1093">
+			<page>2</page>
+			<name>pss_quattro_regular</name>
+			<title>Quattro Regular Order</title>
+			<type>Text</type>
+			<posx>280</posx>
+			<posy>220</posy>
+			<width>2</width>
+			<height>2</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script2cond>2</script2cond>
+			<script2code>function ff_pss_quattro_regular_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27change\x27:\r\n            ff_pss_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_pss_quattro_regular_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>138</script3id>
+			<script3name>ff_integer_or_empty</script3name>
+			<script3msg>Please enter a number for quattro regular.</script3msg>
+		</element>
+		<element id="1094">
+			<page>2</page>
+			<name>pss_quattro_large_price</name>
+			<title>Quattro Large Price</title>
+			<posx>350</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>$10.99</data1>
+		</element>
+		<element id="1095">
+			<page>2</page>
+			<name>pss_quattro_large</name>
+			<title>Quattro Large Order</title>
+			<type>Text</type>
+			<posx>350</posx>
+			<posy>220</posy>
+			<width>2</width>
+			<height>2</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script2cond>2</script2cond>
+			<script2code>function ff_pss_quattro_large_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27change\x27:\r\n            ff_pss_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_pss_quattro_large_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>138</script3id>
+			<script3name>ff_integer_or_empty</script3name>
+			<script3msg>Please enter a number for quattro large.</script3msg>
+		</element>
+		<element id="1096">
+			<page>2</page>
+			<name>pss_amount_text</name>
+			<title>Total Amount:</title>
+			<posx>150</posx>
+			<posy>320</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EYour total amount is:\x3C/strong\x3E</data1>
+		</element>
+		<element id="1097">
+			<page>2</page>
+			<name>pss_amount</name>
+			<title>Total Amount</title>
+			<type>Text</type>
+			<logging>0</logging>
+			<posx>280</posx>
+			<posy>320</posy>
+			<width>10</width>
+			<height>10</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag2>1</flag2>
+			<script3cond>2</script3cond>
+			<script3code>function ff_pss_amount_validation(element\x2C message)\r\n{\r\n    ff_pss_calculate()\x3B\r\n    if (element.value==0) {\r\n        ff_validationFocus(\x27pss_margherita_regular\x27)\x3B\r\n        return message\x3B\r\n    } // if\r\n    return \x27\x27\x3B\r\n} // ff_pss_amount_validation\r\n\r\nfunction ff_pss_calculate()\r\n{\r\n    var amount = 0\x3B\r\n    var order\x3B\r\n\r\n    order = ff_getElementByName(\x27pss_margherita_regular\x27).value\x3B\r\n    if (order != \x27\x27) amount += parseInt(order) * 5.99\x3B\r\n\r\n    order = ff_getElementByName(\x27pss_margherita_large\x27).value\x3B\r\n    if (order != \x27\x27) amount += parseInt(order) * 8.99\x3B\r\n\r\n    order = ff_getElementByName(\x27pss_quattro_regular\x27).value\x3B\r\n    if (order != \x27\x27) amount += parseInt(order) * 7.99\x3B\r\n\r\n    order = ff_getElementByName(\x27pss_quattro_large\x27).value\x3B\r\n    if (order != \x27\x27) amount += parseInt(order) * 10.99\x3B\r\n\r\n    ff_getElementByName(\x27pss_amount\x27).value = Math.round(amount*100)/100\x3B\r\n} // ff_pss_calculate</script3code>
+			<script3msg>Please enter your order first!</script3msg>
+		</element>
+		<element id="1098">
+			<page>2</page>
+			<name>pss_order</name>
+			<title>Order Now</title>
+			<type>Regular Button</type>
+			<posx>280</posx>
+			<posy>350</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Order Now</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_pss_order_action(element\x2C action)\r\n{\r\n    var error\x3B\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            error = ff_validation(ff_currentpage)\x3B\r\n            if (error != \x27\x27) {\r\n                alert(error)\x3B\r\n                ff_validationFocus()\x3B\r\n            } else\r\n                ff_switchpage(ff_getPageByName(\x27psa_title\x27))\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_pss_order_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1099">
+			<page>3</page>
+			<name>psc_title</name>
+			<title>Title</title>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ccenter\x3E\x3Ch1\x3ECreate My Own Pizza\x3C/h1\x3E\x3Ch1\x3E\x3C/h1\x3E\x3C/center\x3E</data1>
+		</element>
+		<element id="1100">
+			<page>3</page>
+			<name>psc_regular</name>
+			<title>Regular</title>
+			<posx>280</posx>
+			<posy>60</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ERegular\x3C/strong\x3E</data1>
+		</element>
+		<element id="1101">
+			<page>3</page>
+			<name>psc_large</name>
+			<title>Large</title>
+			<posx>350</posx>
+			<posy>60</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ELarge\x3C/strong\x3E</data1>
+		</element>
+		<element id="1102">
+			<page>3</page>
+			<name>psc_image</name>
+			<title>Custom Image</title>
+			<type>Image</type>
+			<posx>0</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>{ff_images}/pizzashop/design.jpg</data1>
+		</element>
+		<element id="1103">
+			<page>3</page>
+			<name>psc_custom_text</name>
+			<title>Custom Text</title>
+			<posx>110</posx>
+			<posy>100</posy>
+			<width>100</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EBasic Pizza\x3C/strong\x3E\x3Cbr\x3E  \x3Cfont size=\x22-2\x22\x3EWith pizza sauce\x3C/font\x3E</data1>
+		</element>
+		<element id="1104">
+			<page>3</page>
+			<name>psc_custom_regular_price</name>
+			<title>Custom Regular Price</title>
+			<posx>280</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>$5.99</data1>
+		</element>
+		<element id="1105">
+			<page>3</page>
+			<name>psc_custom_regular</name>
+			<title>Custom Regular Order</title>
+			<type>Text</type>
+			<posx>280</posx>
+			<posy>120</posy>
+			<width>2</width>
+			<height>2</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag2>1</script1flag2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psc_custom_regular_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27change\x27:\r\n            ff_psc_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psc_custom_regular_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>138</script3id>
+			<script3name>ff_integer_or_empty</script3name>
+			<script3msg>Please enter a number for regular size.</script3msg>
+		</element>
+		<element id="1106">
+			<page>3</page>
+			<name>psc_custom_large_price</name>
+			<title>Custom Large Price</title>
+			<posx>350</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>$8.99</data1>
+		</element>
+		<element id="1107">
+			<page>3</page>
+			<name>psc_custom_large</name>
+			<title>Custom Large Order</title>
+			<type>Text</type>
+			<posx>350</posx>
+			<posy>120</posy>
+			<width>2</width>
+			<height>2</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psc_custom_large_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27change\x27:\r\n            ff_psc_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psc_custom_large_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>138</script3id>
+			<script3name>ff_integer_or_empty</script3name>
+			<script3msg>Please enter a number for large size.</script3msg>
+		</element>
+		<element id="1108">
+			<page>3</page>
+			<name>psc_extras_text</name>
+			<title>Extras Text</title>
+			<posx>240</posx>
+			<posy>155</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Add $0.49 for every extra</data1>
+		</element>
+		<element id="1109">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Extras</title>
+			<type>Checkbox</type>
+			<posx>0</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Mozzarella</data1>
+			<data2>Mozzarella</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psc_adds_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            ff_psc_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psc_adds_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1110">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Pepperoni</title>
+			<type>Checkbox</type>
+			<posx>100</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Pepperoni</data1>
+			<data2>Pepperoni</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1111">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Mushrooms</title>
+			<type>Checkbox</type>
+			<posx>200</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Mushrooms</data1>
+			<data2>Mushrooms</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1112">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Garlic</title>
+			<type>Checkbox</type>
+			<posx>300</posx>
+			<posy>200</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Garlic</data1>
+			<data2>Garlic</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1113">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Chedar</title>
+			<type>Checkbox</type>
+			<posx>0</posx>
+			<posy>220</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Chedar</data1>
+			<data2>Chedar</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1114">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Tomatos</title>
+			<type>Checkbox</type>
+			<posx>100</posx>
+			<posy>220</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Tomatos</data1>
+			<data2>Tomatos</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1115">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Vegetables</title>
+			<type>Checkbox</type>
+			<posx>200</posx>
+			<posy>220</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Vegetables</data1>
+			<data2>Vegetables</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1116">
+			<page>3</page>
+			<name>psc_adds</name>
+			<title>Anchovies</title>
+			<type>Checkbox</type>
+			<posx>300</posx>
+			<posy>220</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Anchovies</data1>
+			<data2>Anchovies</data2>
+			<script2cond>2</script2cond>
+			<script2code>// This is just dummy\x2C function must be defined in first psc_adds only.\r\n// Nonetheless action of all psc_adds_only must be \x22Custom Code\x22 with\r\n// \x22Click\x22</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1117">
+			<page>3</page>
+			<name>psc_alladds</name>
+			<title>All Extras</title>
+			<type>Checkbox</type>
+			<logging>0</logging>
+			<posx>0</posx>
+			<posy>250</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>yes</data1>
+			<data2>Don\x27t steal my time\x2C I want them ALL!</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psc_alladds_action(element\x2C action)\r\n{\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            for (var i = 0\x3B i \x3C ff_elements.length\x3B i++)\r\n                if (ff_elements[i][2]==\x27psc_adds\x27) \r\n                    ff_getElementByIndex(i).checked = element.checked\x3B\r\n            ff_psc_calculate()\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psc_alladds_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1118">
+			<page>3</page>
+			<name>psc_amount_text</name>
+			<title>Total Amount:</title>
+			<posx>150</posx>
+			<posy>320</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EYour total amount is:\x3C/strong\x3E</data1>
+		</element>
+		<element id="1119">
+			<page>3</page>
+			<name>psc_amount</name>
+			<title>Total Amount</title>
+			<type>Text</type>
+			<logging>0</logging>
+			<posx>280</posx>
+			<posy>320</posy>
+			<width>10</width>
+			<height>10</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag2>1</flag2>
+			<script3cond>2</script3cond>
+			<script3code>function ff_psc_amount_validation(element\x2C message)\r\n{\r\n    ff_psc_calculate()\x3B\r\n    if (ff_getElementByName(\x27psc_custom_regular\x27).value == \x27\x27 \x26\x26\r\n        ff_getElementByName(\x27psc_custom_large\x27).value == \x27\x27) {\r\n        ff_validationFocus(\x27psc_custom_regular\x27)\x3B\r\n        return message\x3B\r\n    } // if\r\n    return \x27\x27\x3B\r\n} // ff_psc_amount_validation\r\n\r\nfunction ff_psc_calculate()\r\n{\r\n    var amount = 0\x3B\r\n    var order\x3B\r\n    var count = 0\x3B\r\n\r\n    // add base amout of regular size\r\n    order = ff_getElementByName(\x27psc_custom_regular\x27).value\x3B\r\n    if (order != \x27\x27) {\r\n        order = parseInt(order)\x3B\r\n        count += order\x3B\r\n        amount += order * 5.99\x3B\r\n    } // if\r\n \r\n    // add base amount of large size\r\n    order = ff_getElementByName(\x27psc_custom_large\x27).value\x3B\r\n    if (order != \x27\x27) {\r\n        order = parseInt(order)\x3B\r\n        count += order\x3B\r\n        amount += order * 8.99\x3B\r\n    }\r\n\r\n    // count number of adds\r\n    var adds = 0\x3B\r\n    for (var i = 0\x3B i \x3C ff_elements.length\x3B i++)\r\n        if (ff_elements[i][2]==\x27psc_adds\x27) \r\n            if (ff_getElementByIndex(i).checked) adds++\x3B\r\n    amount += count * adds * 0.49\x3B\r\n\r\n    // show result\r\n    ff_getElementByName(\x27psc_amount\x27).value = Math.round(amount*100)/100\x3B\r\n} // ff_psc_calculate</script3code>
+			<script3msg>You must order one basic pizza at least!</script3msg>
+		</element>
+		<element id="1120">
+			<page>3</page>
+			<name>psc_order</name>
+			<title>Order Now</title>
+			<type>Regular Button</type>
+			<posx>280</posx>
+			<posy>350</posy>
+			<width>10</width>
+			<height>10</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Order Now</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_psc_order_action(element\x2C action)\r\n{\r\n    var error\x3B\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            error = ff_validation(ff_currentpage)\x3B\r\n            if (error != \x27\x27) {\r\n                alert(error)\x3B\r\n                ff_validationFocus()\x3B\r\n            } else\r\n                ff_switchpage(ff_getPageByName(\x27psa_title\x27))\x3B\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_psc_order_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1121">
+			<page>4</page>
+			<name>psa_title</name>
+			<title>Title</title>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ccenter\x3E\x3Ch1\x3EDelivery Address\x3C/h1\x3E\x3Ch1\x3E\x3C/h1\x3E\x3C/center\x3E</data1>
+		</element>
+		<element id="1122">
+			<page>4</page>
+			<name>psa_name_text</name>
+			<title>Name:</title>
+			<posx>5</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Your Name:</data1>
+		</element>
+		<element id="1123">
+			<page>4</page>
+			<name>psa_name</name>
+			<title>Name</title>
+			<type>Text</type>
+			<posx>80</posx>
+			<posy>100</posy>
+			<width>45</width>
+			<height>255</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag2>1</script1flag2>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter your name.</script3msg>
+		</element>
+		<element id="1124">
+			<page>4</page>
+			<name>psa_address_text</name>
+			<title>Address:</title>
+			<posx>5</posx>
+			<posy>130</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Address:</data1>
+		</element>
+		<element id="1125">
+			<page>4</page>
+			<name>psa_address</name>
+			<title>Address</title>
+			<type>Text</type>
+			<posx>80</posx>
+			<posy>130</posy>
+			<width>45</width>
+			<height>255</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter your address.</script3msg>
+		</element>
+		<element id="1126">
+			<page>4</page>
+			<name>psa_phone_text</name>
+			<title>Phone:</title>
+			<posx>5</posx>
+			<posy>160</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Phone:</data1>
+		</element>
+		<element id="1127">
+			<page>4</page>
+			<name>psa_phone</name>
+			<title>Phone</title>
+			<type>Text</type>
+			<posx>80</posx>
+			<posy>160</posy>
+			<width>45</width>
+			<height>255</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter your phone number.</script3msg>
+		</element>
+		<element id="1128">
+			<page>4</page>
+			<name>pss_submit</name>
+			<title>Submit Order</title>
+			<type>Regular Button</type>
+			<posx>120</posx>
+			<posy>220</posy>
+			<width>10</width>
+			<height>10</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Submit order\x2C I\x27m hungry now!</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_pss_submit_action(element\x2C action)\r\n{\r\n    var error\x3B\r\n    switch (action) {\r\n        case \x27click\x27:\r\n            error = ff_validation(ff_currentpage)\x3B\r\n            if (error != \x27\x27) {\r\n                alert(error)\x3B\r\n                ff_validationFocus()\x3B\r\n            } else {\r\n                ff_switchpage(ff_getPageByName(\x27psx_submitting\x27))\x3B\r\n                ff_submitForm()\x3B\r\n            } // if\r\n            break\x3B\r\n        default:\x3B\r\n    } // switch\r\n} // ff_pss_submit_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1129">
+			<page>5</page>
+			<name>psx_submitting</name>
+			<title>Submitting...</title>
+			<posx>50</posx>
+			<posy>100</posy>
+			<width>300</width>
+			<height>200</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch2\x3EYour order is being submitted\x2C please stand by....\x3C/h2\x3E</data1>
+		</element>
+		<element id="1130">
+			<page>6</page>
+			<name>pst_picture</name>
+			<title>Picture</title>
+			<type>Image</type>
+			<posx>100</posx>
+			<posy>50</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>{ff_images}/pizzashop/delivery.jpg</data1>
+			<data2>Lights Picture</data2>
+		</element>
+		<element id="1131">
+			<page>6</page>
+			<name>pst_text</name>
+			<title>Text</title>
+			<posx>20</posx>
+			<posy>200</posy>
+			<width>360</width>
+			<height>100</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch1\x3EThank you for your order!\x3C/h1\x3E\r\n\x3Cp\x3EPlease expect our delivery in half an hour from now. Prepare the necessary amount please.\x3Cp\x3E</data1>
+		</element>
+	</form>
+	<form id="44">
+		<package>Samples</package>
+		<name>RnrContestRegist</name>
+		<title>Rock\x27N\x27Roll dance contest registration</title>
+		<description>This is the registration form for the Rock\x27N\x27Roll dance contest. Every site member can make one registration only in this sample. Existing registrations can be edited.</description>
+		<width>350</width>
+		<height>200</height>
+		<pages>2</pages>
+		<emailntf>0</emailntf>
+		<emailxml>1</emailxml>
+		<dblog>0</dblog>
+		<script1cond>2</script1cond>
+		<script1code>function ff_RnrContestRegist_init()\r\n{\r\n    if (ff_getElementByName(\x27userid\x27).value==\x270\x27) ff_switchpage(2)\x3B\r\n} // ff_RnrContestRegist_init</script1code>
+		<piece1cond>2</piece1cond>
+		<piece1code>//+trace dis\r\n\r\n// load the standard form creation utilities\r\n$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B\r\n\r\n// create table if it does not yet exist\r\nff_query(\r\n    \x22CREATE TABLE IF NOT EXISTS `#__rnr_contest` (\x22.\r\n        \x22`id` INT( 11 ) NOT NULL AUTO_INCREMENT \x2C\x22.\r\n        \x22`userid` INT( 11 ) DEFAULT \x270\x27 NOT NULL \x2C\x22.\r\n        \x22`couple` VARCHAR( 50 ) NOT NULL \x2C\x22.\r\n        \x22`age` TINYINT( 1 ) DEFAULT \x270\x27 NOT NULL \x2C\x22.\r\n        \x22`acro` TINYINT( 1 ) DEFAULT \x270\x27 NOT NULL \x2C\x22.\r\n        \x22`fun` TINYINT( 1 ) DEFAULT \x270\x27 NOT NULL \x2C\x22.\r\n        \x22`boogie` TINYINT( 1 ) DEFAULT \x270\x27 NOT NULL\x2C\x22.\r\n        \x22PRIMARY KEY  (`id`)\x22.\r\n    \x22) TYPE=MyISAM AUTO_INCREMENT=1\x22\r\n)\x3B\r\n\r\n// load old record if any\r\nglobal $record\x3B\r\n$rows = ff_select(\x22select * from `#__rnr_contest` where userid=\x22.JFactory::getUser()-\x3Eget(\x27id\x27\x2C0))\x3B\r\nif (count($rows)) {\r\n   $record = $rows[0]\x3B\r\n   ff_setChecked(\x27age\x27\x2C $record-\x3Eage)\x3B\r\n   if ($record-\x3Eacro  ) ff_setChecked(\x27acro\x27  \x2C\x271\x27)\x3B\r\n   if ($record-\x3Efun   ) ff_setChecked(\x27fun\x27   \x2C\x271\x27)\x3B\r\n   if ($record-\x3Eboogie) ff_setChecked(\x27boogie\x27\x2C\x271\x27)\x3B\r\n} else\r\n   $record = NULL\x3B</piece1code>
+		<piece3cond>2</piece3cond>
+		<piece3code>//+trace dis\r\n\r\n// load the standard submit utilities\r\n$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B\r\n\r\n// retrieve the submitted values\r\n$recordid = ff_getSubmit(\x27recordid\x27)\x3B\r\n$userid   = JFactory::getUser()-\x3Eget(\x27id\x27\x2C0)\x3B\r\n$couple   = ff_getSubmit(\x27couple\x27\x2C \x27\x27)\x3B\r\n$age      = ff_getSubmit(\x27age\x27\x2C    0)\x3B\r\n$acro     = ff_getSubmit(\x27acro\x27\x2C   0)\x3B\r\n$fun      = ff_getSubmit(\x27fun\x27\x2C    0)\x3B\r\n$boogie   = ff_getSubmit(\x27boogie\x27\x2C 0)\x3B\r\n\r\nif (is_numeric($recordid))\r\n    // update existing record\r\n    ff_query(\r\n        \x22update `#__rnr_contest` \x22.\r\n           \x22set `couple` = \x27$couple\x27\x2C \x22.\r\n               \x22`age`    = \x27$age\x27\x2C \x22.\r\n               \x22`acro`   = \x27$acro\x27\x2C \x22.\r\n               \x22`fun`    = \x27$fun\x27\x2C \x22.\r\n               \x22`boogie` = \x27$boogie\x27 \x22.\r\n         \x22where `id`     = $recordid\x22\r\n    )\x3B\r\nelse\r\n    // save new record\r\n    ff_query(\r\n        \x22insert into `#__rnr_contest` \x22.\r\n            \x22(`userid`\x2C `couple`\x2C `age`\x2C `acro`\x2C `fun`\x2C `boogie`) \x22.\r\n        \x22values (\x27$userid\x27\x2C \x27$couple\x27\x2C \x27$age\x27\x2C \x27$acro\x27\x2C \x27$fun\x27\x2C \x27$boogie\x27)\x22\r\n    )\x3B</piece3code>
+		<piece4cond>2</piece4cond>
+		<piece4code>ff_redirectForm(\x22RnrContestList\x22)\x3B</piece4code>
+		<element id="1132">
+			<name>title</name>
+			<title>Title</title>
+			<posx>0</posx>
+			<posy>10</posy>
+			<width>100</width>
+			<widthmode>1</widthmode>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ccenter\x3E\x3Ch3\x3ERock\x27N\x27Roll Dance Contest Registration Form\x3C/h3\x3E\x3C/center\x3E</data1>
+		</element>
+		<element id="1133">
+			<name>couple_capt</name>
+			<title>Couple Caption</title>
+			<posx>10</posx>
+			<posy>50</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>Couple:</data1>
+		</element>
+		<element id="1134">
+			<name>couple</name>
+			<title>Couple</title>
+			<type>Text</type>
+			<posx>10</posx>
+			<posy>67</posy>
+			<width>50</width>
+			<height>50</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php global $record\x3B if ($record) return $record-\x3Ecouple\x3B ?\x3E</data1>
+			<script1cond>1</script1cond>
+			<script1id>132</script1id>
+			<script1name>ff_getfocus</script1name>
+			<script1flag2>1</script1flag2>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter couple names</script3msg>
+		</element>
+		<element id="1135">
+			<name>age</name>
+			<title>Junior</title>
+			<type>Radio Button</type>
+			<posx>10</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>Junior Class</data2>
+			<script3cond>2</script3cond>
+			<script3code>function ff_age_validation(element\x2C message)\r\n{\r\n    var age = 0\x3B\r\n    for (var i = 0\x3B i \x3C ff_elements.length\x3B i++)\r\n        if (ff_elements[i][2]==\x27age\x27) \r\n            if (ff_getElementByIndex(i).checked) age++\x3B\r\n    if (age==0) {\r\n        ff_validationFocus(element.name)\x3B\r\n        return \x27Please select age class\x5Cn\x27\x3B\r\n    } // if\r\n    return \x27\x27\x3B\r\n} // ff_age_validation</script3code>
+		</element>
+		<element id="1136">
+			<name>age</name>
+			<title>Adult</title>
+			<type>Radio Button</type>
+			<posx>110</posx>
+			<posy>100</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>0</data1>
+			<data2>Adult Class</data2>
+		</element>
+		<element id="1137">
+			<name>acro</name>
+			<title>Acrobatic</title>
+			<type>Checkbox</type>
+			<posx>10</posx>
+			<posy>130</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>Acrobatic Rock\x27N\x27Roll</data2>
+			<script3cond>2</script3cond>
+			<script3code>function ff_acro_validation(element\x2C message)\r\n{\r\n    if (!ff_getElementByName(\x27acro\x27).checked \x26\x26\r\n        !ff_getElementByName(\x27fun\x27).checked \x26\x26\r\n        !ff_getElementByName(\x27boogie\x27).checked) {\r\n        ff_validationFocus(element.name)\x3B\r\n        return \x27Please select at least one category\x5Cn\x27\x3B\r\n    } // if\r\n    return \x27\x27\x3B\r\n} // ff_acro_validation</script3code>
+		</element>
+		<element id="1138">
+			<name>fun</name>
+			<title>Fun</title>
+			<type>Checkbox</type>
+			<posx>10</posx>
+			<posy>150</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>Fun Rock\x27N\x27Roll</data2>
+		</element>
+		<element id="1139">
+			<name>boogie</name>
+			<title>Boogie</title>
+			<type>Checkbox</type>
+			<posx>10</posx>
+			<posy>170</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>Boogie-Woogie</data2>
+		</element>
+		<element id="1140">
+			<name>submit</name>
+			<title>Submit</title>
+			<type>Icon</type>
+			<posx>200</posx>
+			<posy>130</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>{mossite}/administrator/images/save.png</data1>
+			<data2>\x3Cfont size=\x222\x22\x3E\x3Cstrong\x3ESubmit Registration\x3C/strong\x3E\x3C/font\x3E</data2>
+			<data3>{mossite}/administrator/images/save_f2.png</data3>
+			<script2cond>1</script2cond>
+			<script2id>164</script2id>
+			<script2name>ff_validate_submit</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1141">
+			<name>userid</name>
+			<title>User ID</title>
+			<type>Hidden Input</type>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php return JFactory::getUser()-\x3Eget(\x27id\x27\x2C-1)\x3B ?\x3E</data1>
+		</element>
+		<element id="1142">
+			<name>recordid</name>
+			<title>Record ID</title>
+			<type>Hidden Input</type>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php global $record\x3B if ($record) return $record-\x3Eid\x3B ?\x3E</data1>
+		</element>
+		<element id="1143">
+			<page>2</page>
+			<name>message</name>
+			<title>Message</title>
+			<posx>10</posx>
+			<posxmode>1</posxmode>
+			<posy>50</posy>
+			<width>80</width>
+			<widthmode>1</widthmode>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Ch2\x3EYou need to log in as site member to registrate for the contest.\x3C/h2\x3E</data1>
+		</element>
+	</form>
+	<form id="45">
+		<package>Samples</package>
+		<name>RnrContestList</name>
+		<title>Rock\x27N\x27Roll dance contest partipicant list</title>
+		<description>Partipicants list for the Rock\x27N\x27Roll dance contest. \r\n(Please run registration first in order to automaticly create tables)</description>
+		<width>95</width>
+		<widthmode>1</widthmode>
+		<height>10</height>
+		<heightmode>1</heightmode>
+		<emailntf>0</emailntf>
+		<dblog>0</dblog>
+		<prevwidth>450</prevwidth>
+		<piece1cond>1</piece1cond>
+		<piece1id>99</piece1id>
+		<piece1name>ff_InitLib</piece1name>
+		<piece3cond>2</piece3cond>
+		<piece3code>//+trace dis\r\n\r\n// load the standard submit utilities\r\n$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B\r\n\r\n// get the userid to delete\r\n$deleteid = 0\x3B\r\nforeach ($this-\x3Esubmitdata as $data)\r\n    if ($data[_FF_DATA_NAME]==\x27deleteid\x27) {\r\n        $deleteid = $data[_FF_DATA_VALUE]\x3B\r\n        break\x3B\r\n    } // if\r\n\r\n// delete the record if userid found\r\nif ($deleteid \x3E 0)\r\n    ff_query(\x22delete from `#__rnr_contest` where id=$deleteid\x22)\x3B</piece3code>
+		<element id="1144">
+			<name>update</name>
+			<title>New/Update</title>
+			<type>Icon</type>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>4</flag1>
+			<data1>{mossite}/administrator/images/edit.png</data1>
+			<data2>\x3Cstrong\x3ENew/Update Registration\x3C/strong\x3E</data2>
+			<data3>{mossite}/administrator/images/edit_f2.png</data3>
+			<script2cond>2</script2cond>
+			<script2code>function ff_update_action(element\x2C action)\r\n{\r\n    ff_redirectParent(\r\n        \x27\x3C?php return ff_makeFormUrl(\x22RnrContestRegist\x22)\x3B ?\x3E\x27\r\n    )\x3B\r\n} // ff_update_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1145">
+			<name>revoke</name>
+			<title>Revoke</title>
+			<type>Icon</type>
+			<posx>220</posx>
+			<posy>10</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>4</flag1>
+			<data1>{mossite}/administrator/images/delete.png</data1>
+			<data2>\x3Cstrong\x3ERevoke Registration\x3C/strong\x3E</data2>
+			<data3>{mossite}/administrator/images/delete_f2.png</data3>
+			<script2cond>2</script2cond>
+			<script2code>function ff_revoke_action(element\x2C action)\r\n{\r\n    // check if user is logged in\r\n    var userid = ff_getElementByName(\x27userid\x27).value\x3B\r\n    if (userid == 0) {\r\n        alert(\x27You are not logged in to the site.\x27)\x3B\r\n        return\x3B\r\n    } // if\r\n\r\n    // search if userid is in the list\r\n    var listid = ff_getIdByName(\x27participants\x27)\x3B\r\n    var qrows = ff_queryRows[listid]\x3B\r\n    var cnt = qrows.length\x3B\r\n    var i\x3B\r\n    var rowid = 0\x3B\r\n    for (i = 0\x3B i \x3C cnt\x3B i++)\r\n        if (qrows[i][1] == userid) {\r\n            rowid = qrows[i][0]\x3B\r\n            break\x3B\r\n        } // if\r\n    if (rowid == 0) {\r\n        alert(\x27You have currently no registration.\x27)\x3B\r\n        return\x3B\r\n    } // if\r\n\r\n    if (!confirm(\x27Do you really want to revoke your registration?\x27)) return\x3B\r\n    ff_getElementByName(\x27deleteid\x27).value = rowid\x3B\r\n    ff_submitForm()\x3B\r\n} // ff_revoke_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1146">
+			<name>participants</name>
+			<title>Participants</title>
+			<type>Query List</type>
+			<class1>ff_titlebar</class1>
+			<class2>ff_querylist\x3Badminlist</class2>
+			<posx>2</posx>
+			<posxmode>1</posxmode>
+			<posy>60</posy>
+			<width>96</width>
+			<widthmode>1</widthmode>
+			<height>20</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<flag1>1</flag1>
+			<data1>0\r\n2\r\n1\r\n\r\ndata1\x3Brow0\r\ndata2\x3Brow1\r\nfooter\x3Badminheading\r\nfooter\x3Bpagenav\r\n1</data1>
+			<data2>$rows = ff_select(\r\n    \x22select \x22.\r\n        \x22c.id as id\x2C \x22.\r\n        \x22c.userid as userid\x2C \x22.\r\n        \x22u.name as user\x2C \x22.\r\n        \x22c.couple as couple\x2C \x22.\r\n        \x22c.age as age\x2C \x22.\r\n        \x22c.acro as acro\x2C \x22.\r\n        \x22c.fun as fun\x2C \x22.\r\n        \x22c.boogie as boogie \x22.\r\n    \x22from #__rnr_contest as c \x22.\r\n    \x22left join #__users as u on c.userid = u.id \x22.\r\n    \x22order by user\x2C couple\x22\r\n)\x3B</data2>
+			<data3>ID\x26id\x26\x26\x26\x26\x260\x260\x262\x260\x260\x262\x260\x260\x26\x5Cx3C?php return $value\x3B ?\x5Cx3E\r\nUser ID\x26userid\x26\x26\x26\x26\x260\x260\x262\x260\x260\x262\x260\x260\x26\x5Cx3C?php return $value\x3B ?\x5Cx3E\r\nUser\x26user\x26\x26\x26\x2680\x260\x261\x261\x260\x260\x260\x260\x260\x26\x5Cx3C?php return $value\x3B ?\x5Cx3E\r\nCouple\x26couple\x26\x26\x26\x26150\x260\x261\x261\x260\x260\x260\x260\x260\x26\x5Cx3C?php return htmlentities($value)\x3B ?\x5Cx3E\r\nAge\x26age\x26\x26\x26\x2640\x260\x261\x261\x260\x260\x260\x260\x260\x26\x5Cx3C?php if ($value==1) return \x5Cx22Junior\x5Cx22\x3B else return \x5Cx22Adult\x5Cx22\x3B ?\x5Cx3E\r\nAcro RnR\x26acro\x26\x26\x26\x2630\x260\x261\x262\x260\x260\x262\x260\x260\x26\x5Cx3C?php\x5Cnif ($value)\x5Cn  return\x5Cn    \x5Cx27\x5Cx3Cimg src=\x5Cx22{mossite}/administrator/images/tick.png\x5Cx22/\x5Cx3E\x5Cx27\x3B\x5Cn?\x5Cx3E\r\nFun RnR\x26fun\x26\x26\x26\x2630\x260\x261\x262\x260\x260\x262\x260\x260\x26\x5Cx3C?php\x5Cnif ($value)\x5Cn  return\x5Cn    \x5Cx27\x5Cx3Cimg src=\x5Cx22{mossite}/administrator/images/tick.png\x5Cx22/\x5Cx3E\x5Cx27\x3B\x5Cn?\x5Cx3E\r\nBoogie Woogie\x26boogie\x26\x26\x26\x2630\x260\x261\x262\x260\x260\x262\x260\x260\x26\x5Cx3C?php\x5Cnif ($value)\x5Cn  return\x5Cn    \x5Cx27\x5Cx3Cimg src=\x5Cx22{mossite}/administrator/images/tick.png\x5Cx22/\x5Cx3E\x5Cx27\x3B\x5Cn?\x5Cx3E</data3>
+		</element>
+		<element id="1147">
+			<name>userid</name>
+			<title>User ID</title>
+			<type>Hidden Input</type>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php return JFactory::getUser()-\x3Eget(\x27id\x27\x2C0) ?\x3E</data1>
+		</element>
+		<element id="1148">
+			<name>deleteid</name>
+			<title>Delete ID</title>
+			<type>Hidden Input</type>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+		</element>
+	</form>
+	<form id="46">
+		<package>Samples</package>
+		<name>SubmitContent</name>
+		<title>Submit Content</title>
+		<description>This form shows how content can be submitted by users.</description>
+		<class1>content_outline</class1>
+		<width>420</width>
+		<height>500</height>
+		<pages>3</pages>
+		<emailntf>0</emailntf>
+		<dblog>0</dblog>
+		<piece1cond>2</piece1cond>
+		<piece1code>//+trace dis\r\n\r\n// configuration variables\r\n$register = 1\x3B  // 0 = public access\x2C 1 = registred users only\r\n\r\n// load the standard piece library\r\n$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B  \r\n\r\n// check for registred users\r\nif ($register \x26\x26 JFactory::getUser()-\x3Eget(\x27id\x27\x2C0) == 0) $this-\x3Epage = 2\x3B</piece1code>
+		<piece3cond>2</piece3cond>
+		<piece3code>//+trace dis\r\n\r\n// configuration variables\r\n$moderate = 1\x3B  // 0 = publish directly\x2C 1 = leave unpublished\r\n\r\n// declare globals used in this piece\r\nglobal $Itemid\x3B\r\n\r\n// load the standard piece library\r\n$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B\r\n\r\n// get values from submission\r\n$name     = ff_getSubmit(\x27name\x27\x2C     \x27\x27)\x3B\r\n$title    = ff_getSubmit(\x27title\x27\x2C    \x27\x27)\x3B\r\n$text     = ff_getSubmit(\x27text\x27\x2C     \x27\x27)\x3B\r\n$section  = ff_getSubmit(\x27section\x27\x2C  0)\x3B\r\n$category = ff_getSubmit(\x27category\x27\x2C 0)\x3B\r\n\r\n// get the userid of a superadministrator. the article will be created\r\n// by the superadmin\x2C but use as author alias the name of the person\r\n// who submitted it.\r\n$creator = ff_select(\x22select id\x2C email\x2C sendEmail from #__users where gid=25\x22)\x3B\r\n$creator = $creator[0]\x3B // take first row\r\n\r\n// format text\x2C date and state\r\n$text = ff_markdown($text)\x3B\r\n$date = date( \x22Y-m-d H:i:s\x22 )\x3B\r\nif ($moderate) $state = 0\x3B else $state = 1\x3B\r\n\r\n// save new submission into #__content table\r\nff_query(\r\n    \x22insert into #__content \x22.\r\n        \x22(title\x2C title_alias\x2C introtext\x2C state\x2C sectionid\x2C \x22.\r\n         \x22catid\x2C created\x2C created_by\x2C created_by_alias) \x22.\r\n    \x22values \x22.\r\n        \x22(\x27$title\x27\x2C \x27$title\x27\x2C \x27$text\x27\x2C \x27$state\x27\x2C \x27$section\x27\x2C \x22.\r\n         \x22\x27$category\x27\x2C \x27$date\x27\x2C \x27$creator-\x3Eid\x27\x2C \x27$name\x27)\x22\r\n)\x3B\r\n\r\n// get section and cat name\r\n$section_name = ff_selectValue(\x22select title from #__sections where id=\x27$section\x27\x22)\x3B\r\n$cat_name = ff_selectValue(\x22select title from #__categories where id=\x27$category\x27\x22)\x3B\r\n\r\n// update #__messages table for backend notices\r\n$subject = \x22New content submitted\x22\x3B\r\n$message = \x22A new product was submitted by [$name] \x22.\r\n           \x22titled [$title] in section [$section_name] and category [$cat_name]\x22\x3B\r\nff_query(\r\n    \x22insert into #__messages (user_id_from\x2C user_id_to\x2C date_time\x2C subject\x2Cmessage) \x22.\r\n    \x22values (\x27\x22.JFactory::getUser()-\x3Eget(\x27id\x27\x2C0).\x22\x27\x2C \x27$creator-\x3Eid\x27\x2C \x27$date\x27\x2C \x27$subject\x27\x2C\x27$message\x27)\x22\r\n)\x3B\r\n\r\n// send a mail notice to superadmin\r\nif ($creator-\x3EsendEmail) {\r\n    // if sent by unregistred we dont know the email\r\n    if (JFactory::getUser()-\x3Eget(\x27id\x27\x2C0) != 0) $from = JFactory::getUser()-\x3Eget(\x27email\x27\x2C\x27\x27)\x3B else $from = \x22somebody@unknown.com\x22\x3B\r\n    $this-\x3EsendMail(\r\n        $from\x2C              // senders email\r\n        $name\x2C              // senders name\r\n        $creator-\x3Eemail\x2C    // recipient email\r\n        $subject\x2C           // subject line\r\n        $message            // the message\r\n    )\x3B\r\n} // if\r\n\r\nff_redirectSelf(\x22\x26ff_page=3\x22)\x3B // show thank you page</piece3code>
+		<element id="1149">
+			<name>name_label</name>
+			<title>Name Label</title>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EName\x3C/strong\x3E</data1>
+		</element>
+		<element id="1150">
+			<name>name</name>
+			<title>Name</title>
+			<type>Text</type>
+			<class2>inputbox</class2>
+			<posx>10</posx>
+			<posy>30</posy>
+			<width>200</width>
+			<widthmode>1</widthmode>
+			<height>30</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php \r\nglobal $my\x3B \r\nif ($my-\x3Eid\x3E0)\r\n   return $my-\x3Ename\x3B \r\nelse\r\n   return ff_getParam(\x27ff_param_name\x27\x2C \x27\x27)\x3B\r\n?\x3E</data1>
+			<script1cond>2</script1cond>
+			<script1code>function ff_name_init(element\x2C condition)\r\n{\r\n\x3C?php\r\n    // make readonly for registred users\r\n    global $my\x3B\r\n    if ($my-\x3Eid) return \x22element.readOnly = true\x3B\x22\x3B\r\n?\x3E\r\n} // ff_name_init</script1code>
+			<script1flag1>1</script1flag1>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter your name.</script3msg>
+		</element>
+		<element id="1151">
+			<name>section</name>
+			<title>Section</title>
+			<type>Select List</type>
+			<posx>10</posx>
+			<posy>60</posy>
+			<width>200</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>\x3C?php\r\n$section = ff_getParam(\x27ff_param_section\x27\x2C 0)\x3B\r\n$rows = ff_select(\r\n            \x22select id\x2C title from #__sections \x22.\r\n            \x22where published = 1 order by title\x22\r\n        )\x3B\r\n$flag = 0\x3B\r\n$list = \x27\x27\x3B\r\nif (!is_null($rows))\r\n    foreach ($rows as $row)\r\n        if ($row-\x3Eid==$section) {\r\n            $flag = 1\x3B\r\n            $list .= \x221\x3B$row-\x3Etitle\x3B$row-\x3Eid\x5Cr\x5Cn\x22\x3B\r\n        } else\r\n            $list .= \x220\x3B$row-\x3Etitle\x3B$row-\x3Eid\x5Cr\x5Cn\x22\x3B\r\n\r\nif ($flag) return $list\x3B \r\nreturn \x221\x3BSelect Section\x3B\x27\x27\x5Cr\x5Cn\x22.$list\x3B\r\n?\x3E</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_section_action(element\x2C action)\r\n{\r\n    // reload this form and pass the id of the new selected\r\n    // section so the category list can get reloaded\r\n    ff_redirectParent(\r\n        \x27\x3C?php return ff_makeSelfUrl()\x3B ?\x3E\x27+\r\n        \x27\x26ff_param_section=\x27+element.value+\r\n        \x27\x26ff_param_name=\x27+escape(ff_getElementByName(\x27name\x27).value)+\r\n        \x27\x26ff_param_title=\x27+escape(ff_getElementByName(\x27title\x27).value)+\r\n        \x27\x26ff_param_text=\x27+escape(ff_getElementByName(\x27text\x27).value)\r\n    )\x3B\r\n} // ff_section_action</script2code>
+			<script2flag3>1</script2flag3>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please select the section.</script3msg>
+		</element>
+		<element id="1152">
+			<name>category</name>
+			<title>Category</title>
+			<type>Select List</type>
+			<posx>10</posx>
+			<posy>90</posy>
+			<width>200</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>1</data1>
+			<data2>\x3C?php\r\n$section  = ff_getParam(\x27ff_param_section\x27\x2C 0)\x3B\r\n$category = ff_getParam(\x27ff_param_category\x27\x2C 0)\x3B\r\n$rows = ff_select(\r\n    \x22select id\x2C title from #__categories \x22.\r\n    \x22where section=\x27$section\x27 and published=1\x22\r\n)\x3B\r\n$list = \x27\x27\x3B\r\n$sel = 1\x3B\r\nif (!is_null($rows)) {\r\n    foreach ($rows as $row) {\r\n        if ($row-\x3Eid==$category) {\r\n            $list .= \x221\x3B$row-\x3Etitle\x3B$row-\x3Eid\x5Cr\x5Cn\x22\x3B\r\n            $sel = 0\x3B\r\n        } else\r\n            $list .= \x220\x3B$row-\x3Etitle\x3B$row-\x3Eid\x5Cr\x5Cn\x22\x3B\r\n    } // foreach\r\n} // if\r\nreturn $sel.\x22\x3BSelect Category\x3B\x27\x27\x5Cr\x5Cn\x22.$list\x3B\r\n?\x3E</data2>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please select the category.</script3msg>
+		</element>
+		<element id="1153">
+			<name>title_label</name>
+			<title>Title Label</title>
+			<posx>10</posx>
+			<posy>120</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3ETitle\x3C/strong\x3E</data1>
+		</element>
+		<element id="1154">
+			<name>title</name>
+			<title>Title</title>
+			<type>Text</type>
+			<class2>inputbox</class2>
+			<posx>10</posx>
+			<posy>140</posy>
+			<width>400</width>
+			<widthmode>1</widthmode>
+			<height>100</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php \r\n$title = ff_getParam(\x27ff_param_title\x27\x2C \x27\x27)\x3B\r\n$title = stripslashes(stripslashes($title))\x3B\r\nreturn htmlentities($title)\x3B \r\n?\x3E</data1>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter the title.</script3msg>
+		</element>
+		<element id="1155">
+			<name>text_label</name>
+			<title>Text Label</title>
+			<posx>10</posx>
+			<posy>170</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3Cstrong\x3EText\x3C/strong\x3E (Please use \x3Ca href=\x22http://daringfireball.net/projects/markdown/syntax\x22 target=\x22_blank\x22\x3EMarkdown\x3C/a\x3E for text formatting!)</data1>
+		</element>
+		<element id="1156">
+			<name>text</name>
+			<title>Text</title>
+			<type>Textarea</type>
+			<class2>inputbox</class2>
+			<posx>10</posx>
+			<posy>190</posy>
+			<width>400</width>
+			<widthmode>1</widthmode>
+			<height>270</height>
+			<heightmode>1</heightmode>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php \r\n$text = ff_getParam(\x27ff_param_text\x27\x2C \x27\x27)\x3B\r\n$text = stripslashes(stripslashes($text))\x3B\r\nreturn htmlentities($text)\x3B \r\n?\x3E</data1>
+			<script3cond>1</script3cond>
+			<script3id>167</script3id>
+			<script3name>ff_valuenotempty</script3name>
+			<script3msg>Please enter the text.</script3msg>
+		</element>
+		<element id="1157">
+			<name>preview_button</name>
+			<title>Preview Button</title>
+			<type>Regular Button</type>
+			<class2>button</class2>
+			<posx>10</posx>
+			<posy>470</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Preview</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_preview_button_action(element\x2C action)\r\n{\r\n    window.open(\r\n        \x27{mossite}/index2.php?option=com_breezingforms\x27+\r\n        \x27\x26ff_name=SubmitContentPreview\x27+\r\n        \x27\x26ff_param_title=\x27+escape(ff_getElementByName(\x27title\x27).value)+\r\n        \x27\x26ff_param_text=\x27+escape(ff_getElementByName(\x27text\x27).value)\x2C\r\n        \x27Preview\x27\x2C\r\n        \x27dependent\x2Cscrollbars\x2Cresizable\x2C\x27+\r\n        \x27width=600\x2Cheight=500\x2Cleft=50\x2Ctop=50\x27\r\n    )\x3B\r\n} // ff_preview_button_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1158">
+			<name>submit_button</name>
+			<title>Submit Button</title>
+			<type>Regular Button</type>
+			<class2>button</class2>
+			<posx>-10</posx>
+			<posy>470</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Submit Content</data2>
+			<script2cond>1</script2cond>
+			<script2id>164</script2id>
+			<script2name>ff_validate_submit</script2name>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1159">
+			<page>2</page>
+			<name>registration</name>
+			<title>Registration</title>
+			<posx>0</posx>
+			<posy>80</posy>
+			<width>500</width>
+			<height>300</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php \r\n$text = \x22\x3Ch4\x3ETo submit an article you need to register\x3C/h4\x3E\x22\x3B\r\nreturn $text\x3B\r\n?\x3E</data1>
+		</element>
+		<element id="1160">
+			<page>3</page>
+			<name>thankyou</name>
+			<title>Thank You</title>
+			<posx>0</posx>
+			<posy>30</posy>
+			<width>500</width>
+			<height>100</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php\r\n\r\nreturn \x22\x3Ch4\x3EThank you for your article\x3C/h4\x3E\x22\x3B\r\n?\x3E</data1>
+		</element>
+	</form>
+	<form id="47">
+		<package>Samples</package>
+		<name>SubmitContentPreview</name>
+		<title>Submit Content Preview</title>
+		<description>This is the preview form for the content submit piece. \r\nIt is not meant to be called directly\x2C but by form\r\nSubmitContent.</description>
+		<class1>content_outline</class1>
+		<width>100</width>
+		<widthmode>1</widthmode>
+		<height>10</height>
+		<heightmode>1</heightmode>
+		<emailntf>0</emailntf>
+		<dblog>0</dblog>
+		<prevwidth>400</prevwidth>
+		<piece1cond>1</piece1cond>
+		<piece1id>99</piece1id>
+		<piece1name>ff_InitLib</piece1name>
+		<element id="1161">
+			<name>closewindow</name>
+			<title>Close Button</title>
+			<type>Regular Button</type>
+			<class2>button</class2>
+			<posx>-1</posx>
+			<posxmode>1</posxmode>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data2>Close Preview</data2>
+			<script2cond>2</script2cond>
+			<script2code>function ff_closewindow_action(element\x2C action)\r\n{\r\n    window.close()\x3B\r\n} // ff_closewindow_action</script2code>
+			<script2flag1>1</script2flag1>
+		</element>
+		<element id="1162">
+			<name>text</name>
+			<title>Text</title>
+			<posx>1</posx>
+			<posxmode>1</posxmode>
+			<posy>20</posy>
+			<width>98</width>
+			<widthmode>1</widthmode>
+			<height>0</height>
+			<mailback>0</mailback>
+			<mailbackfile></mailbackfile>
+			<data1>\x3C?php\r\n    $title = ff_getParam(\x27ff_param_title\x27\x2C \x27Sample Title\x27\x2C _MOS_NOTRIM|_MOS_ALLOWHTML)\x3B\r\n    $text  = ff_getParam(\x27ff_param_text\x27\x2C  \x27Sample Text\x27\x2C  _MOS_NOTRIM|_MOS_ALLOWHTML)\x3B\r\n    return \x27\x3Ch2\x3E\x27.stripslashes($title).\x27\x3C/h2\x3E\x27.\r\n           ff_markdown(stripslashes($text))\x3B\r\n?\x3E</data1>
+		</element>
+	</form>
+</FacileFormsPackage>

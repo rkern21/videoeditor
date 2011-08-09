@@ -1,0 +1,464 @@
+/*
+ ########## BreezingForms 1.7.1 QuickMode ##########
+ @autor crosstec.de
+ @copyright Copyright (C) 2010 crosstec.de. All rights reserved.
+ ########################################
+*/
+
+/* ##### General BreezingForms Default styles ##### */
+
+.bfQuickMode {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bfQuickMode .bfFieldset-wrapper {
+    /*margin-bottom: 10px;*/
+}
+
+.bfQuickMode .bfWrapperBlock {
+	margin: 15px 0 10px 0;
+}
+
+.bfQuickMode .bfNoSection {
+	margin: 10px 0;
+}
+
+.bfQuickMode fieldset .bfWrapperBlock {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.bfQuickMode fieldset {
+    /*margin-bottom: 10px;*/
+    margin: 0;
+}
+
+.bfQuickMode label {
+    vertical-align: top;
+}
+
+.bfQuickMode p.bfElemWrap {
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bfQuickMode span.bfElemWrap {
+    padding: 5px;
+    margin: 0px 10px 0px 0px;
+    position: relative;
+    float: left;
+}
+
+.bfQuickMode p input[type='text'], .bfQuickMode p textarea, .bfQuickMode p select {
+    float: left;
+    margin: 0px;
+    width: 45%;
+}
+
+.bfQuickMode span input[type='text'], .bfQuickMode span textarea, .bfQuickMode span select  {
+    width: auto;
+    float: none;
+    margin: 0px 10px 0px 0px;
+}
+
+.bfQuickMode p:after, .bfQuickMode .bfInline:after {
+    content: "."; 
+    display: block; 
+    height: 0;  
+    clear: both; 
+    visibility: hidden;
+}
+
+/* ##### inline ##### */
+
+.bfQuickMode fieldset .bfWrapperInline, .bfQuickMode .bfNoSection .bfWrapperInline {
+	width: 100%;
+	max-width: 50%;
+	float: left;
+	/*position: relative;*/
+}
+
+/*.bfQuickMode fieldset.bfInline {
+    margin: 0px 10px 10px 0px;
+    width: 100%;
+    max-width: 44%;
+}*/
+
+.bfQuickMode fieldset.bfInline {
+    /*margin: 0px 10px 10px 0px;*/
+    width: 90%;
+    float: left;
+}
+
+.bfQuickMode fieldset.bfInline p {
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+.bfQuickMode .bfInline .bfLabelLeft .bfElementGroupNoWrap input[type='text'] {
+    width: 60%;
+}
+
+/* ##### page intro ##### */
+
+.bfQuickMode .bfPageIntro {
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    background: none;
+    border: none;
+    font-weight: normal;
+}
+
+.bfQuickMode .bfPageIntro p {
+    background: none;
+}
+
+/* ##### error messages #####*/
+
+.bfQuickMode .bfErrorMessage {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffeded;
+    font-weight: bold;
+    float: none;
+    display: block;
+    color: red;
+}
+
+/* ##### tooltip ##### */
+
+.bfQuickMode span.hasTip {
+    width: auto;
+    padding: 0px 25px 0px 0px;
+    margin: 0px;
+    display: block;
+    background: transparent url('img/icon_info.png') right top no-repeat;
+}
+
+.bfQuickMode span.bfTooltip {
+    width: auto;
+    padding: 0px 25px 0px 0px;
+    margin: 0px;
+    display: block;
+    background: transparent url('img/icon_info.png') right top no-repeat;
+}
+
+/* ##### Section Description #####*/
+
+.bfQuickMode .bfSectionDescription {
+    background: none;
+    border: none;
+    font-weight: normal;
+}
+
+.bfQuickMode .bfSectionDescription p {
+    background: none;
+    border: none;
+}
+
+/* ##### label and input field positions ##### */
+
+.bfQuickMode .bfLabelTop label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.bfQuickMode .bfLabelTop input, .bfQuickMode .bfLabelTop textarea, .bfQuickMode .bfLabelTop select, .bfQuickMode .bfLabelTop button {
+    float: none;
+    width: auto;
+}
+
+.bfQuickMode .bfLabelLeft label {
+    width: 45%;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.bfQuickMode .bfLabelLeft input, .bfQuickMode .bfLabelLeft textarea, .bfQuickMode .bfLabelLeft select, .bfQuickMode .bfLabelLeft button  {
+    /*width: auto;*/
+    float: left;
+    margin: 0px;
+}
+
+.bfQuickMode .bfLabelRight label {
+    width: 45%;
+    float: right;
+    margin: 0px 0px 0px 10px; 
+}
+
+.bfQuickMode .bfLabelRight input, .bfQuickMode .bfLabelRight textarea, .bfQuickMode .bfLabelRight select, .bfQuickMode .bfLabelRight button {
+    float: left;
+    margin: 0px;
+}
+
+.bfQuickMode .bfLabelBottom label {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 99%;
+    margin-top: 5px;
+}
+
+.bfQuickMode .bfLabelBottom input, .bfQuickMode .bfLabelBottom textarea, .bfQuickMode .bfLabelBottom select, .bfQuickMode .bfLabelBottom button {
+    float: left;
+    width: auto;
+}
+
+.bfQuickMode p.bfLabelBottom input,
+.bfQuickMode p.bfLabelBottom textarea,
+.bfQuickMode p.bfLabelBottom select,
+.bfQuickMode p.bfLabelBottom button,
+.bfQuickMode span.bfLabelBottom input,
+.bfQuickMode span.bfLabelBottom textarea,
+.bfQuickMode span.bfLabelBottom select,
+.bfQuickMode span.bfLabelBottom button {
+    margin: 0px 0px 20px 0px;
+}
+
+.bfQuickMode p.bfLabelBottom .bfSummarize {
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+
+.bfQuickMode span.bfLabelLeft label {
+    width: auto;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.bfQuickMode span.bfLabelLeft input, .bfQuickMode span.bfLabelLeft textarea, .bfQuickMode span.bfLabelLeft select, .bfQuickMode span.bfLabelLeft button {
+    width: auto;
+    float: none;
+    margin: 0px;
+}
+
+.bfQuickMode span.bfLabelRight label {
+    width: auto;
+    float: right;
+    margin: 0px 5px 0px 10px; 
+}
+
+.bfQuickMode span.bfLabelRight input, .bfQuickMode span.bfLabelRight textarea, .bfQuickMode span.bfLabelRight select, .bfQuickMode span.bfLabelRight button {
+    width: auto;
+    float: none;
+    margin: 0px;
+}
+
+/* ##### required ##### */
+
+.bfQuickMode .bfRequired {
+    vertical-align: top;
+    background: none;
+    font-size: 100%;
+    font-weight: bold;
+    border: none;
+    padding: 0px 0px 0px 5px;
+    margin: 0px;
+    color: #f00;
+    float: none;
+}
+
+/* ##### Element groups ##### */
+
+.bfQuickMode .bfElementGroupNoWrap, .bfQuickMode .bfElementGroup, .bfQuickMode .bfCaptcha  {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    background: none;
+    border: none;
+}
+
+.bfQuickMode p.bfLabelTop .bfElementGroupNoWrap {
+    width: 80%;
+    float: left;
+}
+
+.bfQuickMode .bfLabelTop .bfElementGroup {
+    width: 80%;
+    float: left;
+}
+
+.bfQuickMode .bfLabelTop .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelTop .bfCaptcha {
+    width: auto;
+    padding-top: 10px;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelLeft .bfCaptcha {
+    width: auto;
+    background: none;
+    float: left;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroup,
+.bfQuickMode .bfLabelRight .bfElementGroup,
+.bfQuickMode p.bfLabelLeft .bfElementGroupNoWrap {
+    width: 45%;
+    float: left;
+}
+
+.bfQuickMode .bfLabelRight .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelRight .bfCaptcha {
+    width: auto;
+    float: left;
+}
+
+.bfQuickMode p.bfLabelRight .bfElementGroupNoWrap {
+    width: 45%;
+    float: left;
+}
+
+.bfQuickMode span.bfLabelBottom .bfElementGroupNoWrap {
+    width: auto;
+}
+
+.bfQuickMode .bfLabelBottom .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelBottom .bfElementGroup,
+.bfQuickMode .bfLabelBottom .bfCaptcha {
+    float: left;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroup label,
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap label,
+.bfQuickMode .bfLabelTop .bfElementGroup label,
+.bfQuickMode .bfLabelTop .bfElementGroupNoWrap label,
+.bfQuickMode .bfLabelRight .bfElementGroup label,
+.bfQuickMode .bfLabelRight .bfElementGroupNoWrap label,
+.bfQuickMode .bfLabelBottom .bfElementGroup label,
+.bfQuickMode .bfLabelBottom .bfElementGroupNoWrap label {
+    width: auto;
+    float: none;
+    margin: 0px 10px 10px 0px;
+    display: inline;
+    position: static;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroup input,
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap input,
+.bfQuickMode .bfLabelTop .bfElementGroup input,
+.bfQuickMode .bfLabelTop .bfElementGroupNoWrap input,
+.bfQuickMode .bfLabelRight .bfElementGroup input,
+.bfQuickMode .bfLabelRight .bfElementGroupNoWrap input,
+.bfQuickMode .bfLabelBottom .bfElementGroup input,
+.bfQuickMode .bfLabelBottom .bfElementGroupNoWrap input {
+    width: auto;
+    float: none;
+    margin: 0px 5px 0px 0px;
+    display: inline;
+}
+
+/* ##### Captcha ##### */
+
+.bfQuickMode .bfCaptcha {
+    background: none;
+    border:  none;
+}
+
+.bfQuickMode .bfCaptcha input {
+    width: auto;
+    float: left
+}
+
+.bfQuickMode .bfCaptcha img {
+    vertical-align: middle;
+}
+
+.bfQuickMode .bfCaptcha .ff_capimg {
+    margin-bottom: 10px;
+}
+
+/* ##### Summarize ##### */
+
+.bfQuickMode .bfSummarize {
+    font-weight: bold;
+    display: table-cell;
+}
+
+.bfQuickMode .bfNotAvailable {
+    color: #ccc;
+}
+
+/* ##### buttons ##### */
+
+.bfQuickMode .bfNextButton, .bfQuickMode .bfSubmitButton, .bfQuickMode .bfCancelButton {
+    float: right;
+}
+
+.bfQuickMode .bfPrevButton {
+    float: left;
+}
+
+.bfQuickMode button.bfCalendar {
+    height: 25px;
+    margin: 0px 0px 0px 5px;
+    float: none;
+}
+
+#bfCaptchaEntry {
+    width: 196px;
+}
+
+/* ##### Uploader ##### */
+
+#bfFileQueue {
+	/*
+	width: 400px;
+	height: 300px;
+	overflow: auto;
+	border: 1px solid #E5E5E5;
+	*/
+	margin-bottom: 10px;
+	position: absolute;
+}
+
+#bfSubmitMessage{
+	font: 11px Verdana, Geneva, sans-serif;
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+}
+
+.uploadifyQueueItem {
+	font: 11px Verdana, Geneva, sans-serif;
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+}
+
+.uploadifyError {
+	border: 2px solid #FBCBBC !important;
+	background-color: #FDE5DD !important;
+}
+
+.uploadifyQueueItem .cancel {
+	float: right;
+}
+
+.uploadifyProgress {
+	background-color: #FFFFFF;
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #C5C5C5;
+	border-bottom: 1px solid #C5C5C5;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.uploadifyProgressBar {
+	background-color: #0099FF;
+	width: 1px;
+	height: 3px;
+}

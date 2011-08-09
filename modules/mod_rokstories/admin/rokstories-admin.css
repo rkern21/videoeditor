@@ -1,0 +1,5 @@
+#rokstories-admin-wrapper {float: left;padding: 2em 20px 2em 0;}
+#rokstories-admin-wrapper .loading {background: url(../images/spinner.gif) top right no-repeat; padding-right: 20px;}
+#rokstories-admin-wrapper .success {background: url(../images/success.png) top right no-repeat; padding-right: 20px;}
+#rokstories-admin-wrapper .warning {background: url(../images/warning.png) top right no-repeat; padding-right: 20px;}
+#rokstories-admin-wrapper button.disabled {color: #aaa;}

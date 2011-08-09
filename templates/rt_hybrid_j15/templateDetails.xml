@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+	<name>rt_hybrid_j15</name>
+    <version>1.5.4</version>
+    <creationDate> November 16, 2010</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>Copyright 2005-2010 - RocketTheme.com</copyright>
+    <license>Proprietary - RocketTheme Joomla Club Members Only</license>
+    <description>
+		<![CDATA[
+		<h3 class="template-title nudge">Hybrid Joomla Template</h3>
+		<div class="template-pad">
+
+		<h2>Hybrid Overview</h2>
+
+		<p>
+		<img src="images/blank.png" alt="blank" class="template-thumb" style="background:url(../templates/rt_hybrid_j15/template_thumbnail.png);" />
+		Hybrid for Joomla is a RocketTheme Joomla Template Club release featuring the revolutionary <b>Gantry Joomla Template Framework</b>, developed exclusively by RocketTheme to enable flexible and highly extensible template development.
+		</p>
+
+
+		<h2>Definition of Gantry</h2>
+		<p>
+
+		<strong>gan&middot;try</strong> (gan&prime;tr&#x113;) <em>noun</em>
+		</p>
+		<ol>
+			<li>(RocketTheme) A framework used for assembling, building and maintaining a RocketTheme template</li>
+		</ol>
+
+		<h2>Overview of Gantry</h2>
+
+		<p>Gantry is a sophisticated Joomla template framework with the sole intention of being the best platform to build a solid template with.  Gantry takes all the lessons learned during the development of many RocketTheme templates and distills that knowledge into a single super-flexible framework that is easy to configure, simple to extend, and powerful enough to handle anything we want to throw at it.</p>
+
+		<h2>Key Features</h2>
+
+		<p>The Gantry framework is packed with many great features that enable the rapid development of feature-rich designs with a minimum amount of effort.  We've also gone to great lengths to enhance the standard Joomla administration user interface to make configuring a Gantry-powered template easier than ever before. Check out a sampling of the features Gantry brings to the table:</p>
+
+		<ul>
+			<li>960 Grid System (http://960.gs) for simple consistent layout. 12 and 16 column support</li>
+			<li>Per-menu control over all Gantry functionality</li>
+			<li>Ability to save/remove custom presets</li>
+			<li>Built-in AJAX Support</li>
+			<li>iPhone and iPod Touch mobile autotheme support</li>
+			<li>Built-in Gantry RokGZipper to compress and combine Gantry JS and CSS files</li>
+			<li>Cleaner more understandable index.php.  All the complicated bits are handled for you in the Gantry core.</li>
+			<li>Flexibility to configure up to 6 modules in row position.</li>
+			<li>65 base module positions in the Gantry core.  These can be easily extended to add more</li>
+			<li>36 possible combinations for the layout of the mainbody/sidebars alone!</li>
+			<li>Flexibility to configure different grid-size layouts based on number of published modules.  You are not forced to use the same grid layout for every page</li>
+			<li>12 built-in Gantry Features like Logo, font-sizer, to-top smooth slider.  Easily create your own to add more functionality with little coding required.</li>
+			<li>Ability to force module display and 'blank' module positions for advanced module placement ability.</li>
+			<li>Stunning new Admin interface providing better usability and control.</li>
+			<li>Unique Layout controls allow you to configure your layout without having to do math or ever create a 'broken' layout.</li>
+			<li>Layout controls provide visual representation of your front-end layout for simple and intuitive customization.</li>
+			<li>Gantry is XML driven, adding another row of completely flexible module positions is as simple as editing one XML file.</li>
+			<li>New flexible parameter system allows loading preset theme attributes and modifying for a custom design. Also support session and cookie level overriding for development.</li>
+			<li>All new table-less HTML overrides based on the excellent GNU/GPLv2 overrides from YOOtheme (http://www.yootheme.com)
+			<li>New standard typography and Joomla core elements styling</li>
+			<li>New advanced caching system makes using Gantry really fast!</li>
+			<li>All configuration state is stored in params.ini and cached for speed.</li>
+			<li>Optimized codebase with speed, size, and reuse core tenants of the framework design</li>
+		</ul>
+
+		<h2>Changelog</h2>
+		<p>
+			<strong>Version 1.5.4</strong>
+			<ul>
+				<li>Fixed an issue with certain sidebar ordering configurations in IE and Opera</li>
+			</ul>
+		</p>
+		<p>
+			<strong>Version 1.5.3</strong>
+			<ul>
+				<li>Fixed an issue with sidebar ordering when not using consecutive sidebar module positions</li>
+			</ul>
+		</p>
+		<p>
+			<strong>Version 1.5.2</strong>
+			<ul>
+				<li>Fixed an issue with mainbody and sidebar ordering</li>
+				<li>Added support for wrapped header, body and footer toggle</li>
+				<li>Additional IE6 Fixes and tweaks</li>
+				<li>Suckerfish fix for Inline ads</li>
+			</ul>
+		</p>
+		<p>
+			<strong>Version 1.5.1</strong>
+			<ul>
+				<li>Fixes for preset style references in template xml</li>
+				<li>IE6 Fixes and tweaks</li>
+				<li>Third party extension compatibility tweaks</li>
+			</ul>
+		</p>
+		<p>
+			<strong>Version 1.5.0</strong>
+			<ul>
+				<li>Initial Release</li>
+			</ul>
+		</p>
+
+        </div>
+		]]>
+	    </description>
+		<files>
+			<filename>index.php</filename>
+			<filename>index-iphone.php</filename>
+			<filename>component.php</filename>
+			<filename>debugbody.php</filename>
+			<filename>gantry-ajax.php</filename>
+			<filename>gantry.config.php</filename>
+            <filename>htaccess.txt</filename>
+            <filename>profile.php</filename>
+			<filename>params.ini</filename>
+			<filename>template_thumbnail.png</filename>
+			<filename>templateDetails.xml</filename>
+			<folder>custom</folder>
+			<folder>elements</folder>
+			<folder>fonts</folder>
+			<folder>html</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>admin</folder>
+			<folder>css</folder>
+			<folder>features</folder>
+			<folder>lib</folder>
+			<folder>params</folder>
+		</files>
+		<positions>
+			<position>analytics</position>
+	        <position>drawer</position>
+	        <position>top-a</position>
+	        <position>top-b</position>
+	        <position>top-c</position>
+	        <position>top-d</position>
+	        <position>top-e</position>
+	        <position>top-f</position>
+	        <position>header-a</position>
+	        <position>header-b</position>
+	        <position>header-c</position>
+	        <position>header-d</position>
+	        <position>header-e</position>
+	        <position>header-f</position>
+	        <position>navigation</position>
+	        <position>showcase-a</position>
+	        <position>showcase-b</position>
+	        <position>showcase-c</position>
+	        <position>showcase-d</position>
+	        <position>showcase-e</position>
+	        <position>showcase-f</position>
+			<position>utility-a</position>
+	        <position>utility-b</position>
+	        <position>utility-c</position>
+	        <position>utility-d</position>
+	        <position>utility-e</position>
+	        <position>utility-f</position>
+	        <position>feature-a</position>
+	        <position>feature-b</position>
+	        <position>feature-c</position>
+	        <position>feature-d</position>
+	        <position>feature-e</position>
+	        <position>feature-f</position>
+	        <position>maintop-a</position>
+	        <position>maintop-b</position>
+	        <position>maintop-c</position>
+	        <position>maintop-d</position>
+	        <position>maintop-e</position>
+	        <position>maintop-f</position>
+			<position>breadcrumb</position>
+	        <position>sidebar-a</position>
+	        <position>sidebar-b</position>
+	        <position>sidebar-c</position>
+	        <position>content-top-a</position>
+	        <position>content-top-b</position>
+	        <position>content-top-c</position>
+	        <position>content-bottom-a</position>
+	        <position>content-bottom-b</position>
+	        <position>content-bottom-c</position>
+	        <position>mainbottom-a</position>
+	        <position>mainbottom-b</position>
+	        <position>mainbottom-c</position>
+	        <position>mainbottom-d</position>
+	        <position>mainbottom-e</position>
+	        <position>mainbottom-f</position>
+	        <position>bottom-a</position>
+	        <position>bottom-b</position>
+	        <position>bottom-c</position>
+	        <position>bottom-d</position>
+	        <position>bottom-e</position>
+	        <position>bottom-f</position>
+			<position>lowerpanel-a</position>
+	        <position>lowerpanel-b</position>
+	        <position>lowerpanel-c</position>
+	        <position>lowerpanel-d</position>
+	        <position>lowerpanel-e</position>
+	        <position>lowerpanel-f</position>
+	        <position>footer-a</position>
+	        <position>footer-b</position>
+	        <position>footer-c</position>
+	        <position>footer-d</position>
+	        <position>footer-e</position>
+	        <position>footer-f</position>
+	        <position>copyright</position>
+			<position>mobile-drawer</position>
+			<position>mobile-top</position>
+			<position>mobile-header</position>
+			<position>mobile-navigation</position>
+			<position>mobile-showcase</position>
+			<position>mobile-footer</position>
+			<position>mobile-copyright</position>
+	        <position>debug</position>
+			<position>popup</position>
+			<position>login</position>
+		</positions>
+		<languages>
+			<language tag="en-GB">en-GB.tpl_rt_hybrid_j15.ini</language>
+		</languages>
+		<administration>
+			<languages folder="admin">
+				<language tag="en-GB">en-GB.tpl_rt_hybrid_j15.ini</language>
+			</languages>
+		</administration>
+		<params addpath="/components/com_gantry/admin/elements">
+	        <param name="" type="gantry" default="coresettings, presets, layouts"/>
+			<param name="versioncheck" type="versioncheck" label="" />
+	        <param name="diagnostic" type="diagnostic" />
+	        <param name="grid_system" type="hidden" default="12" />
+	        <param name="template_prefix" type="hidden" default="hybrid-"/>
+	        <param name="cookie_time" type="hidden" default="31536000"/>
+	        <param name="bgcolor" type="hidden" default="foo"/>
+	        <param name="copy_lang_files_if_diff" type="hidden" default="1"/>
+	        
+	        <param name="direction" default="" type="hidden" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+
+	        <param name="menuids" type="menuitemhead" default="1" label="" description="MENUITEMSIDS_DESC" />
+
+			<param name="presets" type="gspacer" default="" description="" label=" " preset-saver="true" glabel="PRESETS" />
+
+			<param name="presets" type="preset" mode="scroller" default="preset1" label="STYLE_PRESETS" description="STYLE_PRESETS_DESC" setbyurl="true" setinmenuitem="false"/>
+
+			<param name="coresettings" type="gspacer" default="" description="" label=" " glabel="SETTINGS" />
+	
+			<param name="backgroundlevel" default="high" type="slider" class="lowhigh-legend" label="BG_LEVEL" description="BG_LEVEL_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+	            <option>low</option>
+	            <option>high</option>
+	        </param>
+	
+			<param name="bodylevel" default="high" type="slider" class="lowhigh-legend" label="BODY_LEVEL" description="BODY_LEVEL_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+	            <option>low</option>
+	            <option>high</option>
+	        </param>
+	
+			<param name="headerstyle" type="selectbox" default="header4" label="HEADER_STYLE" description="HEADER_STYLE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" setclassbytag="rt-header-surround">
+	            <option value="header1">STYLE_1</option>
+	            <option value="header2">STYLE_2</option>
+	            <option value="header3">STYLE_3</option>
+	            <option value="header4">STYLE_4</option>
+	            <option value="header5">STYLE_5</option>
+	            <option value="header6">STYLE_6</option>
+				<option value="header7">STYLE_7</option>
+				<option value="header8">STYLE_8</option>
+				<option value="header9">STYLE_9</option>
+				<option value="header10">STYLE_10</option>
+				<option value="header11">STYLE_11</option>
+				<option value="header12">STYLE_12</option>
+	        </param>
+	
+			<param name="bodystyle" type="selectbox" default="body2" label="BODY_STYLE" description="BODY_STYLE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" setclassbytag="rt-main-background">
+	            <option value="body1">STYLE_1</option>
+	            <option value="body2">STYLE_2</option>
+	            <option value="body3">STYLE_3</option>
+	            <option value="body4">STYLE_4</option>
+	            <option value="body5">STYLE_5</option>
+	        </param>
+	
+			<param name="bodyaccent" type="selectbox" default="accent4" label="ACCENT_STYLE" description="ACCENT_STYLE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" setclassbytag="rt-main-accent">
+	            <option value="accent1">STYLE_1</option>
+	            <option value="accent2">STYLE_2</option>
+	            <option value="accent3">STYLE_3</option>
+	            <option value="accent4">STYLE_4</option>
+	            <option value="accent5">STYLE_5</option>
+	            <option value="accent6">STYLE_6</option>
+				<option value="accent7">STYLE_7</option>
+				<option value="accent8">STYLE_8</option>
+	        </param>
+	
+			<param name="footerstyle" type="selectbox" default="footer4" label="FOOTER_STYLE" description="FOOTER_STYLE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" setclassbytag="rt-bottom-surround">
+	            <option value="footer1">STYLE_1</option>
+	            <option value="footer2">STYLE_2</option>
+	            <option value="footer3">STYLE_3</option>
+	            <option value="footer4">STYLE_4</option>
+	            <option value="footer5">STYLE_5</option>
+	            <option value="footer6">STYLE_6</option>
+				<option value="footer7">STYLE_7</option>
+				<option value="footer8">STYLE_8</option>
+				<option value="footer9">STYLE_9</option>
+				<option value="footer10">STYLE_10</option>
+				<option value="footer11">STYLE_11</option>
+				<option value="footer12">STYLE_12</option>
+	        </param>
+	
+			<param name="readonstyle" type="selectbox" default="button" label="READON_STYLE" description="READON_STYLE_DESC" isbodyclass="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+				<option value="button">BUTTON</option>
+                <option value="link">LINK</option>
+            </param>
+
+			<param name="articlestyle" type="text" default="" class="text-long" label="ARTICLE_STYLE" description="ARTICLE_STYLE_DESC" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+			
+			<param name="headerwidth" type="selectbox" default="full" label="HEADER_WIDTH" description="HEADER_WIDTH_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+				<option value="wrapped">WRAPPED</option>
+				<option value="full">FULL</option>
+            </param>
+
+			<param name="bodywidth" type="selectbox" default="full" label="BODY_WIDTH" description="BODY_WIDTH_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+				<option value="wrapped">WRAPPED</option>
+				<option value="full">FULL</option>
+            </param>
+
+			<param name="footerwidth" type="selectbox" default="full" label="FOOTER_WIDTH" description="FOOTER_WIDTH_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+				<option value="wrapped">WRAPPED</option>
+				<option value="full">FULL</option>
+            </param>
+
+			<param name="fixedfooter" type="toggle" default="0" description="FIXED_FOOTER_DESC" label="FIXED_FOOTER" isbodyclass="true"/>
+
+			<param name="webfonts" type="chain" label="WEBFONTS" description="WEBFONTS_DESC">
+	            <param name="enabled" type="toggle" default="0" label="SHOW" />
+	            <param name="source" type="selectbox" default="google" label="WEBFONTS_SOURCE">
+	                <option value="google">Google Font Directory</option>
+	            </param>
+	        </param>
+
+	        <param name="font" type="chain" label="FONT_SETTINGS"  description="FONT_SETTINGS_DESC">
+	            <param name="family" type="fonts" default="hybrid" label="FONT_FAMILY" description="" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+					<option value="hybrid">Hybrid</option>
+	                <option value="geneva">Geneva</option>
+	                <option value="georgia">Georgia</option>
+	                <option value="helvetica">Helvetica</option>
+	                <option value="lucida">Lucida</option>
+	                <option value="optima">Optima</option>
+	                <option value="palatino">Palatino</option>
+	                <option value="trebuchet">Trebuchet</option>
+	            </param>
+	            <param name="size" type="hidden" default="default" setbyurl="true"/>
+	            <param name="size-is" type="selectbox" default="default" label="FONT_SIZE" description="" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+	                <option value="xsmall">F_XSMALL</option>
+	                <option value="small">F_SMALL</option>
+	                <option value="default">F_DEFAULT</option>
+	                <option value="large">F_LARGE</option>
+	                <option value="xlarge">F_XLARGE</option>
+	            </param>
+	        </param>
+
+
+			<param name="settings" type="gspacer" default="" description="" label=" " glabel="FEATURES" />
+
+	        <param name="styledeclaration-enabled" type="hidden" default="1" />
+
+	        <param name="logo" type="chain" label="LOGO"  description="LOGO_DESC">
+	            <param name="enabled" type="toggle" default="1" label="SHOW" />
+	            <param name="position" type="position" default="header-a" label="POSITION" />
+				<param name="autosize" type="toggle" default="1" label="AUTO_SIZE" />
+	            <param name="perstyle" type="hidden" default="1" />
+	            <param name="css" type="hidden" default="body #rt-logo" />
+	        </param>
+
+	        <param name="date" type="chain" label="DATE" description="DATE_DESC">
+	            <param name="enabled" type="toggle" default="0" label="SHOW" />
+	            <param name="position" type="position" default="top-a" label="POSITION" />
+				<param name="clientside" type="toggle" default="0" label="DATE_CLIENTSIDE" />
+				<param name="formats" type="dateformats" default="%A, %B %d, %Y" label=" ">
+						<option value="%A, %B %d, %Y" />
+						<option value="%B %d, %Y" />
+						<option value="%d %h, %Y" />
+						<option value="%d %h, %y" />
+						<option value="%a, %h %d, %Y" />
+						<option value="%a, %h %d, %y" />
+				</param>
+	        </param>
+
+	        <param name="fontsizer" type="chain" label="FONTSIZE"  description="FONTSIZE_DESC">
+	            <param name="enabled" type="toggle" default="0" label="SHOW" />
+	            <param name="position" type="position" default="footer-a" label="POSITION" />
+	        </param>
+
+			<param name="login" type="chain" label="LOGIN"  description="LOGIN_DESC">
+	            <param name="enabled" type="toggle" default="0" label="SHOW" />
+	            <param name="position" type="position" default="utility-a" label="POSITION" />
+				<param name="text" type="text" default="Member Login" label="LOGIN_TEXT" class="text-medium" />
+				<param name="logouttext" type="text" default="Logout" label="LOGOUT_TEXT" class="text-medium" />
+	        </param>
+	
+			<param name="featurepanel" type="chain" label="FEATUREPANEL" description="FEATUREPANEL_DESC">
+				<param name="enabled" type="toggle" default="1" label="ENABLE" />
+				<param name="delay" type="text" default="250" label="DELAY" class="text-short" />
+				<param name="default" type="selectbox" default="open" label="DEFAULT">
+					<option value="open">Open</option>
+					<option value="close">Close</option>
+				</param>
+			</param>
+			
+			<param name="lowerpanel" type="chain" label="LOWERPANEL" description="LOWERPANEL_DESC">
+				<param name="enabled" type="toggle" default="1" label="ENABLE" />
+				<param name="delay" type="text" default="250" label="DELAY" class="text-short" />
+				<param name="default" type="selectbox" default="open" label="DEFAULT">
+					<option value="open">Open</option>
+					<option value="close">Close</option>
+				</param>
+			</param>
+	
+			<param name="popup" type="chain" label="POPUP"  description="POPUP_DESC">
+	            <param name="enabled" type="toggle" default="0" label="SHOW" />
+	            <param name="position" type="position" default="utility-a" label="POSITION" />
+				<param name="text" type="text" default="Popup Module" label="POPUP_TEXT" class="text-medium" />
+				<param name="width" type="text" default="250" label="POPUP_WIDTH" class="text-medium" />
+				<param name="height" type="text" default="235" label="POPUP_HEIGHT" class="text-medium" />
+	        </param>
+
+			<param name="branding" type="chain" label="BRANDING"  description="BRANDING_DESC">
+	            <param name="enabled" type="toggle" default="1" label="SHOW" />
+	            <param name="position" type="position" default="footer-a" label="POSITION" />
+	        </param>
+
+	        <param name="copyright" type="chain" label="COPYRIGHT"  description="COPYRIGHT_DESC">
+	            <param name="enabled" type="toggle" default="0" label="SHOW" />
+	            <param name="position" type="position" default="footer-b" label="POSITION" />
+	            <param name="text" type="text" default="Designed by RocketTheme" label="" class="text-long" />
+	        </param>
+
+			<param name="smartload" type="chain" label="SMARTLOAD" description="SMARTLOAD_DESC">
+				<param name="enabled" type="toggle" default="1" label="SHOW" />
+				<param name="text" type="text" default="200" label="Offset Y" class="text-short" />
+                <param name="ignores" type="text" default="com_community,com_contact,com_k2,com_tienda,com_weblinks" label="Component Ignores" class="text-medium" />
+				<param name="exclusion" type="text" default="ul.menutop,div.roktabs-wrapper,span.image,div.fusion-submenu-wrapper,.module-content ul.menu .image,.roknewspager-div a,#rokintroscroller,.feature-block .image-full" label="XPath Ignores" class="text-medium" />
+			</param>
+
+			<param name="morearticles" type="chain" label="MOREARTICLES" description="MOREARTICLES_DESC">
+				<param name="enabled" type="toggle" default="1" label="ENABLE" />
+				<param name="text" type="text" default="Load More Articles" label="" class="text-medium" />
+				<param name="pagination" type="toggle" default="1" label="HIDE_PAGINATION" />
+			</param>
+
+			<param name="totop" type="chain" label="TOTOP" description="TOTOP_DESC">
+				<param name="enabled" type="toggle" default="1" label="SHOW" />
+				<param name="position" type="position" default="footer-b" label="POSITION" />
+				<param name="text" type="text" default="Top" label="" class="text-long" />
+			</param>
+
+			<param name="systemmessages" type="chain" label="SYSMESSAGE"  description="SYSMESSAGE_DESC">
+			    <param name="enabled" type="toggle" default="1" label="SHOW" />
+			    <param name="position" type="position" default="drawer" label="POSITION" />
+			</param>
+
+			<param name="resetsettings" type="chain" label="RESETSETTINGS" description="RESETSETTINGS_DESC">
+				<param name="enabled" type="toggle" default="0" label="SHOW" />
+				<param name="position" type="position" default="footer-b" label="POSITION" />
+				<param name="text" type="text" default="Reset Settings" label="" class="text-long" />
+			</param>
+
+	        <param name="ie6warn" type="chain" label="IE6WARN"  description="IE6WARN_DESC">
+	            <param name="enabled" type="toggle" default="1" label="SHOW" />
+	            <param name="delay" type="text" default="2000" label="DELAY" class="text-short" />
+	        </param>
+
+	        <param name="analytics" type="chain" label="ANALYTICS"  description="ANALYTICS_DESC">
+	            <param name="enabled" type="toggle" default="0" label="ANALYTICS_ENABLE" />
+	            <param name="code" type="text" default="" label="ANALYTICS_CODE" class="text-long" />
+	            <param name="position" type="hidden" default="analytics" />
+	        </param>
+
+
+			<param name="menu" type="gspacer" default="" description="" label="" glabel="MENU" />
+
+			<param name="menu" type="chain" label="MENU_CTRL" description="MENU_CTRL_DESC">
+	            <param name="enabled" type="toggle" default="1" label="SHOW"/>
+	            <param name="type" type="groupedselection" default="fusionmenu" label="TYPE" description="" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+	                <group type="group" name="fusionmenu" label="FUSION">
+	                    <param name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" description="MENU_SELECT_DESC" />
+	                    <param name="position" type="position" default="header-b" label="POSITION" description="POSITION_DESC" />
+	                    <param name="enable_js" type="toggle" default="1" label="ENABLE_JS" description="ENABLE_JS_DESC"/>
+	                    <param name="opacity" type="text" default="1" label="MENU_OPACITY" description="MENU_OPACITY_DESC" class="text-short" />
+	                    <param name="effect" type="selectbox" default="slidefade" label="MENU_EFFECT" description="MENU_EFFECT_DESC">
+	                        <option value="slide">SLIDE</option>
+	                        <option value="slidefade">SLIDEFADE</option>
+	                    </param>
+	                    <param name="hidedelay" type="text" default="500" label="MENU_DELAY" description="MENU_DELAY_DESC" class="text-short" />
+	                    <param name="menu-animation" type="animation" default="Circ.easeOut" label="MENU_ANIMATION" description="MENU_ANIMATION_DESC" />
+	                    <param name="menu-duration" type="text" default="300" label="MENU_DURATION" description="MENU_DURATION_DESC" class="text-short" />
+						<param name="centered-offset" type="hidden" default="0" label="CENTERED_DROPDOWN" description="CENTERED_DROPDOWN_DESC" />
+	
+	                    <param name="tweak-initial-x" type="hidden" default="-10" label="X_OFFSET" description="" class="text-short" />
+	                    <param name="tweak-initial-y" type="hidden" default="-13" label="Y_OFFSET" description="" class="text-short" />
+	                    <param name="tweak-subsequent-x" type="hidden" default="0" label="X_OFFSET" description="SUBMENUSXOFFSET_DESC" class="text-short" />
+	                    <param name="tweak-subsequent-y" type="hidden" default="0" label="Y_OFFSET" description="SUBMENUSYOFFSET_DESC" class="text-short" />
+						<param name="tweak-width" type="hidden" default="20" />
+						<param name="tweak-height" type="hidden" default="20" />
+	
+	                    <param name="enable-current-id" type="toggle" default="0" label="ENABLE_ID" description="ENABLE_ID_DESC"/>
+	                    <param name="theme" type="hidden" default="gantry-fusion"/>
+	                    <param name="limit_levels" type="hidden" default="0"/>
+	                    <param name="startLevel" type="hidden" default="0"/>
+	                    <param name="showAllChildren" type="hidden" default="1"/>
+	                    <param name="class_sfx" type="hidden" default="top"/>
+	                    <param name="cache" type="hidden" default="0"/>
+	                    <param name="module_cache" type="hidden" default="1"/>
+	                </group>
+	                <group type="group" name="splitmenu" label="SPLITMENU">
+	                    <param name="roknavmenu_fusion_enable-current-id" type="toggle" default="0" label="ENABLE_ID" description="ENABLE_ID_DESC"/>
+	                    <param name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" description="MENU_SELECT_DESC" />
+	                    <param name="theme" type="hidden" default="gantry-splitmenu"/>
+	                    <param name="cache" type="hidden" default="0"/>
+	                    <param name="module_cache" type="hidden" default="1"/>
+
+	                    <param name="mainmenu-position" type="position" default="header-b" label="MAINMENU_POS" description="MAINMENU_POS_DESC" />
+	                    <param name="mainmenu-limit_levels" type="hidden" default="1"/>
+	                    <param name="mainmenu-startLevel" type="hidden" default="0"/>
+	                    <param name="mainmenu-endLevel" type="hidden" default="0"/>
+	                    <param name="mainmenu-class_sfx" type="hidden" default="top"/>
+
+	                    <param name="submenu-position" type="position" default="sidebar-a" label="SUBMENU_POS" description="SUBMENU_POS_DESC" />
+	                    <param name="submenu-limit_levels" type="hidden" default="1"/>
+	                    <param name="submenu-startLevel" type="hidden" default="1"/>
+	                    <param name="submenu-endLevel" type="hidden" default="9"/>
+
+
+	                    <param name="submenu-class_sfx" type="text" default="" label="SIDEMENU_CLASS_SFX" description="SIDEMENU_CLASS_SFX_DESC" class="text-short" />
+	                </group>
+	            </param>
+	        </param>
+	        <param name="menu-type-suckerfishmenu-position" type="hidden" default="header-b"/>
+	        <param name="menu-type-suckerfishmenu-theme" type="hidden" default="gantry-suckerfish"/>
+            <param name="menu-type-suckerfishmenu-limit_levels" type="hidden" default="0"/>
+            <param name="menu-type-suckerfishmenu-startLevel" type="hidden" default="0"/>
+            <param name="menu-type-suckerfishmenu-showAllChildren" type="hidden" default="1"/>
+            <param name="menu-type-suckerfishmenu-class_sfx" type="hidden" default="top"/>
+            <param name="menu-type-suckerfishmenu-cache" type="hidden" default="0"/>
+            <param name="menu-type-suckerfishmenu-module_cache" type="hidden" default="1"/>
+
+
+			<param name="layouts" type="gspacer" default="" description="" label=" " glabel="LAYOUTS" />
+
+
+			<param name="topPosition" type="positions" default="5,7" label="TOP_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+			<param name="headerPosition" type="positions" default="3,3,3,3" label="HEADER_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+			<param name="showcasePosition" type="positions" default="3,3,3,3" label="SHOWCASE_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+	        <param name="featurePosition" type="positions" default="3,3,3,3" label="FEATURE_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+			<param name="utilityPosition" type="positions" default="3,3,3,3" label="UTILITY_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+	        <param name="maintopPosition" type="positions" default="3,3,3,3" label="MAINTOP_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+			<param name="mainbodyPosition" type="positions" default="6,3,3" label="MAINBODY_POS" description="POS_DESC">
+	            <schemas>1,2,3,4</schemas>
+				<words>sa,sb,sc,mb</words>
+	            <type>custom</type>
+			</param>
+
+	        <param name="mainbottomPosition" type="positions" default="3,3,3,3" label="MAINBOTTOM_POS" description="POS_DESC">
+	            <schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+			<param name="bottomPosition" type="positions" default="3,3,3,3" label="BOTTOM_POS" description="POS_DESC">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+			
+			<param name="lowerpanelPosition" type="positions" default="3,3,3,3" label="LOWERPANEL_POS" description="POS_DESC">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+	        <param name="footerPosition" type="positions" default="3,3,3,3" label="FOOTER_POS" description="POS_DESC">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</param>
+
+			<param name="iphonesettings" type="gspacer" default="" description="" label=" " glabel="IPHONE_SETTINGS" />
+			<param name="iphone-enabled" type="toggle" default="1" description="IPHONE_ENABLED_DESC" label="IPHONE_ENABLED" />
+			<param name="iphone-scalable" type="toggle" default="0" label="IPHONE_SCALABLE" description="IPHONE_SCALABLE_DESC" />
+			<param name="iphone-switcher" type="chain" label="IPHONE_STANDARD" description="IPHONE_STANDARD_DESC">
+				<param name="enabled" type="toggle" default="1" label="ENABLE" />
+				<param name="position" type="position" default="mobile-copyright" label="POSITION" />
+			</param>
+	        <param name="touchmenu" type="chain" label="IPHONE_MENU" description="IPHONE_MENU_DESC">
+	            <param name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" description="MENU_SELECT_DESC" />
+				<param name="enabled" type="hidden" default="1" />
+	            <param name="position" type="hidden" default="mobile-navigation"/>
+	            <param name="theme" default="touch" type="hidden"/>
+				<param name="animation" type="selectbox" default="slide" label="IPHONE_TOUCHANIMATION" description="IPHONE_TOUCHANIMATION_DESC">
+					<option value="slide">Slide</option>
+					<option value="fade">Fade</option>
+					<option value="dissolve">Dissolve</option>
+					<option value="flip">Flip</option>
+					<option value="vflip">Vertical Flip</option>
+					<option value="slideup">Slide</option>
+					<option value="swap">Swap</option>
+					<option value="cube">Cube</option>
+					<option value="pop">Pop</option>
+				</param>
+	            <param name="cache" type="hidden" default="0"/>
+		        <param name="module_cache" type="hidden" default="1"/>
+				<param name="startLevel" type="hidden" default="0" />
+				<param name="endLevel" type="hidden" default="20" />
+				<param name="showAllChildren" type="hidden" default="1" />
+			</param>
+			<param name="iphoneimages" type="chain" default="" description="IPHONE_IMAGES_DESC" label="IPHONE_IMAGES">
+				<param name="enabled" type="toggle" default="1" label="ENABLED" />
+				<param name="minWidth" default="80" type="text" class="text-short" label="MINWIDTH" />
+				<param name="percentage" default="25" type="selectbox" label="PERCENTAGE">
+					<option value="75">75%</option>
+					<option value="50">50%</option>
+					<option value="33">33%</option>
+					<option value="25">25%</option>
+				</param>
+			</param>
+			<param name="mobile" type="groupedparams" label="IPHONE_ALIASES"  description="IPHONE_ALIASES_DESC">
+				<param name="drawer" type="aliases" default="drawer" label="DRAWER_ALIAS"  showlabel="no" position="left"/>
+				<param name="top" type="aliases" default="top-a" label="TOP_ALIAS"  showlabel="no" position="left"/>
+				<param name="header" type="aliases" default="header-b" label="HEADER_ALIAS" showlabel="no" position="left" />
+				<param name="navigation" type="aliases" default="mobile-navigation" label="NAVIGATION_ALIAS" showlabel="no" position="left" />
+				<param name="showcase" type="aliases" default="header-a" label="SHOWCASE_ALIAS" showlabel="no" position="left" />
+				<param name="footer" type="aliases" default="footer-a" label="FOOTER_ALIAS" showlabel="no" position="left" />
+				<param name="copyright" type="aliases" default="copyright" label="COPYRIGHT_ALIAS" showlabel="no" position="left" />
+			</param>
+
+	        <param name="advancedsettings" type="gspacer" default="" description="" label=" " glabel="ADVANCED" />
+
+	        <param name="cache" type="chain" label="GANTRY_CACHE"  description="GANTRY_CACHE_DESC">
+	            <param name="enabled" type="toggle" default="1" label="ENABLED" setinmenuitem="false" />
+	            <param name="time" type="text" default="900" label="CACHE_TIME" class="text-short" description="Cache timeout in ms" setinmenuitem="false" />
+	        </param>
+
+			<param name="gzipper" type="chain" label="GANTRY_GZIPPER"  description="GANTRY_GZIPPER_DESC">
+	            <param name="enabled" type="toggle" default="1" label="ENABLED" setinmenuitem="false" />
+	            <param name="time" type="text" default="600" label="CACHE_TIME" class="text-short" description="CACHE_TIME_DESC" setinmenuitem="false" />
+                <param name="expirestime" type="text" default="1440" label="EXPIRES_TIME" class="text-short" description="EXPIRES_TIME_DESC" setinmenuitem="false" />
+	            <param name="stripwhitespace" type="toggle" default="1" label="STRIP_WHITESPACE" setinmenuitem="false" />
+	        </param>
+
+	        <param name="inputstyling" type="chain" label="INPUT_STYLING"  description="INPUT_STYLING_DESC">
+	            <param name="enabled" type="toggle" default="1" label="ENABLED" />
+	            <param name="exclusions" type="text" default="'.content_vote','\#rt-popup','\#vmMainPage'" label="EXCLUSIONS" class="text-long" />
+	        </param>
+
+	        <param name="features-order" type="features" label="FEATURE_ORDER" description="FEATURE_ORDER_DESC" default="viewswitcher,logo,branding,copyright,fontsizer,styledeclaration,date,totop,pagesuffix,resetsettings,demostyles,systemmessages,inactive,branding,login,analytics,iphonegradients,webfonts,iphoneimages,rtl,splitmenu,belatedpng,fusionmenu,ie6menu,ie6warn,jstools,moduleoverlays,smartload,suckerfishmenu,touchmenu,morearticles,popup" />
+
+	        <param name="top" type="chain" label="TOP_POS"  description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="header" type="chain" label="HEADER_POS"  description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="showcase" type="chain" label="SHOWCASE_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+			<param name="utility" type="chain" label="UTILITY_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="feature" type="chain" label="FEATURE_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="maintop" type="chain" label="MAINTOP_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="mainbottom" type="chain" label="MAINBOTTOM_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="bottom" type="chain" label="BOTTOM_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+	
+			<param name="lowerpanel" type="chain" label="LOWERPANEL_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+	        <param name="footer" type="chain" label="FOOTER_POS" description="ADVANCED_DESC">
+	            <param name="showall" type="toggle" default="0" label="FORCE_POS" />
+	            <param name="showmax" type="showmax" default="6" label="POS_COUNT" />
+	        </param>
+
+            <param name="file-inline-js-enabled" type="toggle" default="1" label="FILE_INLINE_JS" description="FILE_INLINE_JS_DESC" />
+
+	        <param name="component-enabled" type="toggle" default="1" label="COMPONENT" description="COMPONENT_DESC" />
+	
+			<param name="mainbody-enabled" type="toggle" default="1" label="MAINBODY" description="MAINBODY_DESC" />
+
+	        <param name="rtl-enabled" type="toggle" default="1" label="RTL" description="RTL_DESC" setinmenuitem="false" />
+
+	        <param name="buildspans-enabled" type="toggle" default="1" label="TITLESPANS" description="TITLESPANS_DESC" />
+
+	        <param name="moduleoverlays-enabled" type="toggle" default="1" label="MODULEOVERLAYS" description="MODULEOVERLAYS_DESC" />
+
+	        <param name="pagesuffix-enabled" type="toggle" default="1" label="PAGESUFFIX" description="PAGESUFFIX_DESC" />
+
+			<param name="thirdparty" type="toggle" default="0" label="THIRDPARTY" description="THIRDPARTY_DESC" />
+
+            <param name="inactive" type="chain" label="INACTIVE"  description="INACTIVE_DESC">
+                <param name="enabled" type="toggle" default="1" label="ENABLED"  setinmenuitem="false" />
+                <param name="menuitem" type="menuitem" label="SELECT_MENU_ITEM" setinmenuitem="false" />
+            </param>
+
+            <param name="" type="finalize" />
+	    </params>
+	</install>

@@ -1,0 +1,46 @@
+name::Free
+price::$0
+price-sub::per month
+row-3::<b>2</b> Users
+row-4::<b>1 GB</b> Storage
+row-5::<b>No</b> Customization
+row-6::height:89px;|⊕ iPhone App
+button-text::Sign Up Now
+button-text-sub::Sign Up to get access now!
+button-text-link::#
+button-text-classes::button4
+---
+name::Basic
+price::$29
+price-sub::per month
+row-3::<b>10</b> Users
+row-4::<b>5GB</b> Storage
+row-5::<b>Basic</b> Customization
+row-6::height:89px;|⊕ iPhone App<br />⊕ Basic Audit Trail
+button-text::Sign Up Now
+button-text-sub::Sign Up to get access now!
+button-text-link::#
+button-text-classes::button4
+---
+name::Pro
+price::$49
+price-sub::per month
+row-3::<b>50</b> Users
+row-4::<b>25GB</b> Storage
+row-5::<b>Full</b> Customization
+row-6::height:89px;|⊕ iPhone App<br />⊕ Full Audit Trail<br />⊕ Enhanced Security (SSL)<br />⊕ Custom Domains
+button-text::Sign Up Now
+button-text-link::#
+button-text-sub::Sign Up to get access now!
+---
+name::Enterprise
+price::$199
+price-sub::per month
+row-3::<b>Unlimited</b> Users
+row-4::<b>100GB</b> Storage
+row-5::<b>Full</b> Customization
+row-6::height:89px;|⊕ iPhone App<br />⊕ Full Audit Trail<br />⊕ Enhanced Security (SSL)<br />⊕ Custom Domains
+button-text::Sign Up Now
+button-text-sub::Sign Up to get access now!
+button-text-link::#
+button-text-classes::button4

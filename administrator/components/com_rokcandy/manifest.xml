@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.10" method="update">
+	<name>RokCandy</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>August 26, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.3</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		RokCandy is a simple yet powerful macro system for Joomla 1.5.  It provides the ability to create and categorize macros that can be used throughout your site.
+	</description>
+
+	<files folder="components/com_rokcandy">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>rokcandy.php</filename>
+		<folder>assets</folder>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_rokcandy/assets/rokcandy-icon-16.png" >RokCandy</menu>
+			<submenu>
+				<menu img="images/blank.png">Macros</menu>
+				<menu img="images/blank.png" link="option=com_categories&amp;section=com_rokcandy">Categories</menu>
+			</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="administrator/components/com_rokcandy">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>rokcandy.php</filename>
+			<folder>assets</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>install</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<!-- Administration Language File Copy Section -->
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_rokcandy.ini</language>
+		</languages>
+
+	</administration>
+		
+	<installfile>install/install.rokcandy.php</installfile>
+	<uninstallfile>install/uninstall.rokcandy.php</uninstallfile>
+</install>

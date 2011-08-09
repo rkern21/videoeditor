@@ -1,0 +1,113 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* K2 OVERRIDES */
+#k2Container .componentheading {font-size: 180%;font-weight: normal;letter-spacing: normal;margin-bottom: 30px;margin-top: 0;}
+#k2Container ul {list-style: none;padding: 0;}
+#k2Container a.subCategoryImage img {float:left;}
+#k2Container .itemAuthorLatest ul li a, #k2Container .itemRelated ul li a {padding-left: 10px;}
+
+/* Universal */
+.bodystyle-body1 div.itemLinks, .bodystyle-body1 div.catItemLinks, .bodystyle-body1 span.itemImage img, .bodystyle-body1 span.catItemImage img, .bodystyle-body1 div.itemListCategory, .bodystyle-body1 div.subCategory, .bodystyle-body1 span.userItemImage img, .bodystyle-body1 div.itemToolbar, .bodystyle-body1 div.itemNavigation, .bodystyle-body1 div.itemComments {background: #F2F6FC;border:1px solid #E3E8EF;}
+.bodystyle-body1 div.catItemLinks, .bodystyle-body1 div.itemAuthorBlock, .bodystyle-body1 div.userBlock, .bodystyle-body1 div.userItemLinks {background:#E3E8EF;}
+.bodystyle-body1 div.itemAuthorBlock, .bodystyle-body1 div.userBlock, .bodystyle1 #k2Container div.itemToolbar {border: 1px solid #DDE2E9;}
+.bodystyle-body1 #k2Container .odd {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #E3E8EF;}
+.bodystyle-body1 #k2Container .even {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #F2F6FC;}
+
+.bodystyle-body2 div.itemLinks, .bodystyle-body2 div.catItemLinks, .bodystyle-body2 span.itemImage img, .bodystyle-body2 span.catItemImage img, .bodystyle-body2 div.itemListCategory, .bodystyle-body2 div.subCategory, .bodystyle-body2 span.userItemImage img, .bodystyle-body2 div.itemToolbar, .bodystyle-body2 div.itemNavigation, .bodystyle-body2 div.itemComments  {background: #f9f9f9;border:1px solid #f0f0f0;}
+.bodystyle-body2 div.catItemLinks, .bodystyle-body2 div.itemAuthorBlock, .bodystyle-body2 div.userBlock, .bodystyle-body2 div.userItemLinks {background:#F3F3F3;}
+.bodystyle-body2 div.itemAuthorBlock, .bodystyle-body2 div.userBlock, .bodystyle-body2 #k2Container div.itemToolbar {border: 1px solid #f0f0f0;}
+.bodystyle-body2 #k2Container .odd {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #F3F3F3;}
+.bodystyle-body2 #k2Container .even {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #f9f9f9;}
+
+.bodystyle-body3 div.itemLinks, .bodystyle-body3 div.catItemLinks, .bodystyle-body3 span.itemImage img, .bodystyle-body3 span.catItemImage img, .bodystyle-body3 div.itemListCategory, .bodystyle-body3 div.subCategory, .bodystyle-body3 span.userItemImage img, .bodystyle-body3 div.itemToolbar, .bodystyle-body3 div.itemNavigation, .bodystyle-body3 div.itemComments  {background: #f6f6f6;border:1px solid #ececec;}
+.bodystyle-body3 div.catItemLinks, .bodystyle-body3 div.itemAuthorBlock, .bodystyle-body3 div.userBlock, .bodystyle-body3 div.userItemLinks {background:#ececec;}
+.bodystyle-body3 div.itemAuthorBlock, .bodystyle-body3 div.userBlock, .bodystyle-body3 #k2Container div.itemToolbar {border: 1px solid #D8D7D0;}
+.bodystyle-body3 #k2Container .odd {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #ececec;}
+.bodystyle-body3 #k2Container .even {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #f6f6f6;}
+
+.bodystyle-body4 div.itemLinks, .bodystyle-body4 div.catItemLinks, .bodystyle-body4 span.itemImage img, .bodystyle-body4 span.catItemImage img, .bodystyle-body4 div.itemListCategory, .bodystyle-body4 div.subCategory, .bodystyle-body4 span.userItemImage img, .bodystyle-body4 div.itemToolbar, .bodystyle-body4 div.itemNavigation, .bodystyle-body4 div.itemComments {background: #F7F5EE;border:1px solid #E5E3DC;}
+.bodystyle-body4 div.catItemLinks, .bodystyle-body4 div.itemAuthorBlock, .bodystyle-body4 div.userBlock, .bodystyle-body4 div.userItemLinks {background:#E5E3DC;}
+.bodystyle-body4 div.itemAuthorBlock, .bodystyle-body4 div.userBlock, .bodystyle-body4 #k2Container div.itemToolbar {border: 1px solid #D8D7D0;}
+.bodystyle-body4 #k2Container .odd {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #E5E3DC;}
+.bodystyle-body4 #k2Container .even {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #F7F5EE;}
+
+.bodystyle-body5 div.itemLinks, .bodystyle-body5 div.catItemLinks, .bodystyle-body5 span.itemImage img, .bodystyle-body5 span.catItemImage img, .bodystyle-body5 div.itemListCategory, .bodystyle-body5 div.subCategory, .bodystyle-body5 span.userItemImage img, .bodystyle-body5 div.itemToolbar, .bodystyle-body5 div.itemNavigation, .bodystyle-body5 div.itemComments  {background: #292929;border:1px solid #2C2C2C;}
+.bodystyle-body5 div.catItemLinks, .bodystyle-body5 div.itemAuthorBlock, .bodystyle-body5 div.userBlock, .bodystyle-body5 div.userItemLinks {background:#171717;}
+.bodystyle-body5 div.itemAuthorBlock, .bodystyle-body5 div.userBlock, .bodystyle-body5 #k2Container div.itemToolbar {border: 1px solid #111;}
+.bodystyle-body5 #k2Container .odd {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #171717;}
+.bodystyle-body5 #k2Container .even {border: none;background: url(../images/body/body1/b-horz-div.png) repeat-x 50% 0 #292929;}
+
+/* Category */
+#rt-main-background div.catItemCategory, #rt-main-background div.catItemTagsBlock {border:none;}
+
+/* Items */
+#rt-mainbody #k2Container {font-size:13px;}
+#k2Container .itemImageCaption {display:block;text-align:center;padding:2px;float: none;}
+#k2Container .itemContainer {margin-bottom:50px;}
+#rt-main-background div.itemHitsTwitter, #rt-main-background div.itemCategory, #rt-main-background div.itemTagsBlock, #rt-main-background div.itemSocialLinksBlock {border:none;}
+div.itemCommentsForm p.itemCommentsFormNotes {border: none;}
+
+/* User Page */
+div.userBlock p.userAdditionalInfo {border: none;}
+div.userItemCategory, div.userItemTagsBlock {border: none;}
+
+/* JComments */
+.comments-link, .readmore-link {color: inherit;}
+#jc .rbox_tr, #jc .rbox_tl, #jc .rbox_t, #jc .rbox_m, #jc .rbox_br, #jc .rbox_bl, #jc .rbox_b {background: none;border: none;}
+#comments-form .btn, #comments-report-form .btn {display: inline-block;height: 36px;margin: 0 0 0 7px;background-position: 100% 0;background-repeat: no-repeat;cursor: pointer;}
+#comments-form .btn div, #comments-report-form .btn div {display: block;margin: 0 0 0 -7px;padding: 0 14px;border: 0;font-size: 13px;cursor: pointer;line-height: 36px;overflow: visible;height: 36px;background-position: 0 0;background-repeat: no-repeat;font-weight: bold;}
+#comments-form .btn a {display: block;line-height: 36px;}
+#comments-form .btn:hover, #comments-report-form .btn:hover {background-position: 100% -48px;}
+#comments-form .btn:hover div, #comments-report-form .btn:hover div {background-position: 0 -48px;}
+.bodyaccent-accent1 #comments-form .btn, .bodyaccent-accent1 #comments-report-form .btn {background-image: url(../images/body/body1/accent1/a1-readon-r.png);}
+.bodyaccent-accent1 #comments-form .btn div, .bodyaccent-accent1 #comments-report-form .btn div {background-image: url(../images/body/body1/accent1/a1-readon-l.png);}
+.bodyaccent-accent1 #comments-form .btn div a, .bodyaccent-accent1 #comments-report-form .btn div a {color: #333;}
+.bodyaccent-accent2 #comments-form .btn, .bodyaccent-accent2 #comments-report-form .btn {background-image: url(../images/body/body1/accent2/a2-readon-r.png);}
+.bodyaccent-accent2 #comments-form .btn div, .bodyaccent-accent2 #comments-report-form .btn div {background-image: url(../images/body/body1/accent2/a2-readon-l.png);}
+.bodyaccent-accent2 #comments-form .btn div a, .bodyaccent-accent2 #comments-report-form .btn div a {color: #fff;}
+.bodyaccent-accent3 #comments-form .btn, .bodyaccent-accent3 #comments-report-form .btn {background-image: url(../images/body/body1/accent3/a3-readon-r.png);}
+.bodyaccent-accent3 #comments-form .btn div, .bodyaccent-accent3 #comments-report-form .btn div {background-image: url(../images/body/body1/accent3/a3-readon-l.png);}
+.bodyaccent-accent3 #comments-form .btn div a, .bodyaccent-accent3 #comments-report-form .btn div a {color: #333;}
+.bodyaccent-accent4 #comments-form .btn, .bodyaccent-accent4 #comments-report-form .btn {background-image: url(../images/body/body1/accent4/a4-readon-r.png);}
+.bodyaccent-accent4 #comments-form .btn div, .bodyaccent-accent4 #comments-report-form .btn div {background-image: url(../images/body/body1/accent4/a4-readon-l.png);}
+.bodyaccent-accent4 #comments-form .btn div a, .bodyaccent-accent4 #comments-report-form .btn div a {color: #fff;}
+.bodyaccent-accent5 #comments-form .btn, .bodyaccent-accent5 #comments-report-form .btn {background-image: url(../images/body/body1/accent5/a5-readon-r.png);}
+.bodyaccent-accent5 #comments-form .btn div, .bodyaccent-accent5 #comments-report-form .btn div {background-image: url(../images/body/body1/accent5/a5-readon-l.png);}
+.bodyaccent-accent5 #comments-form .btn div a, .bodyaccent-accent5 #comments-report-form .btn div a {color: #fff;}
+.bodyaccent-accent6 #comments-form .btn, .bodyaccent-accent6 #comments-report-form .btn {background-image: url(../images/body/body1/accent6/a6-readon-r.png);}
+.bodyaccent-accent6 #comments-form .btn div, .bodyaccent-accent6 #comments-report-form .btn div {background-image: url(../images/body/body1/accent6/a6-readon-l.png);}
+.bodyaccent-accent6 #comments-form .btn div a, .bodyaccent-accent6 #comments-report-form .btn div a {color: #fff;}
+.bodyaccent-accent7 #comments-form .btn, .bodyaccent-accent7 #comments-report-form .btn {background-image: url(../images/body/body1/accent7/a7-readon-r.png);}
+.bodyaccent-accent7 #comments-form .btn div, .bodyaccent-accent7 #comments-report-form .btn div {background-image: url(../images/body/body1/accent7/a7-readon-l.png);}
+.bodyaccent-accent7 #comments-form .btn div a, .bodyaccent-accent7 #comments-report-form .btn div a {color: #fff;}
+.bodyaccent-accent8 #comments-form .btn, .bodyaccent-accent8 #comments-report-form .btn {background-image: url(../images/body/body1/accent8/a8-readon-r.png);}
+.bodyaccent-accent8 #comments-form .btn div, .bodyaccent-accent8 #comments-report-form .btn div {background-image: url(../images/body/body1/accent8/a8-readon-l.png);}
+.bodyaccent-accent8 #comments-form .btn div a, .bodyaccent-accent8 #comments-report-form .btn div a {color: #fff;}
+#comments-form label, #comments-report-form label {padding: 0 0 0 15px;}
+#comments .comments-list {margin: 0;}
+#comments-list-footer {margin: 0 !important;}
+#comments-form p, #comments-form #comments-form-buttons, #comments-form #comments-form-error, #comments-form #comments-form-captcha-holder {margin-left: 0px !important;}
+.bodystyle-body1 #comments .even .rbox {border: none;border-top: 1px solid #FFFFFF;background-color: #EAF3F7;}
+.bodystyle-body2 #comments .even .rbox {border: none;border-top: 1px solid #FFFFFF;background-color: #eee;}
+.bodystyle-body3 #comments .even .rbox {border: none;border-top: 1px solid #FFFFFF;background-color: #cfcfcf;}
+.bodystyle-body4 #comments .even .rbox {border: none;border-top: 1px solid #F9F8F4;background-color: #DFDBCF;}
+.bodystyle-body5 #comments .even .rbox {border: none;border-top: 1px solid #555;background-color: #333;}
+#comments .odd .rbox {background: none;}
+.bodystyle-body5 #comments h4, .bodystyle-body5 #jc h4 {border-bottom: 1px solid #333;color: #aaa;}
+.bodystyle-body5 .comment-box, .bodystyle-body5 #comments .comment-body, .bodystyle-body5 #jc #comments-footer a {color: #aaa;}
+.bodystyle-body5 #comments-list .toolbar {border-top: 1px solid #444;color: #aaa;}
+.bodystyle-body5 #jc #comments-footer {border-top: 1px solid #444;color: #aaa;}
+.bodyaccent-accent1 #comments a {color: #F89433;}
+.bodyaccent-accent2 #comments a {color: #711703;}
+.bodyaccent-accent3 #comments a {color: #80B000;}
+.bodyaccent-accent4 #comments a {color: #4A6B98;}
+.bodyaccent-accent5 #comments a {color: #D80000;}
+.bodyaccent-accent6 #comments a {color: #B655BD;}
+.bodyaccent-accent7 #comments a {color: #50772B;}
+.bodyaccent-accent8 #comments a {color: #DE502B;}

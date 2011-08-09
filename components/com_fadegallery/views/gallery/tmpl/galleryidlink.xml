@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Gallery ID Link">
+		<message>
+		</message>
+	</layout>
+	<state>
+		<name>Fade Gallery - Gallery ID Link</name>
+		<description>A link to already created gallery.</description>
+    
+	
+	    <params addpath="/components/com_fadegallery/elements">
+	        <param type="fadegallery" name="galleryid" default="" label="Select Gallery" description="Select Gallery" />
+			
+		</params>
+		
+	</state>
+</metadata>

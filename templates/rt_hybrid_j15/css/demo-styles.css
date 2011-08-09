@@ -1,0 +1,59 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Frontpage Content */
+body .floatleft {float: left;margin-right: 8px;margin-left: 0;}
+body .floatright {float: right;margin-left: 8px;margin-right: 0;}
+body .nomarginbottom, body .nomarginbottom .rt-block, body ul.nomarginbottom {margin-bottom: 0;}
+body .nomargintop, body .nomargintop .rt-block, body ul.nomargintop {margin-top: 0;}
+body .nopaddingleft {padding-left: 0 !important;}
+body .nopaddingright {padding-right: 0 !important;}
+body .nopaddingbottom {padding-bottom: 0 !important;}
+body .nopaddingtop {padding-top: 0 !important;}
+.floatnone {float: none !important;}
+.clearnone {clear: none !important;}
+.floatleftlast {float: left;margin-right: 0;}
+.floatrightlast {float: right;margin-left: 0;}
+.menutop li.rt-style > .item {width: auto !important;padding: 10px 0;}
+.menutop li.rt-style .item img {margin: 0 0 5px 12px;}
+.menutop li.rt-style .item span {text-align:center;}
+.flushleftrightbottom .rt-block {padding: 15px 0 0;}
+.rt-bottom-icons, .rt-side-icons {display: block;margin-bottom: 8px;}
+.rt-bottom-icons img {margin-top: 3px;}
+.rt-side-icons img {margin-top: 4px;}
+.nov10-home .rt-joomla .rt-article {margin-bottom: 10px;}
+.nov10-home .rt-joomla .rt-article-bg {padding-bottom: 0;}
+
+/* Custom Grid */
+.rt-demo-grid-2, .rt-demo-grid-3, .rt-demo-grid-3a, .rt-demo-grid-4, .rt-demo-grid-5, .rt-demo-grid-6, .rt-demo-grid-7 {float: left;margin-left: 10px;margin-right: 10px;}
+.rt-demo-grid-2 {width: 140px;}
+.rt-demo-grid-3 {width: 220px;}
+.rt-demo-grid-4 {width: 310px;}
+.rt-demo-grid-5 {width: 400px;}
+.rt-demo-grid-6 {width: 500px;}
+.rt-demo-grid-7 {width: 560px;}
+.rt-demo-grid-alpha {margin-left: 0;}
+.rt-demo-grid-omega {margin-right: 0;margin-left: 0;}
+.roktabs-wrapper .rt-demo-grid-3 {width: 200px;}
+.roktabs-wrapper .rt-demo-grid-6 {width: 420px;}
+.roktabs-wrapper .rt-demo-grid-7 {width: 646px;}
+
+/* Extensions */
+.rt-ext-img {display: block;margin: 0 auto 10px;}
+
+/* Tutorials */
+.demo-tut-video-img {margin-right: 15px;width: 123px;float: left;}
+.mod-var-link {text-transform: uppercase;}
+
+/* RTL Stuff */
+body.rtl .floatleft {float: right;margin-right: 0;margin-left: 8px;}
+body.rtl .floatright {float: left;margin-left: 0;margin-right: 8px;}
+body.rtl .demo-tut-video-img {margin-right: 0;margin-left: 15px;float: right;}
+body.rtl .nopaddingleft {padding-right: 0 !important;}
+body.rtl .nopaddingright {padding-left: 0 !important;}
+body.rtl .rt-demo-grid-2, body.rtl .rt-demo-grid-3, body.rtl .rt-demo-grid-3a, body.rtl .rt-demo-grid-4, body.rtl .rt-demo-grid-5, body.rtl .rt-demo-grid-6, body.rtl .rt-demo-grid-7 {float: right;}

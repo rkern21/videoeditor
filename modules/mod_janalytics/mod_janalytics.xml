@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/module-install.dtd">
+<install version="1.5" type="module" client="site">
+    <name>J!Analytics</name>
+    <creationDate>May 2010</creationDate>
+    <author>Dean Tedesco</author>
+    <authorEmail>dino@tedesco.net.au</authorEmail>
+    <authorUrl>http://janalytics.tedesco.net.au/</authorUrl>
+    <copyright>Copyright (C) 2010 Dean Tedesco. All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <version>2.0.0</version>
+    <description>JANALYTICS_DESC</description>
+    <files>
+        <filename module="mod_janalytics">mod_janalytics.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.mod_janalytics.ini</language>
+    </languages>
+    <media></media>
+    <params>
+        <param name="gaid" type="text" default="" label="TITLE_ID" description="DESC_ID" />
+        <param name="tracking" type="radio" default="single" label="TITLE_TRACKING" description="DESC_TRACKING">
+            <option value="single">OPTION_TRACKING_SINGLE</option>
+            <option value="multisub">OPTION_TRACKING_MULTISUB</option>
+            <option value="multitop">OPTION_TRACKING_MULTITOP</option>
+        </param>
+        <param name="domain" type="text" default=".tedesco.net.au" label="TITLE_DOMAIN" description="DESC_DOMAIN" />
+        <param name="anonymizeip" type="radio" default="off" label="TITLE_ANONYMIZE_IP" description="DESC_ANONYMIZE_IP">
+            <option value="on">J_ON</option>
+            <option value="off">J_OFF</option>
+        </param>
+    </params>
+</install>

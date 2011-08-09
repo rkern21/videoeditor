@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.10" method="upgrade">
+    <name>Gantry</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>March 5, 2011</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2011 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <!--  The version string is recorded in the components table -->
+    <version>3.1.10</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>
+		Gantry is a powerful template framework.
+	</description>
+    <files folder=".">
+        <filename>CHANGELOG.php</filename>
+        <filename>CREDITS.php</filename>
+        <filename>index.html</filename>
+        <filename>gantry-ajax.php</filename>
+        <filename>gantry.config.php</filename>
+        <filename>gantry.php</filename>
+        <folder>admin</folder>
+        <folder>ajax-models</folder>
+        <folder>core</folder>
+        <folder>css</folder>
+        <folder>facets</folder>
+        <folder>features</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>tmpl</folder>
+    </files>
+    <administration>
+	</administration>
+</install>

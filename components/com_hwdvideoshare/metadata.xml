@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+   <menu>
+      <options var="task">
+         <option name="HWDVS_MENU_VH" msg="HWDVS_MENU_VH_DESC" value="frontpage"  />
+         <option name="HWDVS_MENU_VC" msg="HWDVS_MENU_VC_DESC" value="categories" />
+         <option name="HWDVS_MENU_GC" msg="HWDVS_MENU_GC_DESC" value="gotocategory" />
+         <option name="HWDVS_MENU_UV" msg="HWDVS_MENU_UV_DESC" value="upload" />
+         <option name="HWDVS_MENU_CH" msg="HWDVS_MENU_CH_DESC" value="channels" />
+         <option name="HWDVS_MENU_VG" msg="HWDVS_MENU_VG_DESC" value="groups" />
+         <option name="HWDVS_MENU_AG" msg="HWDVS_MENU_AG_DESC" value="creategroup" />
+         <option name="HWDVS_MENU_PL" msg="HWDVS_MENU_PL_DESC" value="playlists" />
+         <option name="HWDVS_MENU_CP" msg="HWDVS_MENU_CP_DESC" value="createPlaylist" />
+         <option name="HWDVS_MENU_MV" msg="HWDVS_MENU_MV_DESC" value="yourvideos" />
+         <option name="HWDVS_MENU_FV" msg="HWDVS_MENU_FV_DESC" value="yourfavourites" />
+         <option name="HWDVS_MENU_MG" msg="HWDVS_MENU_MG_DESC" value="yourgroups" />
+         <option name="HWDVS_MENU_MM" msg="HWDVS_MENU_MM_DESC" value="yourmemberships" />
+         <option name="HWDVS_MENU_MP" msg="HWDVS_MENU_MP_DESC" value="yourplaylists" />
+         <option name="HWDVS_MENU_MC" msg="HWDVS_MENU_MC_DESC" value="yourchannel" />
+      </options>
+   </menu>
+   <state switch="task">
+      <frontpage>
+         <name>HWDVS_MENU_VH</name>
+         <description>HWDVS_MENU_VH_DESC</description>
+      </frontpage>
+      <categories>
+         <name>HWDVS_MENU_VC</name>
+         <description>HWDVS_MENU_VC_DESC</description>
+      </categories>
+      <gotocategory>
+         <name>HWDVS_MENU_VC</name>
+         <description>HWDVS_MENU_VC_DESC</description>
+         <params>
+            <param type="text" name="hwdmcid" size="3" label="Category ID" description="If you want to link to a specific cateogry, enter the category ID in this field. Leaving this blank will direct the user the the main category page." />
+         </params>
+      </gotocategory>
+      <upload>
+         <name>HWDVS_MENU_UV</name>
+         <description>HWDVS_MENU_UV_DESC</description>
+         <params />
+      </upload>
+      <channels>
+         <name>HWDVS_MENU_CH</name>
+         <description>HWDVS_MENU_CH_DESC</description>
+         <params />
+      </channels>
+      <groups>
+         <name>HWDVS_MENU_VG</name>
+         <description>HWDVS_MENU_VG_DESC</description>
+         <params />
+      </groups>
+      <creategroup>
+         <name>HWDVS_MENU_AG</name>
+         <description>HWDVS_MENU_AG_DESC</description>
+         <params />
+      </creategroup>      
+      <playlists>
+         <name>HWDVS_MENU_PL</name>
+         <description>HWDVS_MENU_PL_DESC</description>
+         <params />
+      </playlists>
+      <createPlaylist>
+         <name>HWDVS_MENU_CP</name>
+         <description>HWDVS_MENU_CP_DESC</description>
+         <params />
+      </createPlaylist> 
+      <yourvids>
+         <name>HWDVS_MENU_MV</name>
+         <description>HWDVS_MENU_MV_DESC</description>
+         <params />
+      </yourvids>
+      <youfavs>
+         <name>HWDVS_MENU_FV</name>
+         <description>HWDVS_MENU_FV_DESC</description>
+         <params />
+      </youfavs>
+      <yourgroups>
+         <name>HWDVS_MENU_MG</name>
+         <description>HWDVS_MENU_MG_DESC</description>
+         <params />
+      </yourgroups>
+      <yourmembership>
+         <name>HWDVS_MENU_MM</name>
+         <description>HWDVS_MENU_MM_DESC</description>
+         <params />
+      </yourmembership>
+      <yourplaylists>
+         <name>HWDVS_MENU_MP</name>
+         <description>HWDVS_MENU_MP_DESC</description>
+         <params />
+      </yourplaylists>
+      <yourchannel>
+         <name>HWDVS_MENU_MC</name>
+         <description>HWDVS_MENU_MC_DESC</description>
+         <params />
+      </yourchannel>
+   </state>
+</metadata>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" id="minwidth" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help - ARI Sexy Lightbox module</title>
+	<style type="text/css">
+		BODY {padding: 5px;}
+		H2 {border-bottom: 1px solid gray; display: block; width: 100%;}
+	</style>
+</head>
+<body>
+		ARI Sexy Lightbox module provides ability for showing external pages, inline content, image galleries, Flickr and Picasa galleries in sexy lightbox.
+		Main features:
+		<ul>
+			<li>User friendly interface;</li>
+			<li>Can display external pages and inline content;</li>
+			<li>Provides ability for creating image galleries based on images from specific folder(s). Can generate thumbnails and cache data for decreasing server loading. Supports gallery mode (shows all image on page) and single image mode (shows the first thumbnail and provides ability for navigations between gallery images);</li>
+			<li>Can display Flickr photos based on Flickr photoset ID(s), collection ID(s), group ID(s), user ID(s) and recent user's photos;</li>
+			<li>Can display Picasa photos based on Picasa user and album name;</li>
+			<li>Supports 6 themes;</li>
+			<li>Can display Joomla! modules and articles in popup;</li>
+			<li>Highly customizable;</li>
+			<li>Supports possibility for showing additional image parameters (such as description, title and other) which you can define in CSV file;</li>
+			<li>You can change gallery layout. It requires minimum HTML knowledge;</li>
+			<li>Can display module in Joomla! articles with help ARI Sexy Lightbox plugin.</li>
+		</ul>
+		<br /><br />
+		<b>How to use?</b>
+		<br /><br />
+		Configure main plugin parameters, then choose what you want to display with help 'Choose type' parameter.
+		It supports the following types:
+		<ul>
+			<li><b>Image gallery</b> is used for showing image gallery based on images from folders;</li>
+			<li><b>Flickr gallery</b> is used for showing image gallery based on Flickr images;</li>
+			<li><b>Picasa gallery</b> is used for showing image gallery based on Picasa images;</li>
+			<li><b>Inline content</b> is used for showing necessary content in lightbox;</li>
+			<li><b>Remote content</b> is used for showing external pages in lightbox;</li>
+			<li><b>Module</b> is used for showing Joomla! modules in lightbox;</li>
+			<li><b>Article</b> is used for showing Joomla! articles in lightbox.</li>
+		</ul>
+		After you choose appropriate type, configure specific parameters:
+		<br /><br />
+		<b>Image Gallery</b>
+		<br /><br />
+		Indicate 'Thumbnail width' and 'Thumbnail height' parameters which will indicate thumbnails size.
+		If you want to save image size ratio based on one size parameter (width or height), specify necessary
+		size parameter and leave another parameter empty or set to '0'.<br/><br/>
+		If you want to use your own thumbnails instead of auto generated thumbnails use 'Thumbnails path' parameter for this purpose. 
+		You can use predefined variable {$fileName} in value of this parameter. {$fileName} contains file name of original image. 
+		For example you want to use thumbnails from 'thumb' subdir in folder which contains original images and thumbnails will have the same file names as original images, then specify in this field 'thumb/{$fileName}' value.  
+		<br/><br/>
+		For decreasing module execution time and
+		decreasing server loading you can use 'Cache time' parameter. 'Cache time' in minutes and for this period
+		module will not re-read folder(s) with images and generate thumbnails.<br/><br/>For indicating folder(s) from which
+		you want to show images, use 'Directories' parameter. Place each necessary folder on new line in 'Directories' textarea.
+		Joomla! root directory will be used as root path for this folders. It means that if you want to show images from 
+		[joomla_dir]/images/sexyimages folder, type in 'Directories' parameter the following value images/sexyimages. 
+		Set 'Scan subfolders' parameter to 'Yes', if you want to include images from subfolders to image gallery. If 
+		you have knowledge of regular expressions, you can specify filter for file names with help 'Files filters' parameter.
+		<br/><br/>
+		You can also define title and other parameters for images. For this place CSV file with name from 'Description file'
+		parameter in neccesary folder with images. Sample CSV file you can download <a href="../../arisexylightbox.csv" target="_blank">here</a>.
+		Type in 'File' column image file name and in 'Title' column image title. If you want to specify additional parameters, 
+		only add new column in CSV file. If you use non-english characters in CSV file, save this file in UTF-8 encoding without BOM.
+		<br/><br/>
+		<a name="sexy_layout_type"></a>
+		The next step is choice of gallery type. You can choose the following types:
+		<ul>
+			<li><b>Simple gallery</b> is used for showing images with titles in table format. You can define CSS classes for table and row, and indicate how many images will be shown in one row;</li>
+			<li><b>Advanced gallery</b> is used for showing images in user specific format. In this mode you can use additional parameters from CSV file;</li>
+			<li><b>Single image</b> is used for showing the first thumbnail and if user click on this, user will see gallery in lightbox.</li>
+		</ul>
+		<br />
+		<b>Flickr Gallery</b>
+		<br /><br />
+		For showing photos from <a href="http://www.flickr.com" target="_blank">Flickr</a> you need to have <a href="http://www.flickr.com/services/api/misc.api_keys.html" target="_blank" title="Get Flickr API key">Flickr API key</a>.
+		If you want to show private images set secret Flickr key and Flickr token. Flickr token can be generated <a href="http://www.demo2.ari-soft.com/flickr-token/index.php" title="Flickr token generator" target="_blank">here</a>.
+		After indicating API key, specify thumbnail and image size. One note, you can use 'Original' value only if it's permitted by photo owner. You can read about this limitation <a href="http://www.flickr.com/services/api/misc.urls.html" target="_blank">here</a>.
+		Then enter photoset ID (or several photoset ID separated by semicolumns). If you have a problem with finding photoset ID, you can use this <a href="http://www.mentalaxis.com/idfindr/" target="_blank">service</a> for indicating it.
+		The last step is choosing layout type. More about it you can read in <a href="#sexy_layout_type">Image Gallery</a> topic.
+		<br /><br />
+		<b>Picasa Gallery</b>
+		<br /><br />
+		Use this type for showing images from Picasa albums. Only specify Picasa user and album name and it will work.
+		<br /><br />
+		<b>Inline Content</b>
+		<br /><br /> 
+		Use this type for showing specific content in lightbox. Use 'Width' and 'Height' parameters for indicating lightbox size. In 'Link text' type text by click on this user will see text from 'Content' parameter.
+		'Title' parameter will be used as title HTML attribute for link.
+		<br /><br />  
+		<b>Remote Content</b>
+		<br /><br /> 
+		Use this type for showing external page, YouTube video, Vimeo video, QuickTime movide and Flash objects in lightbox. Use 'Width' and 'Height' parameters for indicating lightbox size. In 'Link text' type text by click on this user will see external page from 'URL' parameter.
+		'Title' parameter will be used as title HTML attribute for link.
+		<br /><br />
+		Use links in the following format for the next types:
+		<ul>
+			<li><b>YouTube</b> - http://www.youtube.com/watch?v=WyA1dzfKywg</li>
+			<li><b>Vimeo</b> - http://vimeo.com/8245346</li>
+			<li><b>QuickTime</b> - http://trailers.apple.com/movies/universal/despicableme/despicableme-tlr1_r640s.mov</li>
+			<li><b>Flash</b> - http://www.adobe.com/products/flashplayer/include/marquee/design.swf</li>
+			<li><b>FLV</b> - http://www.domain.com/video/my_video.flv</li>
+		</ul>
+		<br />  
+		<b>Module</b>
+		<br /><br />
+		Use this type for loading Joomla! modules in lightbox. Use 'Width' and 'Height' parameters for indicating lightbox size. In 'Link text' type text by click on this user will see Joomla! module from 'Module' parameter.
+		'Title' parameter will be used as title HTML attribute for link.
+		<br /><br />  
+		<b>Article</b>
+		<br /><br /> 
+		Use this type for showing a Joomla! article. Use 'Article ID' parameter that specify id of necessary article. Use 'Width' and 'Height' parameters for indicating lightbox size. In 'Link text' type text by click on this user will see the article.
+		'Title' parameter will be used as title HTML attribute for link.
+		<br /><br /><br />
+		If you have any questions you feel free to ask them on our <a href="http://www.ari-soft.com/ARI-Sexy-Lightbox/" target="_blank">forum</a> or by <a href="mailto:info@ari-soft.com">email</a>.
+</body>
+</html>

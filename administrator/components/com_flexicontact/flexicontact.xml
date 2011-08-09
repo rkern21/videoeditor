@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>FlexiContact</name>
+	<creationDate>13 May 2010</creationDate>
+	<author>Chris Gaebler</author>
+	<copyright>Chris Gaebler 2009-2010</copyright>
+	<authorUrl>extensions.lesarbresdesign.info</authorUrl>
+	<version>3.05</version>
+	<description>The flexible contact page that's easy to setup</description>
+
+<params>
+	<param name="page_hdr" type="text" size="40" default="" label="Page title" description="The page title" />
+	<param name="page_text" type="textarea" rows="8" cols="60" default="" label="Page text" description="Text to appear at the top of the page" />
+	<param name="image" type="imagelist" directory="/images" hide_default="1" default="-1" label="Image" description="Image to appear at the top of the page. Must be located in the /images/stories folder." />
+	<param name="image_align" type="radio" default="right" label="Image Align" description="Image alignment">
+		<option value="left">Left</option>
+		<option value="right">Right</option>
+	</param>
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="toPrimary" type="text" size="40" default="" label="Email To" description="To address. Specify multiple addresses by separating them with a comma." />
+	<param name="ccAddress" type="text" size="40" default="" label="Cc" description="Cc address. Specify multiple addresses by separating them with a comma." />
+	<param name="bccAddress" type="text" size="40" default="" label="Bcc" description="Bcc address. Specify multiple addresses by separating them with a comma." />
+	
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="num_images" type="text" size="5" default="0" label="Number of captcha images" description="Zero to disable Captcha" />
+	<param name="magic_word" type="text" size="30" default="" label="Magic Word" description="Magic word required to send message. Blank to disable." />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="subject" type="radio" default="yes" label="Show Subject" description="Show the subject line or not">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</param>
+	<param name="default_subject" type="text" size="40" default="" label="Default subject" description="Default subject line." />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="list_opt" type="list" default="optional" label="List" description="A dropdown list">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="list_prompt" type="text" size="40" default="" label="Prompt" description="The prompt for the dropdown list" />
+	<param name="list_list" type="textarea" rows="6" cols="35" default="" label="List items" description="A list of items the user can choose from, separated by commas" />
+	
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="opt1" type="list" default="optional" label="Line 1" description="One line text field">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="prompt1" type="text" size="40" default="" label="Prompt" description="The prompt for this field" />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="opt2" type="list" default="optional" label="Line 2" description="One line text field">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="prompt2" type="text" size="40" default="" label="Prompt" description="The prompt for this field" />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="opt3" type="list" default="optional" label="Line 3" description="One line text field">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="prompt3" type="text" size="40" default="" label="Prompt" description="The prompt for this field" />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="opt4" type="list" default="optional" label="Line 4" description="One line text field">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="prompt4" type="text" size="40" default="" label="Prompt" description="The prompt for this field" />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="opt5" type="list" default="optional" label="Line 5" description="One line text field">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="prompt5" type="text" size="40" default="" label="Prompt" description="The prompt for this field" />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="area-opt" type="list" default="optional" label="Text Area" description="Multi-line text area">
+		<option value="disabled">Disabled</option>
+		<option value="optional">Optional</option>
+		<option value="mandatory">Mandatory</option>
+	</param>
+	<param name="area-prompt" type="text" size="40" default="" label="Prompt" description="The prompt for the multi-line text area" />
+	<param name="area-width" type="text" size="5" default="40" label="Width" description="The width of the multi-line text area (default = 40 chars)" />
+	<param name="area-height" type="text" size="5" default="15" label="Height" description="The height of the multi-line text area (default = 15 lines)" />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="bottom_text" type="textarea" rows="8" cols="60" default="" label="Bottom text" description="Text to appear at the bottom of the page" />
+</params>
+
+<files folder="site">
+	<filename>flexicontact.php</filename>
+	<filename>flexicontact.html.php</filename>
+	<folder>images/</folder>
+</files>
+
+<languages folder="site">
+	<language tag="cs-CZ">language/cs-CZ.com_flexicontact.ini</language>
+	<language tag="da-DK">language/da-DK.com_flexicontact.ini</language>
+	<language tag="de-DE">language/de-DE.com_flexicontact.ini</language>
+	<language tag="en-GB">language/en-GB.com_flexicontact.ini</language>
+	<language tag="es-ES">language/es-ES.com_flexicontact.ini</language>
+	<language tag="fi-FI">language/fi-FI.com_flexicontact.ini</language>
+	<language tag="fr-FR">language/fr-FR.com_flexicontact.ini</language>
+	<language tag="hr-HR">language/hr-HR.com_flexicontact.ini</language>
+	<language tag="it-IT">language/it-IT.com_flexicontact.ini</language>
+	<language tag="nb-NO">language/nb-NO.com_flexicontact.ini</language>
+	<language tag="nl-NL">language/nl-NL.com_flexicontact.ini</language>
+	<language tag="pl-PL">language/pl-PL.com_flexicontact.ini</language>
+	<language tag="sk-SK">language/sk-SK.com_flexicontact.ini</language>
+	<language tag="sv-SE">language/sv-SE.com_flexicontact.ini</language>
+	<language tag="zh-CN">language/zh-CN.com_flexicontact.ini</language>
+	<language tag="tr-TR">language/tr-TR.com_flexicontact.ini</language>
+</languages>
+  
+<administration>
+	<menu>Flexi Contact</menu>
+	<submenu>
+		<menu img="article.png" task="show_log">Log File</menu>
+		<menu img="language.png" task="images">Captcha Images</menu>
+		<menu img="info.png" task="help">Help and Support</menu>
+	</submenu>
+
+	<files folder="admin">
+		<filename>admin.flexicontact.php</filename>
+		<filename>admin.flexicontact.html.php</filename>
+ 	</files>
+	
+	<languages folder="admin/language">
+		<language tag="da-DK">da-DK.com_flexicontact.ini</language>
+		<language tag="en-GB">en-GB.com_flexicontact.ini</language>
+		<language tag="fr-FR">fr-FR.com_flexicontact.ini</language>
+		<language tag="hr-HR">hr-HR.com_flexicontact.ini</language>
+		<language tag="tr-TR">tr-TR.com_flexicontact.ini</language>
+	</languages>
+
+</administration>
+
+</install>

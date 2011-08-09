@@ -1,0 +1,12 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Root Items */
+body.rtl .menutop li {float: right;padding: 8px 6px 8px 5px;}
+body.rtl .menutop li.item1 {padding-left: inherit;padding-right: 4px;}
+.menu-type-splitmenu.rtl .menutop li {background-position: 100% 1px;}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.10" method="upgrade">
+	<name>RokStock</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>October 1, 2010</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>0.7</version>
+	<description>RokStock is market stock module based on Google data</description>
+	<files>
+		<filename module="mod_rokstock">mod_rokstock.php</filename>
+		<filename>RT-LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>rokstock.css</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>googlestock.class.php</filename>
+		<filename>JSON.php</filename>
+		<folder>images/</folder>
+		<folder>elements/</folder>
+		<folder>tmpl/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_rokstock.ini</language>
+	</languages>
+	<params addpath="/modules/mod_rokstock/elements">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="module class suffix" />
+		<param name="" type="rokmodulecheck" default="" label="" description="" />
+		<param name="default_stocks" type="text" default=".DJI, .INX, .IXIC" label="Default Stocks" description="Valid stock title. Can be more than one, separated by comma." />
+		<param name="user_interaction" type="radio" default="1" label="User interaction" description="Gives to the user the ability to interact with RokStock. Add, remove, reorder. Note: all modifications will be visible to the user only.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param name="store_cookie" type="radio" default="1" label="Save/restore status" description="Save and restore the status of tickers to cookie">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param name="store_time" type="text" default="30" label="Store duration (days)" description="Duration in days for the cookie to be kept" />
+		<param name="externals" type="radio" default="1" label="Open links in new page" description="Wether to open ticker links in a new window">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param name="show_main_chart" type="radio" default="1" label="Show main chart" description="Wether to show the main chart">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param name="show_tooltips" type="radio" default="0" label="Tooltips Details" description="Wether to enable the tooltips details when mouseovering the indexes title">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param name="time_display" type="radio" default="12" label="Tooltips time axis hours" description="Wether to display 12h or 24h time on tooltips time axis.">
+				<option value="12">12h</option>
+				<option value="24">24h</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="hidden" default="0"/>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

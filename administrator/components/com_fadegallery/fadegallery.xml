@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+    <name>FadeGallery</name>
+    <author>DesignCompass corp</author>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://compass.com.pa</authorUrl>
+    <copyright>Copyright (C) Design Compass corp. All rights reserved.</copyright>
+    <creationDate>December 2010</creationDate>
+    <version>1.3.0</version>
+    <description>FadeGallery - Site</description>
+   
+    <!-- installation part -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.fadegallery.php</installfile>
+	<uninstallfile>uninstall.fadegallery.php</uninstallfile>
+	
+    <!-- site part -->
+
+    <menu task="default">FadeGallery</menu>
+   
+   
+   
+   
+    <files folder="site">
+		
+		<!-- root -->
+		<filename>controller.php</filename>
+		<filename>fadegallery.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		
+		<!-- elements -->
+		<filename>elements/index.html</filename>
+		<filename>elements/fadegallery.php</filename>
+		<filename>elements/fadegalleryoptional.php</filename>
+
+		<!-- images -->
+		<filename>images/index.html</filename>
+		<filename>images/dot.png</filename>
+		<filename>images/compasslogo.png</filename>
+		
+		<!-- includes -->
+		<filename>includes/fadegalleryclass.php</filename>
+		
+		<!-- views -->
+        <filename>views/index.html</filename>
+		
+		
+		<!-- views/gallery -->
+        <filename>views/gallery/index.html</filename>
+		<filename>views/gallery/view.html.php</filename>
+	
+		
+	
+		<!-- views/gallery/tmpl -->
+        <filename>views/gallery/tmpl/default.php</filename>
+		<filename>views/gallery/tmpl/default.xml</filename>
+		<filename>views/gallery/tmpl/galleryidlink.php</filename>
+		<filename>views/gallery/tmpl/galleryidlink.xml</filename>
+		
+		<filename>views/gallery/tmpl/index.html</filename>
+
+    </files>
+
+	<!-- module part -->
+	<files folder="modules">
+		<filename>module/index.html</filename>
+		<filename>module/mod_fadegallery.php</filename>
+		<filename>module/mod_fadegallery.xml</filename>
+	</files>
+	<!-- plugin part -->
+	<files folder="plugins">
+		<filename>plugin/fadegallery.php</filename>
+		<filename>plugin/fadegallery.xml</filename>
+	</files>
+	<!-- media part -->
+	<files folder="media">
+		<filename>fadegallery.js</filename>
+	</files>
+	
+	<!-- gallery part -->
+	<files folder="gallery">
+		<filename>fadegallery/img1.jpg</filename>
+		<filename>fadegallery/img2.jpg</filename>
+		<filename>fadegallery/img3.jpg</filename>
+		<filename>fadegallery/img4.jpg</filename>
+	</files>
+	
+	
+	
+	<administration>
+		<menu task="default">Fade Gallery</menu>
+		<files folder="admin">
+		
+		<!-- root -->
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+
+			<filename>install.fadegallery.php</filename>
+			<filename>uninstall.fadegallery.php</filename>
+			
+			<filename>fadegallery.php</filename>
+		
+		<!-- controllers -->
+		
+			<filename>controllers/index.html</filename>
+			<filename>controllers/docs.php</filename>
+			<filename>controllers/galleries.php</filename>
+
+
+
+		<!-- models -->
+			<filename>models/index.html</filename>
+			<filename>models/galleryedit.php</filename>
+			
+		<!-- tables -->
+			<filename>tables/index.html</filename>
+			<filename>tables/galleryedit.php</filename>
+			
+		<!-- views -->
+			<filename>views/index.html</filename>
+			
+		<!-- views/galleries -->
+			<filename>views/galleries/index.html</filename>
+			<filename>views/galleries/view.html.php</filename>
+			
+		<!-- views/galleries/tmpl -->
+			<filename>views/galleries/tmpl/index.html</filename>
+			<filename>views/galleries/tmpl/default.php</filename>
+			
+		<!-- views/docs -->
+			<filename>views/docs/index.html</filename>
+			<filename>views/docs/view.html.php</filename>
+			
+		<!-- views/galleries/tmpl -->
+			<filename>views/docs/tmpl/index.html</filename>
+			<filename>views/docs/tmpl/default.php</filename>
+			
+		<!-- views/galleryedit -->
+			<filename>views/galleryedit/index.html</filename>
+			<filename>views/galleryedit/view.html.php</filename>
+			
+		<!-- views/galleries/tmpl -->
+			<filename>views/galleryedit/tmpl/index.html</filename>
+			<filename>views/galleryedit/tmpl/form.php</filename>
+						
+			
+
+		</files>
+		
+		<languages>
+		<!-- main -->
+			<language tag="en-GB">languages/main/admin/en-GB.com_fadegallery.ini</language>
+		</languages>
+	</administration>   	
+
+</install>

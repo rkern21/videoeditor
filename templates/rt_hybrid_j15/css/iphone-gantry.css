@@ -1,0 +1,83 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+body {word-wrap: break-word;}
+body .rt-wrapper {overflow: hidden;}
+body .rt-container {background: transparent;}
+body #rt-logo {width: 154px !important; height: 68px !important;-webkit-background-size: 100% 100% !important;}
+body .headerstyle-header1 #rt-logo {background: url(../images/logo/header1/logo.png) center center no-repeat;}
+body .headerstyle-header2 #rt-logo {background: url(../images/logo/header2/logo.png) center center no-repeat;}
+body .headerstyle-header3 #rt-logo {background: url(../images/logo/header3/logo.png) center center no-repeat;}
+body .headerstyle-header4 #rt-logo {background: url(../images/logo/header4/logo.png) center center no-repeat;}
+body .headerstyle-header5 #rt-logo {background: url(../images/logo/header5/logo.png) center center no-repeat;}
+body .headerstyle-header6 #rt-logo {background: url(../images/logo/header6/logo.png) center center no-repeat;}
+body .headerstyle-header7 #rt-logo {background: url(../images/logo/header7/logo.png) center center no-repeat;}
+body .headerstyle-header8 #rt-logo {background: url(../images/logo/header8/logo.png) center center no-repeat;}
+body .headerstyle-header9 #rt-logo {background: url(../images/logo/header9/logo.png) center center no-repeat;}
+body .headerstyle-header10 #rt-logo {background: url(../images/logo/header10/logo.png) center center no-repeat;}
+body .headerstyle-header11 #rt-logo {background: url(../images/logo/header11/logo.png) center center no-repeat;}
+body .headerstyle-header12 #rt-logo {background: url(../images/logo/header12/logo.png) center center no-repeat;}
+body #rt-header .rt-block {padding: 0 10px 10px !important;}
+body #rt-header {padding: 0 !important;}
+body #rt-header.headerstyle-header1 {background: url(../images/iphone/headerfooter1/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter1/bg.jpg) #161E29 no-repeat 50% 0;}
+body #rt-header.headerstyle-header2 {background: url(../images/iphone/headerfooter2/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter2/bg.jpg) #441713 no-repeat 50% 0;}
+body #rt-header.headerstyle-header3 {background: url(../images/iphone/headerfooter3/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter3/bg.jpg) #999999 no-repeat 50% 0;}
+body #rt-header.headerstyle-header4 {background: url(../images/iphone/headerfooter4/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter4/bg.jpg) #111111 no-repeat 50% 0;}
+body #rt-header.headerstyle-header5 {background: url(../images/iphone/headerfooter5/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter5/bg.jpg) #6F1810 no-repeat 50% 0;}
+body #rt-header.headerstyle-header6 {background: url(../images/iphone/headerfooter6/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter6/bg.jpg) #441F47 no-repeat 50% 0;}
+body #rt-header.headerstyle-header7 {background: url(../images/iphone/headerfooter7/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter7/bg.jpg) #638A3C no-repeat 50% 0;}
+body #rt-header.headerstyle-header8 {background: url(../images/iphone/headerfooter8/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter8/bg.jpg) #2B0A02 no-repeat 50% 0;}
+body #rt-header.headerstyle-header9 {background: url(../images/iphone/headerfooter9/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter9/bg.jpg) #0C0F13 no-repeat 50% 0;}
+body #rt-header.headerstyle-header10 {background: url(../images/iphone/headerfooter10/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter10/bg.jpg) #191919 no-repeat 50% 0;}
+body #rt-header.headerstyle-header11 {background: url(../images/iphone/headerfooter11/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter11/bg.jpg) #323B4D no-repeat 50% 0;}
+body #rt-header.headerstyle-header12 {background: url(../images/iphone/headerfooter12/header-overlay.png) repeat-x 50% 100%, url(../images/iphone/headerfooter12/bg.jpg) #151515 no-repeat 50% 0;}
+body #rt-showcase, body #rt-main {background: none;padding: 0;}
+#rt-body-surround {margin-top:  15px !important;background: none !important;}
+body #rt-copyright {padding: 0;}
+body #rt-footer {color: inherit !important;}
+body #rt-body-bg2 {margin: 0;}
+body #more-articles {margin: 0px;}
+body .rt-articleinfo {position: relative;}
+body .rt-articleinfo .rt-article-icons {float:none; position: absolute; top: -1px;right: 10px;}
+body .rt-date-posted, body .rt-author, body .rt-date-modified {display: block;}
+.module-title .title {font-size: 180%;}
+body #rocket {background-position: 0 0;}
+body #gantry-logo {background-position: 0 -36px;}
+body #developed-by, body #powered-by {width: 148px;font-size: 100%;}
+body #developed-by a {background-position-y: 8px;}
+body #powered-by {width: 102px;}
+body #developed-by a, body #powered-by a {margin: 0;height: 26px;vertical-align: middle;}
+body #rt-copyright {padding: 0;background-color: #222;}
+body #rt-showcase .rt-container .rt-block {background: none;border-radius: 0;-webkit-border-radius: 0;border: 0;-webkit-box-shadow: none;text-shadow: none;}
+body #rt-showcase a.readon {text-shadow: none;}
+body .readon .button {text-indent: 10px;}
+body.rtl #rt-menu ul, body.rtl #rt-menu ul li {direction: ltr;float: left !important;}
+body span.inset-left, body span.inset-right {width: 45%;}
+body #rt-bottom .rt-block, body #rt-main .rt-block {padding: 10px 5px;}
+
+/* Menu */
+body #idrops li.root-sub a, body #idrops li.root-sub span.separator, body #idrops li.root-sub.active a, body #idrops li.root-sub.active span.separator {color: #ccc !important;}
+
+/* Joomla */
+body .weblinks .rt-joomla-table img {width: 16px;height: 16px;}
+.rt-joomla .edit img {display: none;}
+body .rt-joomla .rt-article-bg {margin: 0 !important;padding: 0 !important;}
+.rt-joomla .rt-article {margin: 0 10px !important;padding: 0 !important;}
+
+/* K2 */
+body span.catItemImage img {padding: 0;border: 0;}
+body div.catItemImageBlock {padding: 0;}
+
+/* RokQuickCart */
+body .cart_quickcart h2 {width: auto;margin-right: 0;}
+body .cart_cartstatus {float: none;}
+body .cart_yourcart {margin-right: 0;}
+
+/* Demo Content */
+body img[src$="iphone.jpg"], body .fp-jomsocial img {-webkit-background-size: 100% 100%;}
+body #rt-logo {-webkit-background-size: 85% 85%; margin: 0 auto;}

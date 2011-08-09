@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>RokStories</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>September 1, 2010</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.9</version>
+	<description>RokStories</description>
+	<files>
+		<filename module="mod_rokstories">mod_rokstories.php</filename>
+		<filename>RT-LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>thumbnail.inc.php</filename>
+		<folder>tmpl/</folder>
+		<folder>images/</folder>
+		<folder>elements/</folder>
+		<folder>admin/</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_rokstories.ini</language>
+	</languages>
+	
+	<params addpath="/modules/mod_rokstories/elements">
+		<param name="" type="rokmodulecheck" default="" label="" description="" />
+		<param name="" type="k2check" default="" label="" description=""/>
+		<param name="sampledata" type="sampledata" default="" label="Sample Data" description="Import Sample Data. &lt;br&gt;NOTE: You must be logged into your site as Admin or Super-Admin in order to import data." />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="load_css" type="radio" default="1" label="Load built-in StyleSheet" description="whether to load builtin CSS files. Useful when you want to write your own style and don't want to overwrite.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="layout_type" type="list" default="layout1" label="Layout Type" description="Layout type to use for the module">
+			<option value="layout1">Default</option>
+			<option value="layout2">Showcase</option>
+			<option value="layout3">Compat Showcase</option>
+			<option value="layout4">Compat Showcase with Numbers</option>
+			<option value="layout5">Masked Showcase</option>
+			<option value="layout6">Scroller</option>
+		</param>
+		
+		<param name="content_type" type="list" default="joomla" label="Content Type" description="whether to use Joomla Core Content, or K2 Content">
+			<option value="joomla">Joomla Core Content</option>
+			<option value="k2">K2 Content</option>
+		</param>
+		
+        <param name="@spacer" type="spacer" default="&lt;div id=&quot;joomla-label&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Joomla Core Content&lt;/div&gt;" label="" description="" />
+		
+		<param name="secid" type="section" default="" label="Joomla Section" description="" />
+		<param name="catid" type="category" default="" label="Joomla Category" description="" />
+		<param name="show_front" type="list" default="1" label="Joomla Frontpage Items" description="Show frontpage articles in this module">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Only Frontpage Items</option>
+		</param>
+		
+        <param name="@spacer" type="spacer" default="&lt;div id=&quot;k2-label&quot; style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;K2 Content&lt;/div&gt;" label="" description="" />
+        <param name="catfilter" type="radio" default="0" label="K2 Category filter">
+          <option value="0">All</option>
+          <option value="1">Select</option>
+        </param>
+        <param name="category_id" type="categories" default="" label="K2 Filter items by category" description="Select one ore more categories for which you want to filter an items list. Select none to fetch items from all categories."/>
+        <param name="FeaturedItems" type="list" default="1" label="K2 Featured Items" description="">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+          <option value="2">Show only Featured Items</option>
+        </param>
+        <param name="itemImgSize" type="list" default="M" label="Item image size" description="">
+          <option value="XS">XSmall</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">XLarge</option>
+        </param>
+        
+		<param name="@spacer" type="spacer" default="&lt;div id=&quot;content-label&quot;   style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Content Parameters&lt;/div&gt;" label="" description="" />
+		
+		<param name="article_count" type="text" default="4" label="Max Number of Articles" description="Number of articles to display from the section/category" />
+	  	
+	  	<param name="itemsOrdering" type="list" default="" label="Item Ordering" description="">
+          <option value="">Default</option>
+          <option value="date">Oldest first</option>
+          <option value="rdate">Most recent first</option>
+          <option value="alpha">Title Alphabetical</option>
+          <option value="ralpha">Title Reverse-Alphabetical</option>
+          <option value="order">Ordering</option>
+        </param>
+
+		<param name="strip_tags" type="text" default="a,i,br" label="Allowed HTML tags" description="List the HTML tags you want to allow in your content, separated by comma. All the others will be stripped out." />
+	  	
+		<param name="content_position" type="list" default="right" label="Content position" description="Whether to show the content on left, or right.">
+			<option value="right">Left</option>
+			<option value="left">Right</option>
+			<option value="none">None</option>
+		</param>
+		
+		<param name="show_article_title" type="radio" default="1" label="Show Title" description="Show the Article Title">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_created_date" type="radio" default="0" label="Show Date" description="Show the Article Date">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	  	<param name="show_article" type="radio" default="1" label="Show Article" description="Show the Article">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_article_link" type="radio" default="1" label="Show Link" description="Show Read More">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="legacy_readmore" type="radio" default="0" label="Readon Style" description="Readon button style. Can be either legacy or standard">
+			<option value="1">Legacy</option>
+			<option value="0">Standard</option>
+		</param>
+		
+		<param name="thumb_width" type="text" default="90" label="Width of thumbnail (px)" description="" />
+		<param name="start_width" type="text" default="auto" label="Width of thumbnail display (px)" description="Pixel width for fixed width, set to 'auto' for defaulting to the full image width size." />
+		<param name="user_id" type="list" default="0" label="Authors" description="A filter for the authors">
+			<option value="0">Anyone</option>
+			<option value="by_me">Added or modified by me</option>
+			<option value="not_me">Not added or modified by me</option>
+	  	</param>
+		
+		<param name="start_element" type="text" default="0" label="First article" description="Which article shown as first. First is 0, second 1, etc." />
+		<param name="thumbs_opacity" type="text" default="0.3" label="Thumbs Opacity" description="Opacity value of the thumbnails. Goes from 0 (transparent) to 1 (opaque)" />
+		<param name="fixed_height" type="text" default="0" label="Fixed Height" description="Sets Rokstories in a fixed height to avoid loading jumps if not wanted." />
+		<param name="mouse_type" type="list" default="click" label="Navigation Interaction" description="Wheter to change news via click or mouseover">
+			<option value="click">Click</option>
+			<option value="mouseenter">Mouseover</option>
+		</param>
+		<param name="autoplay" type="radio" default="0" label="Autoplay" description="Wheter to enable the autoplay">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	  	<param name="autoplay_delay" type="text" default="5000" label="Autoplay Delay" description="Delay from each update" />
+	
+		<param name="@spacer" type="spacer" default="&lt;div id=&quot;additional-label&quot;   style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Additional Showcase Layout Type Content Parameters&lt;/div&gt;" label="" description="" />
+		
+		<param name="show_label_article_title" type="radio" default="1" label="Show Label Title" description="Show the Article Label  Title when in Layout2 mode.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_arrows" type="radio" default="1" label="Show Arrows" description="Show Arrows on RokStories Image when in Layout2 mode.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_circles" type="radio" default="1" label="Show Circles" description="Show Circles on RokStories when in Layout6 mode.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="arrows_placement" type="radio" default="inside" label="Arrows Placement" description="Whether to show the arrows 'inside' or 'outside' the image-container.">
+			<option value="inside">Inside</option>
+			<option value="outside">Outside</option>
+		</param>
+		<param name="show_thumbs" type="radio" default="0" label="Show Previews on Arrows" description="Whether to show the next or previous Preview when hovering the arrows.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="fixed_thumb" type="radio" default="1" label="Fixed Previews" description="Show the Previews at a Fixed position">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="link_titles" type="radio" default="0" label="Linked Titles" description="Whether to link the titles to the article.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="link_labels" type="radio" default="0" label="Linked Labels" description="Whether to link the labels to the article.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="link_images" type="radio" default="0" label="Linked Images" description="Whether to link the images to the article.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_mask" type="radio" default="1" label="Show Image Mask" description="Whether to show the Image Mask for Layout 'Masked Layout'">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="mask_desc_dir" type="list" default="topdown" label="Description Animation" description="Type of animation for the descriptions. Works only on Masked Showcase.">
+			<option value="topdown">Top Down</option>
+			<option value="bottomup">Bottom Up</option>
+			<option value="fade">Fade</option>
+		</param>
+		<param name="mask_imgs_dir" type="list" default="bottomup" label="Images Animation" description="Type of animation for the images. Works only on Masked Showcase.">
+			<option value="topdown">Top Down</option>
+			<option value="bottomup">Bottom Up</option>
+			<option value="fade">Fade</option>
+		</param>
+		
+		<param name="scrollerDuration" type="text" default="1000" label="Scroller Duration (ms)" description="Duration of the scroller animation" />
+		<param name="scrollerTransition" type="list" default="Expo.easeInOut" label="Transition Effect" description="The effect to be used for the transition">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		<param name="show_controls" type="radio" default="1" label="Show Controls" description="Show Controls of layout 6">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+	    <param name="spacer" type="spacer" default="" label="" description="" />	
+		<param name="left_offset_x" type="text" default="-40" label="Left Preview Offset X" description="" />
+	  	<param name="left_offset_y" type="text" default="-100" label="Left Preview Offset Y" description="" />
+	  	<param name="right_offset_x" type="text" default="-30" label="Right Preview Offset X" description="" />
+	  	<param name="right_offset_y" type="text" default="-100" label="Right Preview Offset Y" description="" />
+	    <param name="spacer" type="spacer" default="" label="" description="" />	
+		<param name="left_f_offset_x" type="text" default="-40" label="Left Fixed Preview Offset X" description="" />
+	  	<param name="left_f_offset_y" type="text" default="-100" label="Left Fixed Preview Offset Y" description="" />
+	  	<param name="right_f_offset_x" type="text" default="-30" label="Right Fixed Preview Offset X" description="" />
+	  	<param name="right_f_offset_y" type="text" default="-100" label="Right Fixed Preview Offset Y" description="" />
+		
+	</params>
+	<params group="advanced">
+		<param name="cache" type="hidden" default="0"/>
+		<param name="module_cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

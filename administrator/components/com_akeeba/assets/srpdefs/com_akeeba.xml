@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	System Restore Point definition for Akeeba Backup by AkeebaBackup.com
+	
+	Copyright ©2011 Nicholas K. Dionysopoulos / AkeebaBackup.com
+	License: GNU General Public License version 3, or later
+-->
+<restorepoint>
+	<customdirs>
+		<dir>administrator/modules/mod_akadmin</dir>
+		<dir>plugins/system/srp</dir>
+	</customdirs>
+	<customfiles>
+		<file>plugins/system/srp.php</file>
+		<file>plugins/system/srp.xml</file>
+	</customfiles>
+	<langfiles>
+		<lang>mod_akadmin</lang>
+		<lang>plg_system_srp</lang>
+	</langfiles>
+	<extraprefixes>
+		<prefix>ak</prefix>
+	</extraprefixes>
+</restorepoint>

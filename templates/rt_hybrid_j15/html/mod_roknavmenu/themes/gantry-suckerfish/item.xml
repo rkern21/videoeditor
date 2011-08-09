@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item>
+ 	<params>
+		<param name="suckerfish_item_subtext" type="text" default="" label="Subtext Line" description="You can put a second line here"></param>
+ 	</params>
+</item>

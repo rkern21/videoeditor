@@ -1,0 +1,15 @@
+/**
+ * @version   3.1.10 March 5, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+.mini-grid, .mini-container, .miniatures, .presets-badge, .wrapper  {zoom:1;position: relative;}
+.presets-badge .number {top:0;}
+.g-title, .g-inner {position:relative;z-index:100;}
+.selectbox-wrapper, .selectbox-dropdown {z-index:3000;}
+#diagnostic {position: relative;z-index:10;zoom:1;overflow:hidden;}
+#diagnostic .g-title {z-index:10;zoom:1;}
+.paramlist_key input[type=checkbox] {left: 0;position: absolute;display:none;}
+.paramlist_value .menuitems-patch {top: 0 !important;}
+.group-overlays {height:40px;}

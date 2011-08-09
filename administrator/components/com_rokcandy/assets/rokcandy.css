@@ -1,0 +1,20 @@
+table.adminlist tr td.title {
+	background:#F0F0F0 none repeat scroll 0 0;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #FFFFFF;
+	color:#333;
+	text-align:center;
+	font-weight:bold;
+}
+
+td.macro {
+	color: #c00;
+}
+
+fieldset.tip {
+	background:#ffe;
+	font-size: 110%;
+	padding: 10px;
+}
+
+.icon-48-rokcandy { background:url(rokcandy-icon-48.png) no-repeat;}

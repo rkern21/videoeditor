@@ -1,0 +1,60 @@
+#roktwittie .clr {clear:both;}
+#roktwittie .info {margin-top:5px;margin-left:58px;}
+#roktwittie .name{margin: 0 0 4px;padding:0;display:block;}
+#roktwittie .nick{display:inline;margin:3px 0 0;padding: 2px 0;}
+#roktwittie ul{padding:0;list-style:none;}
+#roktwittie a{font-weight:bold;}
+#roktwittie .title{color:#999;margin-bottom:3px;}
+#roktwittie .loading{text-align:center;background:url(../images/spinner.gif) center center no-repeat;height:16px;}
+#roktwittie .loading span{display:none;}
+/* User(s) Status */
+#roktwittie .status{margin-bottom:20px;}
+#roktwittie .light .header{padding:4px 8px;overflow:hidden;background:#f4f4f4 url(../images/header-bg-light.jpg) bottom left repeat-x;}
+#roktwittie .dark .header{padding:4px 8px;overflow:hidden;background:#4A4A4A url(../images/header-bg-dark.jpg) bottom left repeat-x;}
+#roktwittie .status .header .avatar{float:left;}
+#roktwittie .status .header .showavatar{background:#e1e1e1 url(../images/anonymous.jpg) center center no-repeat;margin-bottom:5px;}
+#roktwittie .status .header .name {font-size:20px;font-weight:normal;line-height:100%;}
+#roktwittie .status .header .nick {font-size:13px;font-weight:bold;}
+#roktwittie .light .header .name {color:#333;}
+#roktwittie .light .header .nick {color:#777;}
+#roktwittie .dark .header .name {color:#fff;}
+#roktwittie .dark .header .nick {color:#ccc;}
+#roktwittie .status ul li{clear:both;padding:0;list-style:none;overflow:hidden;}
+#roktwittie .status ul li .title{float:left;width:55px;text-align:right;}
+#roktwittie .status ul li .content{margin-left:60px;font-weight:bold;margin-bottom:5px;}
+#roktwittie .user .stats{margin-bottom:10px;}
+#roktwittie .user .feed a{background:url(../images/rss.gif) center right no-repeat;display:block;float:left;height:16px;padding-right:20px;}
+#roktwittie .user .subscribe {margin-top: 5px;}
+/* Last 30 AND Search */
+#roktwittie .tweets-wrapper{margin-bottom:20px;}
+#roktwittie .query-wrapper{}
+#roktwittie .tweets-wrapper .tweets{}
+#roktwittie .query-wrapper .query{}
+#roktwittie .tweets ul,#roktwittie .query ul{list-style-type:none;margin:0;padding:0;}
+#roktwittie .roktwittie-avatar{margin-right:.5em;float:left;}
+#roktwittie a.roktwittie-avatar img{vertical-align:middle;}
+#roktwittie div.roktwittie-infos{margin:0.3em 0;color:#999;font-size:90%;}
+#roktwittie div.roktwittie-infos a{color:#999;}
+#roktwittie div.roktwittie-infos .roktwittie-date{float:right;font-size:80%;}
+#roktwittie div.roktwittie-infos span{}
+#roktwittie div.roktwittie-infos span .roktwittie-source{font-style:italic;}
+#roktwittie .roktwittie-surround{padding-left:5px;}
+#roktwittie .roktwittie-t1{background:url(../images/tweet-sprite.png) 0 0 no-repeat;}
+#roktwittie .roktwittie-t2{background:url(../images/tweet-sprite.png) 100% -12px no-repeat;}
+#roktwittie .roktwittie-t3{background:url(../images/tweet-sprite.png) 0 -608px repeat-x;height:6px;margin:0 12px;}
+
+#roktwittie .roktwittie-m1{background:url(../images/tweet-sprite.png) 0 -24px no-repeat;}
+#roktwittie .roktwittie-m2{background:url(../images/tweet-sprite.png) 100% -632px no-repeat;}
+#roktwittie .roktwittie-m3{background:#f0f0f0;margin:0 12px;}
+
+
+#roktwittie .roktwittie-b1{background:url(../images/tweet-sprite.png) 0 -584px no-repeat;}
+#roktwittie .roktwittie-b2{background:url(../images/tweet-sprite.png) 100% -596px no-repeat;}
+#roktwittie .roktwittie-b3{background:url(../images/tweet-sprite.png) 0 -620px repeat-x;height:12px;margin:0 12px;}
+#roktwittie div.roktwittie-text{padding:0 0 0 12px;overflow:hidden;}
+#roktwittie div.roktwittie-text a.roktwittie-link{}
+#roktwittie div.roktwittie-text a.roktwittie-linkuser{}
+#roktwittie div.roktwittie-text a.roktwittie-hash{}
+#roktwittie li{overflow:auto;padding:0 0 5px;margin:0;}
+#roktwittie .content ul, #roktwittie .friends_list {margin:0 0 10px 0;padding:0;}
+#roktwittie ul li{list-style:none !important;}

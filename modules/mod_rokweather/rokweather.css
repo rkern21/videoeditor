@@ -1,0 +1,25 @@
+/* RokWeather */
+#rokweather {overflow:hidden;padding:5px;}
+#rokweather .leftbit {float:left;width:44px;}
+#rokweather .degrees {text-align:center;;position:relative;margin-top:10px;color:#666;}
+#rokweather .degrees span {cursor: pointer;}
+#rokweather .degrees .active {font-weight:bold;border-bottom: 2px solid #666;}
+#rokweather .degc {display:none;}
+#rokweather .icon {background: #4E749E;padding: 3px 0 5px;}
+#rokweather .icon img {margin:0px 5px 5px 5px;width:32px;height:32px;}
+#rokweather .icon div {text-align:center;color:#fff;font-size:18px;font-weight:bold;}
+
+#rokweather .content {margin-left:50px;}
+#rokweather .input-board {background: #ffc;font-size: 115%;text-transform: uppercase;color: #444;border:1px solid #ddd;font-weight:normal;padding:0;}
+#rokweather h5 {margin:0;cursor: pointer;border-bottom: 1px solid #ddd;font-size:115%;padding:0;}
+#rokweather h5.loading {background: transparent url(images/spinner.gif) no-repeat scroll 100% 50%}
+#rokweather.rokweather-nointeraction h5 {cursor:default;}
+
+#rokweather .row {padding:3px 0;border-bottom:1px solid #ddd;}
+#rokweather .day { float: left;margin-right:15px;text-align:center;padding-top:5px;}
+#rokweather .day div {font-size: 78%;}
+#rokweather .day img {width:24px;height:24px;}
+#rokweather .day span.low { color: #666;font-weight:normal;}
+#rokweather .day span.high { color:#333;font-weight:normal;}
+
+

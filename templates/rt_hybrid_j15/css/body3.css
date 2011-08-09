@@ -1,0 +1,88 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/** TEXT COLORS **/
+body, .featuretable .item1 {color: #444;}
+#rt-main-background a:hover, .module-content ul.menu li a:hover, .module-content ul.menu li .separator:hover, .module-content ul.menu li .item:hover, .module-content ul.menu li.active > a, .module-content ul.menu li.active > .separator, .module-content ul.menu li.active > .item {color: #000;}
+#rt-main-background .roktabs .roktabs-links ul li span, #rt-main-background #rokajaxsearch .inputbox {color: #777;}
+#rt-main-background .roktabs .roktabs-links ul li.active span {color: #444;}
+
+/** IMAGES AND BACKGROUNDS **/
+/* Core */
+#rt-header-surround {border-bottom: 2px solid #bbb;}
+#rt-bottom-surround {border-top: 2px solid #bbb;}
+
+body {background: #f0f0f0;}
+
+/* Utility */
+#rt-utility {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+
+/* Breadcrumbs */
+#rt-breadcrumbs {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+
+/* Main Body */
+#rt-maintop {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+.rt-main-inner {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+
+/* Modules */
+#rt-main .rt-grid-1, #rt-main .rt-grid-2, #rt-main .rt-grid-3, #rt-main .rt-grid-4, #rt-main .rt-grid-5, #rt-main .rt-grid-6, #rt-main .rt-grid-7, #rt-main .rt-grid-8, #rt-main .rt-grid-9, #rt-main .rt-grid-10, #rt-main .rt-grid-11 {background: url(../images/body/body3/b-col-divider.png) 0 0 repeat-y;}
+
+/* Module Title Variations */
+#rt-main-background .title1 .title {background-image: url(../images/body/body3/b-module-titles.png);}
+#rt-main-background .title2 .title {background-image: url(../images/body/body3/b-module-titles.png);}
+#rt-main-background .title3 .title {background-image: url(../images/body/body3/b-module-titles.png);}
+#rt-main-background .title4 .title {background: #efefef;border-top: 1px solid #fff;}
+#rt-main-background .title5 .title {background: #dfdfdf;border-top: 1px solid #fff;}
+#rt-main-background .title6 .title {background: #cfcfcf;border-top: 1px solid #fff;}
+#rt-main-background .title7 .title {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+
+/* Module Box Variations */
+#rt-main-background .box1 .rt-module-surround {background: #e9e9e9;border-top: 1px solid #fff;}
+#rt-main-background .box2 .rt-module-surround {background: #dfdfdf;border-top: 1px solid #fff;}
+#rt-main-background .box3 .rt-module-surround {background: #cfcfcf;border-top: 1px solid #fff;}
+
+/* Side Menu */
+#rt-main-background .module-content ul.menu li {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+
+/* Typography */
+#rt-main-background .rt-pollrow {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+#rt-main-background .rt-articleinfo {background: url(../images/body/body3/b-articledetails.png) 0 50% no-repeat;}
+#rt-main-background .inputbox {background: #eee;border: 1px solid #ddd;}
+#rt-main-background #form-login #form-login-username, #rt-main-background #form-login #form-login-password {background: url(../images/body/body3/b-inputbox.png);}
+#rt-main-background #form-login #form-login-username .inputbox {background: url(../images/body/body3/b-utilities.png) 100% 0 no-repeat;}
+#rt-main-background #form-login #form-login-password .inputbox {background: url(../images/body/body3/b-utilities.png) 100% -42px no-repeat;}
+.rt-joomla .icon {background-image: url(../images/body/body3/b-article-icons.png);}
+#rt-main-background .rt-joomla .rt-joomla-table tr.even td, #rt-main-background .rt-joomla .rt-joomla-table th {background: #ddd url(../images/body/body3/b-horz-div.png) 50% 0 repeat-x;}
+#rt-main-background .rt-joomla .rt-joomla-table tr.odd td {background: #f9f9f9 url(../images/body/body3/b-horz-div.png) 50% 0 repeat-x;}
+#breadcrumbs-home {background: url(../images/body/body3/b-article-icons.png);}
+#rt-main-background .rt-image {border-color: #bbb;}
+#rt-login-button .buttontext span.icon {background: url(../images/body/body3/b-utilities.png) 0 -42px no-repeat;}
+
+/* RokAjaxSearch */
+#rt-main-background #rokajaxsearch .roksearch-wrapper {background: url(../images/body/body3/b-inputbox.png);}
+#roksearch_results.bodystyle-body3 span.highlight, .results span.highlight {background: #444;color: #fff;}
+#roksearch_results.bodystyle-body3 {background: #eee;border: 1px solid #fff;}
+.bodystyle-body3 .roksearch_result_wrapper1 {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+.bodystyle-body3 .roksearch_even:hover, .bodystyle-body3 .roksearch_odd:hover {background: #fff;}
+
+/* RokTabs */
+#rt-main-background .roktabs .roktabs-links, #rt-main-background .top .active-arrows {background: #fafafa;}
+#rt-main-background .roktabs .roktabs-links ul li {background-image: url(../images/body/body3/b-roktabs-tab-r.png);}
+#rt-main-background .roktabs .roktabs-links ul li span {background-image: url(../images/body/body3/b-roktabs-tab-l.png);}
+
+/* RokFeatureTable */
+.featuretable {color: #444;}
+.featuretable .featuretable-col {background: url(../images/body/body3/b-vert-div.png) 0 0 repeat-y;}
+.featuretable .featuretable-col.highlight {background: #fafafa;}
+.featuretable .featuretable-head, .featuretable .featuretable-cell {background: url(../images/body/body3/b-horz-div.png) 50% 100% repeat-x;}
+.featuretable .name {color: #fff;background: #666 url(../images/body/body3/b-overlay.png) 50% 0 repeat-x;}
+.featuretable-col.highlight .item2 {color: #fff;}
+.featuretable-border {border-top: 1px solid #fff;background: #eee;}
+
+/* RTL */
+body.rtl #rt-main-background .rt-articleinfo {background: url(../images/body/body3/b-articledetails-rtl.png) 100% 50% no-repeat;}

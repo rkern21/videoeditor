@@ -1,0 +1,29 @@
+.installer_logo_box {
+	width: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: solid 1px #333;
+	background: #202626;
+}   
+
+.installer_box {
+	width: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: solid 1px #333;
+} 
+
+.fail {
+	color: red;
+	font-weight: bold;
+}  
+
+.success {
+	color: green;
+	font-weight: bold;
+}  
+
+.icon {
+	padding:1px 5px;
+	vertical-align:bottom;
+}  

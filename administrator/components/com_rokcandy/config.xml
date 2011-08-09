@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+        <param name="forcecache" type="radio" default="0" label="FORCE_CACHE" description="">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
+		<param name="adminenabled" type="radio" default="0" label="ENABLED_ADMIN" description="">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
+		<param name="editenabled" type="radio" default="0" label="ENABLED_EDIT" description="">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
+	    <param name="contentPlugin" type="radio" default="1" label="ENABLED_CONTENT" description="">
+	        <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="disabled" type="textarea" default="" rows="10" cols="50" label="DISABLED" description="DISABLED_DESC"/>
+	</params>
+</config>

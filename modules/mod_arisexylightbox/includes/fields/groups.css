@@ -1,0 +1,30 @@
+DIV.panel DIV.ari-fieldsgroup FIELDSET,
+DIV.ari-fieldsgroup FIELDSET
+{
+	border: 1px solid #CCCCCC;
+	padding: 5px 10px 17px;
+}
+
+DIV.ari-fieldsgroup fieldset SELECT.ari-fieldsgroup-sel
+{
+	float: none;
+	margin-top: 3px;
+}
+
+DIV.ari-fieldsgroup fieldset LABEL.ari-fieldsgroup-lbl,
+FIELDSET.panelform DIV.ari-fieldsgroup fieldset LABEL.ari-fieldsgroup-lbl
+{
+	width: auto;
+	max-width: none;
+	min-width: 0;
+	padding: 0 2px;
+	font-size: 12px;
+}
+
+.el-group-header H4
+{
+	background: #7CC4FF;
+	color: #FFF;
+	padding: 4px 15px;
+	font-size: 110%;
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>RokNewsPager</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>August 26, 2010</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.7</version>
+	<description>RokNewsPager is a horizontal paging latest news module</description>
+	<files>
+		<filename module="mod_roknewspager">mod_roknewspager.php</filename>
+		<filename>RT-LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>elements/</folder>
+		<folder>themes/</folder>
+		<folder>lib/</folder>
+	</files>
+	<params addpath="/modules/mod_roknewspager/elements">
+		<param name="" type="rokmodulecheck" default="" label="" description="" />
+		<param name="" type="k2check" default="" label="" description=""/>
+		<param name="load_css" type="radio" default="1" label="Load built-in StyleSheet" description="whether to load builtin CSS files. Useful when you want to write your own style and don't want to overwrite.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="theme" type="list" default="light" label="Theme" description="Theme type you want to load: light or dark styles">
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+		</param>
+		
+		<param name="content_type" type="list" default="joomla" label="Content Type" description="whether to use Joomla Core Content, or K2 Content">
+			<option value="joomla">Joomla Core Content</option>
+			<option value="k2">K2 Content</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="&lt;div id=&quot;joomla-label&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Joomla Core Content&lt;/div&gt;" label="" description="" />
+		<param name="secid" type="section" default="" label="Joomla Section" description="" />
+		<param name="catid" type="category" default="" label="Joomla Category" description="" />
+		
+		<param name="show_front" type="list" default="1" label="Joomla Frontpage Items" description="Show frontpage articles in this module">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Only Frontpage Items</option>
+		</param>		
+
+        <param name="@spacer" type="spacer" default="&lt;div id=&quot;k2-label&quot;  id=&quot;k2-label&quot;style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;K2 Content&lt;/div&gt;" label="" description="" />
+        <param name="catfilter" type="radio" default="0" label="K2 Category filter">
+          <option value="0">All</option>
+          <option value="1">Select</option>
+        </param>
+        <param name="category_id" type="categories" default="" label="K2 Filter items by category" description="Select one ore more categories for which you want to filter an items list. Select none to fetch items from all categories."/>
+        <param name="FeaturedItems" type="list" default="1" label="K2 Featured Items" description="">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+          <option value="2">Show only Featured Items</option>
+        </param>
+        
+        <param name="@spacer" type="spacer" default="&lt;div id=&quot;content-label&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Content Parameters&lt;/div&gt;" label="" description="" />
+		
+		<param name="article_count" type="text" default="5" size="4" label="Count" description="The number of items to display (default 5)" />
+        <param name="show_accordion" type="list" default="0" label="Enable Accordion Effect" description="Enable Accordion Effect for this module">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="show_paging" type="list" default="1" label="Enable Paging" description="Enable Paging for this module">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="maxpages" type="text" default="8" size="4" label="Max Pages" description="The number of pages (default 8)" />
+
+ 		<param name="show_title" type="list" default="1" label="Show Title" description="Enable item title for articles.">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+        <param name="show_thumbnails" type="list" default="1" label="Show Thumbnails" description="Enable item image thumbnails for this module">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+        <param name="thumb_width" type="text" default="90" size="4" label="Width of thumbnail (px)" description="" />
+        <param name="thumbnail_link" type="list" default="1" label="Use Thumbnail as link" description="Use the thumbnail as a link to the article">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+        <param name="show_overlay" type="list" default="1" label="Show Thumbnail Overlay" description="Enable an image overlay for the thumbnails">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+        <param name="overlay" type="overlaylist" default="" label="Overlay File" description=""/>
+
+         <param name="show_ratings" type="list" default="1" label="Show Item Ratings" description="Show the article ratings for each item">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+
+        <param name="show_readmore" type="list" default="1" label="Show Readmore Link" description="Show the Readmore Text for each item">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+        <param name="readmore_text" type="text" default="Read More..." label="Read More Text" description="The text to show for the read more link." />
+
+        <param name="itemsOrdering" type="list" default="" label="Item Ordering" description="">
+          <option value="">Default</option>
+          <option value="date">Oldest first</option>
+          <option value="rdate">Most recent first</option>
+          <option value="alpha">Title Alphabetical</option>
+          <option value="ralpha">Title Reverse-Alphabetical</option>
+          <option value="order">Ordering</option>
+        </param>
+
+        <param name="show_preview_text" type="list" default="1" label="Show Preview Text" description="Show the Preview Text">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+        
+        <param name="strip_tags" type="text" default="a,br" label="Allowed HTML tags" description="List the HTML tags you want to allow in your content, separated by comma. All the others will be stripped out." />
+        
+	  	<param name="preview_count" type="text" default="200" size="6" label="Preview Length" description="Length of characters of article to preview" />
+
+        <param name="show_comment_count" type="list" default="0" label="Show Comment Count" description="Show the Comment Count if comments are enabled and the comment system is available">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+
+        <param name="show_author" type="list" default="0" label="Show Author" description="Show the Author">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+
+        <param name="show_published_date" type="list" default="0" label="Show Published Date" description="Show the published date which is the newer of the created date or the start publishing date">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+        
+		<param name="autoupdate" type="radio" default="0" label="Auto Update" description="Auto updates the news">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	  	<param name="autoupdate_delay" type="text" default="5000" size="6" label="Auto Update Delay" description="Delay from each auto update request" />
+
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+        
+	</params>
+	<params group="advanced">
+		<param name="cache" type="hidden" default="0"/>
+		<param name="module_ident" type="list" default="id" label="Module Indentification" description="Load module data by Name or ID (requires com_rokmodule v1.1 or later)">
+			<option value="name">Name</option>
+			<option value="id">ID</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

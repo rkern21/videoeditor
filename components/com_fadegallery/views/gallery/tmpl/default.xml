@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standalone">
+		<message>
+		</message>
+	</layout>
+	<state>
+		<name>Fade Gallery - Standalone</name>
+		<description>A component to show fade style javascript gallery.</description>
+    
+	
+	    <params label="Parameters" >
+	        <param name="folder" type="text" default="images/fadegallery" label="Folder" />
+			<param name="filelist" type="text" default="" label="Files" description="If file list is empty then all files of specified folder will be shown." />
+		
+	        <param name="width" type="text" default="400" label="Width" />
+	        <param name="height" type="text" default="300" label="Height" />
+	        <param name="interval" type="text" default="6000" label="Slide Interval" />
+	        <param name="fadetime" type="text" default="4000" label="Fade Time" />
+	        <param name="fadestep" type="text" default="20" label="Fade Step" />
+		</params>
+		
+	</state>
+</metadata>

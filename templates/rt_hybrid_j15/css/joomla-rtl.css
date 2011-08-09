@@ -1,0 +1,84 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Article */
+body.rtl .rt-joomla ol {margin-left: 0;margin-right: 5px;}
+body.rtl #more-articles {float: left;}
+body.rtl #more-articles span {float: none;padding: 0 0 0 30px;background-position: 0 -795px;}
+body.rtl #more-articles.spinner {background-position: 0 50%;background-repeat: no-repeat;}
+body.rtl .rt-joomla .rt-articleinfo {float: left;text-align: right;margin: 0 15px 15px 0;padding: 10px 30px 10px 0;}
+
+/* Column Layout */
+body.rtl .rt-joomla .float-left {float: right;margin-left: 0;margin-right: 15px;}
+body.rtl .rt-joomla .first.float-left, body.rtl .rt-joomla .float-left.width100 {margin-left: inherit;margin-right: 0;}
+body.rtl .rt-joomla .float-right {float: left;}
+
+/* Typography */
+body.rtl .rt-joomla .rt-article-icons {float: right;}
+body.rtl .rt-joomla .icon {float: right;}
+body.rtl #form-login ul li a, body.rtl #com-form-login ul li a, body.rtl ul.rt-more-articles li a, body.rtl .rt-section-list ul li a, body.rtl ul.mostread li a, body.rtl ul.latestnews li a, body.rtl .weblinks ul li a {padding-left: 0;padding-right: 24px;background-position: 100% -398px;}
+body.rtl #form-login ul li a:hover, body.rtl #com-form-login ul li a:hover, body.rtl ul.rt-more-articles li a:hover, body.rtl .rt-section-list ul li a:hover, body.rtl ul.mostread li a:hover, body.rtl ul.latestnews li a:hover, body.rtl .weblinks ul li a:hover, body.rtl #rt-popuplogin ul li a:hover {background-position: 100% -595px;}
+body.rtl #rt-page-background #form-login .inputbox {padding: 0 0 0 20px;}
+body.rtl .rt-pollbuttons .readon {float: right !important;margin: 0 0 0 10px;}
+body.rtl .readonstyle-link .module-content .rt-poll .readon {float: right !important;margin-right: 0;margin-left: 20px;}
+body.rtl .rt-pollrow {direction: ltr;text-align: right;}
+body.rtl .rt-comment-block {float: left;}
+body.rtl .rt-joomla .search_result fieldset.word label {float: right;}
+body.rtl .rt-joomla .label-left {float: right;}
+body.rtl .rt-date-posted span {line-height: 24px;}
+body.rtl .rt-joomla .contact .image {float:left;}
+body.rtl .rt-joomla .search_result select#ordering.inputbox {margin-right: 0;margin-left: 10px;}
+body.rtl pre {direction: ltr;text-align: right;}
+body.rtl ul.pagination {text-align: right;}
+body.rtl ul.pagination li {text-align: right;}
+body.rtl .rt-joomla .search_result select#ordering.inputbox {margin-right: 0;margin-left: 10px;}
+body.rtl #rt-main-surround ul, body.rtl #rt-main-surround ol {padding-left: 0;padding-right: 25px;}
+
+/* RokAjaxSearch */
+body.rtl .rokajaxsearch {direction: ltr;text-align: right;}
+body.rtl .rokajaxsearch .inputbox {text-align: right;padding: 14px 8px 0 20px;}
+body.rtl #roksearch_results {direction: ltr;text-align: right;}
+body.rtl #rokajaxsearch .roksearch-wrapper {float: right;padding: 0 0 0 8px;}
+body.rtl .roksearch_option {float: right !important;}
+body.rtl .search_options {float: right;}
+body.rtl .search_options label {margin-left:8px;margin-right: 0 !important;}
+body.rtl #rokajaxsearch #roksearch_search_str.loading {background-position: 0 50% !important;}
+body.rtl #roksearch_results a#roksearch_link {float: left;padding-right: 0;margin-left: 5px;}
+body.rtl #roksearch_results .container-arrows {float: right;margin-right: 0;margin-left: 5px;}
+body.rtl #roksearch_results a.viewall {float: right;}
+body.rtl #roksearch_results span.small {direction: rtl;}
+
+/* RokStories */
+body.rtl #rt-header-surround .rokstories-layout5 .rokstories-content-block {margin-left: inherit;margin-right: 220px;}
+body.rtl #rt-header-surround .rokstories-layout5 .desc-container {float: left;}
+body.rtl #rt-header-surround .rokstories-layout5 .description {padding: 0 15px 15px 0;}
+body.rtl #rt-header-surround .rokstories-layout5 .vertical-list-wrapper {float: right;left: auto;right: 0;}
+body.rtl #rt-header-surround .rokstories-layout5 .vertical-list li {padding: 15px 10px 15px 15px;text-align: right;}
+body.rtl #rt-header-surround .rokstories-layout5 .vertical-list li.active {margin-right: inherit;margin-left: -4px;}
+body.rtl #rt-header-surround .feature-block .image-container {float: left !important;margin-left: 0 !important;margin-right: 20px;}
+body.rtl #rt-header-surround .feature-block .image-container .image-full {padding-right: inherit;padding-left: 8px;}
+
+/* RokTabs */
+body.rtl .roktabs-wrapper {direction: ltr;text-align: right;}
+body.rtl .roktabs-wrapper .roktabs-links ul li {float: right;}
+body.rtl .roktabs-wrapper .tab-icon {margin-right: 0;margin-left: 8px;float: right;margin-top: 0px;}
+body.rtl .roktabs-wrapper .roktabs-links ul {text-align: right;}
+
+/* RokFeatureTable */
+body.rtl .featuretable-col {float: right;}
+
+/* Rok Quick Cart */
+body.rtl .cart_totals span {text-align: left;}
+body.rtl .simpleCart_finalTotal{width: 106px;}
+
+/* Editing */
+body.rtl .button2-left, body.rtl .button2-right, body.rtl .button2-left div, body.rtl .button2-right div {float: right;}
+body.rtl #editor-xtd-buttons {float: right;}
+body.rtl .edit-article fieldset table {float: right;}
+body.rtl .rt-joomla .save .readon {margin-left: 0;margin-right: 5px;}
+body.rtl .rt-joomla .save {margin-left: 25px;}

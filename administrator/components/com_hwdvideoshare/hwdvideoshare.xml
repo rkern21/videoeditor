@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>hwdVideoShare</name>
+	<creationDate>2011 02 16</creationDate>
+	<author>Highwood Design</author>
+	<copyright>(C) 2007 - 2009 Highwood Design</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@highwooddesign.co.uk</authorEmail>
+	<authorUrl>http://hwdmediashare.co.uk</authorUrl>
+	<version>[ Wainuiomata ]</version>
+	<description>Social networking video sharing component for the Joomla! CMS</description>
+
+	<installfile>install.hwdvideoshare.php</installfile>
+	<uninstallfile>uninstall.hwdvideoshare.php</uninstallfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+
+	<files folder="frontend">
+		<folder>assets/</folder>
+		<folder>converters/</folder>
+		<folder>models/</folder>
+		<folder>views/</folder>
+
+		<filename>xml/xspf/index.html</filename>
+		<filename>xml/xmloutput.class.php</filename>
+		<filename>xml/xmlparse.class.php</filename> 
+		
+		<filename>controller.php</filename>
+		<filename>hwdvideoshare.class.php</filename>
+		<filename>hwdvideoshare.html.php</filename>
+		<filename>hwdvideoshare.php</filename>
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<filename>router.php</filename>
+	</files>
+	
+	<administration>
+		<menu img="../administrator/components/com_hwdvideoshare/assets/images/menu/hwdvideoshare.png">hwdVideoShare</menu>
+		<submenu>
+			<menu task="videos" img="../administrator/components/com_hwdvideoshare/assets/images/menu/hwdvideoshare.png">Videos</menu>
+			<menu task="categories" img="../administrator/components/com_hwdvideoshare/assets/images/menu/categories.png">Categories</menu>
+			<menu task="groups" img="../administrator/components/com_hwdvideoshare/assets/images/menu/groups.png">Groups</menu>
+			<menu task="serversettings" img="../administrator/components/com_hwdvideoshare/assets/images/menu/seversettings.png">Server Settings</menu>
+			<menu task="generalsettings" img="../administrator/components/com_hwdvideoshare/assets/images/menu/generalsettings.png">General Settings</menu>
+			<menu task="converter" img="../administrator/components/com_hwdvideoshare/assets/images/menu/converter.png">Converter</menu>
+			<menu task="approvals" img="../administrator/components/com_hwdvideoshare/assets/images/menu/approvals.png">Pending Approval</menu>
+			<menu task="reported" img="../administrator/components/com_hwdvideoshare/assets/images/menu/reported.png">Reported Media</menu>
+			<menu task="plugins" img="../administrator/components/com_hwdvideoshare/assets/images/menu/plugins.png">Plugins</menu>
+			<menu task="export" img="../administrator/components/com_hwdvideoshare/assets/images/menu/export.png">Export Data</menu>
+			<menu task="import" img="../administrator/components/com_hwdvideoshare/assets/images/menu/import.png">Import Data</menu>
+			<menu task="maintenance" img="../administrator/components/com_hwdvideoshare/assets/images/menu/maintenance.png">Maintenance</menu>
+		</submenu>
+		<files folder="administrator">
+			<folder>assets/</folder>
+			<folder>helpers/</folder>
+			<folder>install/</folder>
+			<folder>libraries/</folder>
+			<folder>models/</folder>
+			<folder>templates/</folder>
+			<folder>views/</folder>
+
+			<filename>admin.hwdvideoshare.html.php</filename>
+			<filename>admin.hwdvideoshare.php</filename>
+			<filename>config.hwdvideoshare.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>serverconfig.hwdvideoshare.php</filename>
+			<filename>toolbar.hwdvideoshare.html.php</filename>
+			<filename>toolbar.hwdvideoshare.php</filename>
+			<filename>version.php</filename>
+		</files>
+		
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_hwdvideoshare.menu.ini</language>
+			<language tag="en-GB">en-GB.com_hwdvideoshare.ini</language>
+		</languages>
+		
+	</administration>
+</install>

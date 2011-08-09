@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>RokFeatureTable</name>
+    <author>RocketTheme, LLC</author>
+    <creationDate>September 13, 2010</creationDate>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>1.1</version>
+    <description><![CDATA[
+	RokFeatureTable is a very simple yet powerful module for providing tabular data. It comes with pre-populated templates and allows to create your own directly from your own template.
+	RokFeatureTable reads custom templates that are found under "templates/your_active_template/admin/rft-templates/". They must be .txt files. You can see a couple of examples from "modules/mod_rokfeaturetable/templates/".
+	]]></description>
+    <files>
+        <filename module="mod_rokfeaturetable">mod_rokfeaturetable.php</filename>
+        <filename>RT-LICENSE.php</filename>
+        <filename>CHANGELOG.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl/</folder>
+        <folder>elements/</folder>
+        <folder>admin/</folder>
+        <folder>templates/</folder>
+    </files>
+    <params addpath="/modules/mod_rokfeaturetable/elements">
+    	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="builtin_css" type="radio" default="1" label="Built-in CSS" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+    	<param name="highlight-col" type="list" default="1" label="Highlight Column"
+    	       description="The highlighted Column">
+    	    <option value="0">None</option>
+    	    <option value="1">Column 1</option>
+    	    <option value="2">Column 2</option>
+    	    <option value="3">Column 3</option>
+    	    <option value="4">Column 4</option>
+    	    <option value="5">Column 5</option>
+    	    <option value="6">Column 6</option>
+    	</param>
+
+		<param name="sample_templates" type="templates" label="Preset Templates" />
+
+		<param name="layout" type="layout" rows="1" columns="1" label="Layout Setup" description="">
+			<param name="data-col1" type="column" rows="10" cols="50" label="Col1 Data" description=""/>
+			<param name="data-col2" type="column" rows="10" cols="50" label="Col2 Data" description=""/>
+			<param name="data-col3" type="column" rows="10" cols="50" label="Col3 Data" description=""/>
+			<param name="data-col4" type="column" rows="10" cols="50" label="Col4 Data" description=""/>
+			<param name="data-col5" type="column" rows="10" cols="50" label="Col5 Data" description=""/>
+			<param name="data-col6" type="column" rows="10" cols="50" label="Col6 Data" description=""/>
+		</param>
+    </params>
+    <params group="advanced">
+        <param name="cache" type="hidden" default="0"/>
+        <param name="module_cache" type="list" default="1" label="Caching"
+               description="Select whether to cache the content of this module">
+            <option value="1">Use global</option>
+            <option value="0">No caching</option>
+        </param>
+        <param name="cache_time" type="text" default="900" label="Cache Time"
+               description="The time before the module is recached"/>
+    </params>
+</install>

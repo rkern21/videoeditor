@@ -1,0 +1,23 @@
+name::padding-top:10px;|Firefox
+name-sub::Gecko Engine
+button-text::Download
+button-text-sub::free
+button-text-link::http://www.mozilla.com/en-US/firefox/all.html
+---
+name::padding-top:10px;|Chrome
+name-sub::WebKit Engine
+button-text::Download
+button-text-sub::free
+button-text-link::http://www.google.com/chrome
+---
+name::padding-top:10px;|Safari
+name-sub::WebKit Engine
+button-text::Download
+button-text-sub::free
+button-text-link::http://www.apple.com/safari/download/
+---
+name::padding-top:10px;|Opera
+name-sub::Presto Engine
+button-text::Download
+button-text-sub::free
+button-text-link::http://www.opera.com/browser/

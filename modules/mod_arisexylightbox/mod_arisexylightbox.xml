@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade">
+	<name>ARI Sexy Lightbox</name>
+	<author>ARI Soft</author>
+	<creationDate>April 2011</creationDate>
+	<copyright>ARI Soft</copyright>
+	<license>GNU/GPL license (http://www.gnu.org/copyleft/gpl.html)</license>
+	<authorEmail>info@ari-soft.com</authorEmail>
+	<authorUrl>www.ari-soft.com</authorUrl>
+	<version>1.8.25</version>
+	<description>ARI_SEXY_LIGHTBOX_MODULE</description>
+	<files>
+		<filename module="mod_arisexylightbox">mod_arisexylightbox.php</filename>
+		<filename>arisexylightbox.csv</filename>
+		<filename>index.html</filename>
+		<folder>includes/</folder>
+		<folder>help/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_arisexylightbox.ini</language>
+	</languages>
+	<params addpath="/modules/mod_arisexylightbox/includes/elements">
+		<param name="includeJQuery" type="list" default="1" label="ASEXYBOX_PARAM_LABEL_INCJQUERY" description="ASEXYBOX_PARAM_DESCR_INCJQUERY">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="jQueryVer" type="list" default="1.4.4" label="ASEXYBOX_PARAM_LABEL_JQUERYVER" description="ASEXYBOX_PARAM_DESCR_JQUERYVER">
+  			<option value="1.3.0">1.3.0</option> 
+  			<option value="1.3.1">1.3.1</option>
+  			<option value="1.3.2">1.3.2</option>
+  			<option value="1.4.0">1.4.0</option>
+  			<option value="1.4.1">1.4.1</option>
+  			<option value="1.4.2">1.4.2</option>
+  			<option value="1.4.3">1.4.3</option>
+  			<option value="1.4.4">1.4.4</option>
+  		</param>
+		<param name="noConflict" type="list" default="1" label="ASEXYBOX_PARAM_LABEL_NOCONFLICT" description="ASEXYBOX_PARAM_DESCR_NOCONFLICT">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_showDownloadLink" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_SHOWDOWNLOADLINK" description="ASEXYBOX_PARAM_DESCR_SHOWDOWNLOADLINK">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_hoverDownloadLink" type="list" default="1" label="ASEXYBOX_PARAM_LABEL_HOVERDOWNLOADLINK" description="ASEXYBOX_PARAM_DESCR_HOVERDOWNLOADLINK">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_downloadLinkTitle" type="text" size="50" default="Open the image in new window" label="ASEXYBOX_PARAM_LABEL_DOWNLOADMESSAGE" description="ASEXYBOX_PARAM_DESCR_DOWNLOADMESSAGE" />  		
+  		<param name="autoShow" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_AUTOSHOW" description="ASEXYBOX_PARAM_DESCR_AUTOSHOW">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  			<option value="first">ASEXYBOX_LABEL_ONFIRSTLOAD</option>
+  		</param>
+  		<param name="showOnClose" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_SHOWONCLOSE" description="ASEXYBOX_PARAM_DESCR_SHOWONCLOSE">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  			<option value="first">ASEXYBOX_LABEL_ONFIRSTLOAD</option>
+  		</param>
+  		<param name="onCloseMessage" type="text" size="50" default="Do you want to see lightbox before leaving the page?" label="ASEXYBOX_PARAM_LABEL_ONCLOSEMESSAGE" description="ASEXYBOX_PARAM_DESCR_ONCLOSEMESSAGE" />
+  		<param name="cookie_duration" type="text" size="6" default="365" label="ASEXYBOX_PARAM_LABEL_COOKIEDURATION" description="ASEXYBOX_PARAM_DESCR_COOKIEDURATION" />
+		<param name="moduleclass_sfx" type="text" default="" label="ASEXYBOX_PARAM_LABEL_CLASSSUFFIX" description="PARAMMODULECLASSSUFFIX" />
+		<param name="opt_overlayStyle_background-color" type="color" size="6" default="" label="ASEXYBOX_PARAM_LABEL_OVERLAYCOLOR" description="ASEXYBOX_PARAM_DESCR_OVERLAYCOLOR" />
+		<param name="opt_overlayStyle_opacity" type="text" size="6" default="0.6" label="ASEXYBOX_PARAM_LABEL_OVERLAYOPACITY" description="ASEXYBOX_PARAM_DESCR_OVERLAYOPACITY" />
+  		<param name="modal" type="list" default="1" label="ASEXYBOX_PARAM_LABEL_MODAL" description="ASEXYBOX_PARAM_DESCR_MODAL">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_disableRightClick" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_DISABLERIGHTCLICK" description="ASEXYBOX_PARAM_DESCR_DISABLERIGHTCLICK">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_enableShow" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_ENABLESHOW" description="ASEXYBOX_PARAM_DESCR_ENABLESHOW">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_pauseDuration" type="text" size="6" default="5000" label="ASEXYBOX_PARAM_LABEL_PAUSEDURATION" description="ASEXYBOX_PARAM_DESCR_PAUSEDURATION" />
+  		<param name="opt_autoStart" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_AUTOSLIDESHOW" description="ASEXYBOX_PARAM_DESCR_AUTOSLIDESHOW">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_continiousShow" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_CONTSHOW" description="ASEXYBOX_PARAM_DESCR_CONTSHOW">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_continious" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_CONTINIOUS" description="ASEXYBOX_PARAM_DESCR_CONTINIOUS">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_zIndex" type="text" size="6" default="32000" label="ASEXYBOX_PARAM_LABEL_ZINDEX" description="ASEXYBOX_PARAM_DESCR_ZINDEX" />
+  		<param name="opt_color" type="list" default="black" label="ASEXYBOX_PARAM_LABEL_THEME" description="ASEXYBOX_PARAM_DESCR_THEME">
+  			<option value="white">ASEXYBOX_LABEL_WHITE</option> 
+  			<option value="black">ASEXYBOX_LABEL_BLACK</option>
+  			<option value="blanco">ASEXYBOX_LABEL_SPAINWHITE</option> 
+  			<option value="negro">ASEXYBOX_LABEL_SPAINBLACK</option>
+  			<option value="blanc">ASEXYBOX_LABEL_FRENCHWHITE</option> 
+  			<option value="noir">ASEXYBOX_LABEL_FRENCHBLACK</option>
+  			<option value="fancy_white">ASEXYBOX_LABEL_FANCYWHITE</option>
+  			<option value="fancy_black">ASEXYBOX_LABEL_FANCYBLACK</option>
+  			<option value="old_white">ASEXYBOX_LABEL_OLDWHITE</option>
+  			<option value="old_black">ASEXYBOX_LABEL_OLDBLACK</option>
+  		</param>
+  		<param name="opt_emergefrom" type="list" default="top" label="ASEXYBOX_PARAM_LABEL_EMERGEFROM" description="ASEXYBOX_PARAM_DESCR_EMERGEFROM">
+  			<option value="bottom">ASEXYBOX_LABEL_BOTTOM</option> 
+  			<option value="top">ASEXYBOX_LABEL_TOP</option>
+			<option value="left">ASEXYBOX_LABEL_LEFT</option> 
+  			<option value="right">ASEXYBOX_LABEL_RIGHT</option>
+  		</param>
+  		<param name="opt_showDuration" type="text" size="6" default="200" label="ASEXYBOX_PARAM_LABEL_SHOWDURATION" description="ASEXYBOX_PARAM_DESCR_SHOWDURATION" />
+  		<param name="opt_closeDuration" type="text" size="6" default="400" label="ASEXYBOX_PARAM_LABEL_CLOSEDURATION" description="ASEXYBOX_PARAM_DESCR_CLOSEDURATION" />
+  		<param name="opt_moveDuration" type="text" size="6" default="1000" label="ASEXYBOX_PARAM_LABEL_MOVEDURATION" description="ASEXYBOX_PARAM_DESCR_MOVEDURATION" />
+  		<param name="opt_moveEffect" type="list" default="easeInOutBack" label="ASEXYBOX_PARAM_LABEL_MOVEEFFECT" description="ASEXYBOX_PARAM_DESCR_MOVEEFFECT">
+  			<option value="swing">ASEXYBOX_LABEL_SWING</option>
+  			<option value="easeInQuad">ASEXYBOX_LABEL_EASYINQUAD</option>
+  			<option value="easeOutQuad">ASEXYBOX_LABEL_EASYOUTQUAD</option>
+  			<option value="easeInOutQuad">ASEXYBOX_LABEL_EASYINOUTQUAD</option>
+  			<option value="easeInCubic">ASEXYBOX_LABEL_EASYINCUBIC</option>
+  			<option value="easeOutCubic">ASEXYBOX_LABEL_EASYOUTCUBIC</option>
+  			<option value="easeInOutCubic">ASEXYBOX_LABEL_EASYINOUTCUBIC</option>
+  			<option value="easeInQuart">ASEXYBOX_LABEL_EASYINQUART</option>
+  			<option value="easeOutQuart">ASEXYBOX_LABEL_EASYOUTQUART</option>
+  			<option value="easeInOutQuart">ASEXYBOX_LABEL_EASYINOUTQUART</option>
+  			<option value="easeInQuint">ASEXYBOX_LABEL_EASYINQUINT</option>
+  			<option value="easeOutQuint">ASEXYBOX_LABEL_EASYOUTQUINT</option>
+  			<option value="easeInOutQuint">ASEXYBOX_LABEL_EASYINOUTQUINT</option>
+  			<option value="easeInSine">ASEXYBOX_LABEL_EASYINSINE</option>
+  			<option value="easeOutSine">ASEXYBOX_LABEL_EASYOUTSINE</option>
+  			<option value="easeInOutSine">ASEXYBOX_LABEL_EASYINOUTSINE</option>
+  			<option value="easeInExpo">ASEXYBOX_LABEL_EASYINEXPO</option>
+  			<option value="easeOutExpo">ASEXYBOX_LABEL_EASYOUTEXPO</option>
+  			<option value="easeInOutExpo">ASEXYBOX_LABEL_EASYINOUTEXPO</option>
+  			<option value="easeInCirc">ASEXYBOX_LABEL_EASYINCIRC</option>
+  			<option value="easeOutCirc">ASEXYBOX_LABEL_EASYOUTCIRC</option>
+  			<option value="easeInOutCirc">ASEXYBOX_LABEL_EASYINOUTCIRC</option>
+  			<option value="easeInElastic">ASEXYBOX_LABEL_EASYINELASTIC</option>
+  			<option value="easeOutElastic">ASEXYBOX_LABEL_EASYOUTELASTIC</option>
+  			<option value="easeInOutElastic">ASEXYBOX_LABEL_EASYINOUTELASTIC</option>
+  			<option value="easeInBack">ASEXYBOX_LABEL_EASYINBACK</option>
+  			<option value="easeOutBack">ASEXYBOX_LABEL_EASYOUTBACK</option>
+  			<option value="easeInOutBack">ASEXYBOX_LABEL_EASYINOUTBACK</option>
+  			<option value="easeInBounce">ASEXYBOX_LABEL_EASYINBOUNCE</option>
+  			<option value="easeOutBounce">ASEXYBOX_LABEL_EASYOUTBOUNCE</option>
+  			<option value="easeInOutBounce">ASEXYBOX_LABEL_EASYINOUTBOUNCE</option>
+  		</param>
+  		<param name="opt_resizeDuration" type="text" size="6" default="1000" label="ASEXYBOX_PARAM_LABEL_RESIZEDURATION" description="ASEXYBOX_PARAM_DESCR_RESIZEDURATION" />
+  		<param name="opt_resizeEffect" type="list" default="easeInOutBack" label="ASEXYBOX_PARAM_LABEL_RESIZEEFFECT" description="ASEXYBOX_PARAM_DESCR_RESIZEEFFECT">
+  			<option value="swing">ASEXYBOX_LABEL_SWING</option>
+  			<option value="easeInQuad">ASEXYBOX_LABEL_EASYINQUAD</option>
+  			<option value="easeOutQuad">ASEXYBOX_LABEL_EASYOUTQUAD</option>
+  			<option value="easeInOutQuad">ASEXYBOX_LABEL_EASYINOUTQUAD</option>
+  			<option value="easeInCubic">ASEXYBOX_LABEL_EASYINCUBIC</option>
+  			<option value="easeOutCubic">ASEXYBOX_LABEL_EASYOUTCUBIC</option>
+  			<option value="easeInOutCubic">ASEXYBOX_LABEL_EASYINOUTCUBIC</option>
+  			<option value="easeInQuart">ASEXYBOX_LABEL_EASYINQUART</option>
+  			<option value="easeOutQuart">ASEXYBOX_LABEL_EASYOUTQUART</option>
+  			<option value="easeInOutQuart">ASEXYBOX_LABEL_EASYINOUTQUART</option>
+  			<option value="easeInQuint">ASEXYBOX_LABEL_EASYINQUINT</option>
+  			<option value="easeOutQuint">ASEXYBOX_LABEL_EASYOUTQUINT</option>
+  			<option value="easeInOutQuint">ASEXYBOX_LABEL_EASYINOUTQUINT</option>
+  			<option value="easeInSine">ASEXYBOX_LABEL_EASYINSINE</option>
+  			<option value="easeOutSine">ASEXYBOX_LABEL_EASYOUTSINE</option>
+  			<option value="easeInOutSine">ASEXYBOX_LABEL_EASYINOUTSINE</option>
+  			<option value="easeInExpo">ASEXYBOX_LABEL_EASYINEXPO</option>
+  			<option value="easeOutExpo">ASEXYBOX_LABEL_EASYOUTEXPO</option>
+  			<option value="easeInOutExpo">ASEXYBOX_LABEL_EASYINOUTEXPO</option>
+  			<option value="easeInCirc">ASEXYBOX_LABEL_EASYINCIRC</option>
+  			<option value="easeOutCirc">ASEXYBOX_LABEL_EASYOUTCIRC</option>
+  			<option value="easeInOutCirc">ASEXYBOX_LABEL_EASYINOUTCIRC</option>
+  			<option value="easeInElastic">ASEXYBOX_LABEL_EASYINELASTIC</option>
+  			<option value="easeOutElastic">ASEXYBOX_LABEL_EASYOUTELASTIC</option>
+  			<option value="easeInOutElastic">ASEXYBOX_LABEL_EASYINOUTELASTIC</option>
+  			<option value="easeInBack">ASEXYBOX_LABEL_EASYINBACK</option>
+  			<option value="easeOutBack">ASEXYBOX_LABEL_EASYOUTBACK</option>
+  			<option value="easeInOutBack">ASEXYBOX_LABEL_EASYINOUTBACK</option>
+  			<option value="easeInBounce">ASEXYBOX_LABEL_EASYINBOUNCE</option>
+  			<option value="easeOutBounce">ASEXYBOX_LABEL_EASYOUTBOUNCE</option>
+  			<option value="easeInOutBounce">ASEXYBOX_LABEL_EASYINOUTBOUNCE</option>
+  		</param>
+  		<param name="opt_shake_distance" type="text" size="6" default="10" label="ASEXYBOX_PARAM_LABEL_SHAKEDISTANCE" description="ASEXYBOX_PARAM_DESCR_SHAKEDISTANCE" />
+  		<param name="opt_shake_duration" type="text" size="6" default="100" label="ASEXYBOX_PARAM_LABEL_SHAKEDURATION" description="ASEXYBOX_PARAM_DESCR_SHAKEDURATION" />
+  		<param name="opt_shake_loops" type="text" size="6" default="2" label="ASEXYBOX_PARAM_LABEL_SHAKELOOPS" description="ASEXYBOX_PARAM_DESCR_SHAKELOOPS" />
+  		<param name="opt_shake_transition" type="list" default="easeInOutBack" label="ASEXYBOX_PARAM_LABEL_SHAKEEFFECT" description="ASEXYBOX_PARAM_DESCR_SHAKEEFFECT">
+  			<option value="swing">ASEXYBOX_LABEL_SWING</option>
+  			<option value="easeInQuad">ASEXYBOX_LABEL_EASYINQUAD</option>
+  			<option value="easeOutQuad">ASEXYBOX_LABEL_EASYOUTQUAD</option>
+  			<option value="easeInOutQuad">ASEXYBOX_LABEL_EASYINOUTQUAD</option>
+  			<option value="easeInCubic">ASEXYBOX_LABEL_EASYINCUBIC</option>
+  			<option value="easeOutCubic">ASEXYBOX_LABEL_EASYOUTCUBIC</option>
+  			<option value="easeInOutCubic">ASEXYBOX_LABEL_EASYINOUTCUBIC</option>
+  			<option value="easeInQuart">ASEXYBOX_LABEL_EASYINQUART</option>
+  			<option value="easeOutQuart">ASEXYBOX_LABEL_EASYOUTQUART</option>
+  			<option value="easeInOutQuart">ASEXYBOX_LABEL_EASYINOUTQUART</option>
+  			<option value="easeInQuint">ASEXYBOX_LABEL_EASYINQUINT</option>
+  			<option value="easeOutQuint">ASEXYBOX_LABEL_EASYOUTQUINT</option>
+  			<option value="easeInOutQuint">ASEXYBOX_LABEL_EASYINOUTQUINT</option>
+  			<option value="easeInSine">ASEXYBOX_LABEL_EASYINSINE</option>
+  			<option value="easeOutSine">ASEXYBOX_LABEL_EASYOUTSINE</option>
+  			<option value="easeInOutSine">ASEXYBOX_LABEL_EASYINOUTSINE</option>
+  			<option value="easeInExpo">ASEXYBOX_LABEL_EASYINEXPO</option>
+  			<option value="easeOutExpo">ASEXYBOX_LABEL_EASYOUTEXPO</option>
+  			<option value="easeInOutExpo">ASEXYBOX_LABEL_EASYINOUTEXPO</option>
+  			<option value="easeInCirc">ASEXYBOX_LABEL_EASYINCIRC</option>
+  			<option value="easeOutCirc">ASEXYBOX_LABEL_EASYOUTCIRC</option>
+  			<option value="easeInOutCirc">ASEXYBOX_LABEL_EASYINOUTCIRC</option>
+  			<option value="easeInElastic">ASEXYBOX_LABEL_EASYINELASTIC</option>
+  			<option value="easeOutElastic">ASEXYBOX_LABEL_EASYOUTELASTIC</option>
+  			<option value="easeInOutElastic">ASEXYBOX_LABEL_EASYINOUTELASTIC</option>
+  			<option value="easeInBack">ASEXYBOX_LABEL_EASYINBACK</option>
+  			<option value="easeOutBack">ASEXYBOX_LABEL_EASYOUTBACK</option>
+  			<option value="easeInOutBack">ASEXYBOX_LABEL_EASYINOUTBACK</option>
+  			<option value="easeInBounce">ASEXYBOX_LABEL_EASYINBOUNCE</option>
+  			<option value="easeOutBounce">ASEXYBOX_LABEL_EASYOUTBOUNCE</option>
+  			<option value="easeInOutBounce">ASEXYBOX_LABEL_EASYINOUTBOUNCE</option>
+  		</param>
+  		<param name="opt_movieAutoPlay" type="list" default="0" label="ASEXYBOX_PARAM_LABEL_MOVIEAUTOPLAY" description="ASEXYBOX_PARAM_DESCR_MOVIEAUTOPLAY">
+  			<option value="0">ASEXYBOX_LABEL_NO</option> 
+  			<option value="1">ASEXYBOX_LABEL_YES</option> 
+  		</param>
+  		<param name="opt_wMode" type="list" default="transparent" label="ASEXYBOX_PARAM_LABEL_WMODE" description="ASEXYBOX_PARAM_DESCR_WMODE">
+  			<option value="opaque">ASEXYBOX_LABEL_WMODE_OPAQUE</option>
+  			<option value="transparent">ASEXYBOX_LABEL_WMODE_TRANSPARENT</option>
+  			<option value="window">ASEXYBOX_LABEL_WMODE_WINDOW</option>  
+  		</param>
+  		<param name="groupName" type="text" size="20" default="" label="ASEXYBOX_PARAM_LABEL_GROUPNAME" description="ASEXYBOX_PARAM_DESCR_GROUPNAME" />
+  		<param name="thumbQuality" type="text" size="10" default="80" label="ASEXYBOX_PARAM_LABEL_THUMBQUALITY" description="ASEXYBOX_PARAM_DESCR_THUMBQUALITY" />
+  		<param name="bgColor" type="color" size="6" default="" label="ASEXYBOX_PARAM_LABEL_BGCOLOR" description="ASEXYBOX_PARAM_DESCR_BGCOLOR" />
+  		<param name="activeType" type="groups" default="imglist" label="ASEXYBOX_LABEL_CHOOSETYPE" description="">
+  			<group type="group" group_id="imglist" default="" label="ASEXYBOX_LABEL_IMGLIST" description="">
+  				<param name="imglist_keepSize" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_KEEPSIZE" description="ASEXYBOX_IMGLIST_DESCR_KEEPSIZE">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+  				<param name="imglist_target" type="list" default="_self" label="ASEXYBOX_IMGLIST_LABEL_TARGET" description="ASEXYBOX_IMGLIST_DESCR_TARGET">
+  					<option value="_self">ASEXYBOX_LABEL_SELFWINDOW</option> 
+  					<option value="_blank">ASEXYBOX_LABEL_NEWWINDOW</option> 
+  				</param>
+  				<param name="imglist_thumbWidth" type="text" size="6" default="" label="ASEXYBOX_IMGLIST_LABEL_THUMBWIDTH" description="ASEXYBOX_IMGLIST_DESCR_THUMBWIDTH" />
+  				<param name="imglist_thumbHeight" type="text" size="6" default="" label="ASEXYBOX_IMGLIST_LABEL_THUMBHEIGHT" description="ASEXYBOX_IMGLIST_DESCR_THUMBHEIGHT" />
+  				<param name="imglist_thumbPath" type="text" size="50" default="" label="ASEXYBOX_IMGLIST_LABEL_THUMBPATH" description="ASEXYBOX_IMGLIST_DESCR_THUMBPATH" />
+  				<param name="imglist_cachePeriod" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CACHEPERIOD" description="ASEXYBOX_IMGLIST_DESCR_CACHEPERIOD" />
+  				<param name="imglist_generateThumbs" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_GENTHUMBS" description="ASEXYBOX_IMGLIST_DESCR_GENTHUMBS">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+  				<param name="imglist_thumbType" type="groups" default="resize" label="ASEXYBOX_IMGLIST_LABEL_CHOOSETHUMBTYPE" description="">
+  					<group type="group" group_id="resize" default="" label="ASEXYBOX_IMGLIST_THUMBTYPE_RESIZE" description="">
+  						<param name="imglist_thumbTypeResize_behavior" type="list" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_RESIZEMETHOD" description="ASEXYBOX_IMGLIST_DESCR_RESIZEMETHOD">
+  							<option value="none">ASEXYBOX_LABEL_NONE</option>
+  							<option value="fit">ASEXYBOX_IMGLIST_LABEL_FITTOVP</option>
+  							<option value="crop">ASEXYBOX_IMGLIST_LABEL_CROPTOVP</option>
+  						</param>
+  					</group>
+  					<group type="group" group_id="crop" default="" label="ASEXYBOX_IMGLIST_THUMBTYPE_CROP" description="">
+  						<param name="imglist_thumbTypeCrop_x" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CROPX" description="ASEXYBOX_IMGLIST_DESCR_CROPX" />
+  						<param name="imglist_thumbTypeCrop_y" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CROPY" description="ASEXYBOX_IMGLIST_DESCR_CROPY" />
+  					</group>
+  					<group type="group" group_id="cropresize" default="" label="ASEXYBOX_IMGLIST_THUMBTYPE_CROPRESIZE" description="">
+  						<param name="imglist_thumbTypeCropresize_x" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CROPX" description="ASEXYBOX_IMGLIST_DESCR_CROPX" />
+  						<param name="imglist_thumbTypeCropresize_y" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CROPY" description="ASEXYBOX_IMGLIST_DESCR_CROPY" />
+  						<param name="imglist_thumbTypeCropresize_width" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CROPWIDTH" description="ASEXYBOX_IMGLIST_DESCR_CROPWIDTH" />
+  						<param name="imglist_thumbTypeCropresize_height" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_CROPHEIGHT" description="ASEXYBOX_IMGLIST_DESCR_CROPHEIGHT" />
+  					</group>
+  				</param>
+  				<param name="" type="header" default="ASEXYBOX_IMGLIST_LABEL_THUMBFILTERS" />
+  				<param name="imglist_thumbFilters_grayscale" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_GRAYSCALE" description="ASEXYBOX_IMGLIST_DESCR_GRAYSCALE">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+  				<param name="imglist_thumbFilters_rotate_enable" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_ROTATE" description="ASEXYBOX_IMGLIST_DESCR_ROTATE">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+  				<param name="imglist_thumbFilters_rotate_type" type="groups" default="fixed" label="ASEXYBOX_IMGLIST_LABEL_ROTATEOPTIONS" description="">
+  					<group type="group" group_id="fixed" default="" label="ASEXYBOX_IMGLIST_ROTATE_FIXED" description="">
+  						<param name="imglist_thumbFilters_rotate_angle" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_ANGLE" description="ASEXYBOX_IMGLIST_DESCR_ROTANGLE" />
+  					</group>
+  					<group type="group" group_id="random" default="" label="ASEXYBOX_IMGLIST_ROTATE_RANDOM" description="">
+  						<param name="imglist_thumbFilters_rotate_startAngle" type="text" size="6" default="0" label="ASEXYBOX_IMGLIST_LABEL_ROTSTARTANGLE" description="ASEXYBOX_IMGLIST_DESCR_ROTSTARTANGLE" />
+  						<param name="imglist_thumbFilters_rotate_endAngle" type="text" size="6" default="360" label="ASEXYBOX_IMGLIST_LABEL_ROTENDANGLE" description="ASEXYBOX_IMGLIST_DESCR_ROTENDANGLE" />
+  					</group>
+  				</param>
+  				<param name="" type="header" default="ASEXYBOX_LABEL_EXTRAPARAMS" />
+  				<param name="imglist_caption" type="text" size="30" default="{$Title}" label="ASEXYBOX_IMGLIST_LABEL_CAPTION" description="ASEXYBOX_IMGLIST_DESCR_CAPTION" />
+  				<param name="imglist_descrFile" type="text" size="30" default="arisexylightbox.csv" label="ASEXYBOX_IMGLIST_LABEL_DESCRFILE" description="ASEXYBOX_IMGLIST_DESCR_DESCRFILE" />
+  				<param name="imglist_fileFilter" type="text" size="50" default=".(jpg|gif|jpeg|png|bmp|JPG|GIF|JPEG|BMP)$" label="ASEXYBOX_IMGLIST_LABEL_FILEFILTER" description="ASEXYBOX_IMGLIST_DESCR_FILEFILTER" />
+  				<param name="imglist_sortBy" type="list" default="" label="ASEXYBOX_IMGLIST_LABEL_SORTBY" description="ASEXYBOX_IMGLIST_DESCR_SORTBY">
+  					<option value="">ASEXYBOX_LABEL_NONE</option> 
+  					<option value="filename">ASEXYBOX_IMGLIST_LABEL_FILENAME</option> 
+  					<option value="modified">ASEXYBOX_IMGLIST_LABEL_MODIFIED</option>
+  					<option value="csv">ASEXYBOX_IMGLIST_LABEL_SORTCSV</option>
+  					<option value="random">ASEXYBOX_IMGLIST_LABEL_RANDOM</option>
+  				</param>
+  				<param name="imglist_sortDir" type="list" default="asc" label="ASEXYBOX_IMGLIST_LABEL_SORTDIR" description="ASEXYBOX_IMGLIST_DESCR_SORTDIR">
+  					<option value="asc">ASEXYBOX_LABEL_ASC</option> 
+  					<option value="desc">ASEXYBOX_LABEL_DESC</option> 
+  				</param>
+  				<param name="imglist_subdir" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SUBDIR" description="ASEXYBOX_IMGLIST_DESCR_SUBDIR">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+  				<param name="imglist_dir" type="textarea" cols="50" rows="6" default="" label="ASEXYBOX_IMGLIST_LABEL_DIR" description="ASEXYBOX_IMGLIST_DESCR_DIR" />
+  				<param name="imglist_type" type="groups" default="gallery" label="ASEXYBOX_IMGLIST_LABEL_CHOOSETYPE" description="">
+  					<group type="group" group_id="gallery" default="" label="ASEXYBOX_IMGLIST_TYPE_GALLERY" description="">
+  						<param name="imglist_simplegallery_theme" type="list" default="none" label="ASEXYBOX_IMGLIST_LABEL_THEME" description="ASEXYBOX_IMGLIST_DESCR_THEME">
+  							<option value="none">ASEXYBOX_LABEL_NONE</option>
+  							<option value="shadow">ASEXYBOX_IMGLIST_LABEL_SHADOW</option>
+  							<option value="shadow pin">ASEXYBOX_IMGLIST_LABEL_PIN</option>
+  							<option value="shadow clip">ASEXYBOX_IMGLIST_LABEL_CLIP</option>
+  							<option value="shadow flora">ASEXYBOX_IMGLIST_LABEL_FLORA</option>
+  							<option value="fancy">ASEXYBOX_IMGLIST_LABEL_FANCY</option>
+  						</param>
+  						<param name="imglist_simplegallery_visibleItemCount" type="text" size="6" default="" label="ASEXYBOX_IMGLIST_LABEL_VISIBLEITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_VISIBLEITEMCOUNT" />
+						<param name="imglist_simplegallery_itemCount" type="text" size="6" default="3" label="ASEXYBOX_IMGLIST_LABEL_ITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_ITEMCOUNT" />  						
+						<param name="imglist_simplegallery_mainClass" type="text" size="30" default="" label="ASEXYBOX_IMGLIST_LABEL_MAINCLASS" description="ASEXYBOX_IMGLIST_DESCR_MAINCLASS" />
+						<param name="imglist_simplegallery_rowClasses" type="text" size="30" default="odd;even" label="ASEXYBOX_IMGLIST_LABEL_ROWCLASS" description="ASEXYBOX_IMGLIST_DESCR_ROWCLASS" />
+						<param name="imglist_simplegallery_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SHOWTITLE" description="ASEXYBOX_IMGLIST_DESCR_SHOWTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="imglist_simplegallery_titleParam" type="text" size="15" default="Title" label="ASEXYBOX_IMGLIST_LABEL_GALLERYTITLE" description="ASEXYBOX_IMGLIST_DESCR_GALLERYTITLE" />
+  						<param name="imglist_simplegallery_emptyTitle" type="text" size="25" default="{$baseFileName}" label="ASEXYBOX_IMGLIST_LABEL_GALLERYEMPTYTITLE" description="ASEXYBOX_IMGLIST_DESCR_GALLERYEMPTYTITLE" />
+						<param name="imglist_simplegallery_emptyText" type="textarea" cols="50" rows="6" default="" label="ASEXYBOX_IMGLIST_LABEL_EMPTYTEXT" description="ASEXYBOX_IMGLIST_DESCR_EMPTYTEXT" />
+  					</group>
+  					<group type="group" group_id="advgallery" default="" label="ASEXYBOX_IMGLIST_TYPE_ADVGALLERY" description="">
+  						<param name="imglist_advgallerytemplate" type="textarea" cols="50" rows="20" default="{repeater}&#13;&amp;nbsp;&amp;nbsp;{headertemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;table>&#13;&amp;nbsp;&amp;nbsp;{/headertemplate}&#13;&amp;nbsp;&amp;nbsp;{rowtemplate itemCount=&quot;2&quot; rowClass=&quot;odd;even&quot;}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;tr class=&quot;{$rowClass}&quot;>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{celltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;div>{$data:sexyimage}&lt;/div>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;div>{$data:Title}&lt;/div>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{/celltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{emptycelltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;td>&amp;nbsp;&lt;/td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{/emptycelltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tr>&#13;&amp;nbsp;&amp;nbsp;{/rowtemplate}&#13;&amp;nbsp;&amp;nbsp;{footertemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/table>&#13;&amp;nbsp;&amp;nbsp;{/footertemplate}&#13;&amp;nbsp;&amp;nbsp;{emptytemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;No items found&#13;&amp;nbsp;&amp;nbsp;{/emptytemplate}&#13;{/repeater}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="singleimage" default="" label="ASEXYBOX_IMGLIST_TYPE_SINGLE" description="">
+  						<param name="imglist_singletemplate" type="textarea" cols="50" rows="20" default="{$data:sexyimage}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="customtext" default="" label="ASEXYBOX_IMGLIST_TYPE_CUSTOMTEXT" description="">
+  						<param name="imglist_customtemplate" type="textarea" cols="50" rows="20" default="Show gallery" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+					<group type="group" group_id="slickgallery" default="" label="ASEXYBOX_IMGLIST_TYPE_SLICKGALLERY" description="">
+						<param name="imglist_slickgallery_width" type="text" size="6" default="300" label="ASEXYBOX_IMGLIST_LABEL_SLICKWIDTH" description="ASEXYBOX_IMGLIST_DESCR_SLICKWIDTH" />
+						<param name="imglist_slickgallery_height" type="text" size="6" default="400" label="ASEXYBOX_IMGLIST_LABEL_SLICKHEIGHT" description="ASEXYBOX_IMGLIST_DESCR_SLICKHEIGHT" />
+						<param name="imglist_slickgallery_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SLICKTITLE" description="ASEXYBOX_IMGLIST_DESCR_SLICKTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="imglist_slickgallery_operaSupport" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_SLICKOPERASUPPORT" description="ASEXYBOX_IMGLIST_DESCR_SLICKOPERASUPPORT">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="imglist_slickgallery_startDegree" type="text" size="6" default="-40" label="ASEXYBOX_IMGLIST_LABEL_SLICKSTARTDEGREE" description="ASEXYBOX_IMGLIST_DESCR_SLICKSTARTDEGREE" />
+  						<param name="imglist_slickgallery_endDegree" type="text" size="6" default="40" label="ASEXYBOX_IMGLIST_LABEL_SLICKENDDEGREE" description="ASEXYBOX_IMGLIST_DESCR_SLICKENDDEGREE" />
+  					</group>
+  				</param>
+  			</group>
+  			<group type="group" group_id="flickr" default="" label="ASEXYBOX_LABEL_FLICKR" description="">
+  				<param name="flickr_apikey" type="text" size="50" default="" label="ASEXYBOX_FLICKR_LABEL_APIKEY" description="ASEXYBOX_FLICKR_DESCR_APIKEY" />
+  				<param name="flickr_secret" type="text" size="50" default="" label="ASEXYBOX_FLICKR_LABEL_SECRET" description="ASEXYBOX_FLICKR_DESCR_SECRET" />
+  				<param name="flickr_token" type="text" size="50" default="" label="ASEXYBOX_FLICKR_LABEL_TOKEN" description="ASEXYBOX_FLICKR_DESCR_TOKEN" />
+  				<param name="flickr_cachePeriod" type="text" size="6" default="600" label="ASEXYBOX_FLICKR_LABEL_CACHEPERIOD" description="ASEXYBOX_FLICKR_DESCR_CACHEPERIOD" />
+  				<param name="flickr_thumbSize" type="list" default="thumbnail" label="ASEXYBOX_FLICKR_LABEL_THUMBSIZE" description="ASEXYBOX_FLICKR_DESCR_THUMBSIZE">
+  					<option value="square">ASEXYBOX_FLICKR_LABEL_SQUARE</option> 
+  					<option value="thumbnail">ASEXYBOX_FLICKR_LABEL_THUMBNAIL</option> 
+  					<option value="small">ASEXYBOX_FLICKR_LABEL_SMALL</option>
+  					<option value="medium">ASEXYBOX_FLICKR_LABEL_MEDIUM</option>
+  					<option value="large">ASEXYBOX_FLICKR_LABEL_LARGE</option>
+  					<option value="original">ASEXYBOX_FLICKR_LABEL_ORIGINAL</option>
+  				</param>
+  				<param name="flickr_imgSize" type="list" default="medium" label="ASEXYBOX_FLICKR_LABEL_IMGSIZE" description="ASEXYBOX_FLICKR_DESCR_IMGSIZE">
+  					<option value="square">ASEXYBOX_FLICKR_LABEL_SQUARE</option> 
+  					<option value="thumbnail">ASEXYBOX_FLICKR_LABEL_THUMBNAIL</option> 
+  					<option value="small">ASEXYBOX_FLICKR_LABEL_SMALL</option>
+  					<option value="medium">ASEXYBOX_FLICKR_LABEL_MEDIUM</option>
+  					<option value="large">ASEXYBOX_FLICKR_LABEL_LARGE</option>
+  					<option value="original">ASEXYBOX_FLICKR_LABEL_ORIGINAL</option>
+  				</param>
+  				<param name="flickr_count" type="text" size="6" default="" label="ASEXYBOX_FLICKR_LABEL_COUNT" description="ASEXYBOX_FLICKR_DESCR_COUNT" />
+  				<param name="flickr_random" type="list" default="0" label="ASEXYBOX_FLICKR_LABEL_RANDOM" description="ASEXYBOX_FLICKR_DESCR_RANDOM">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+				<param name="flickr_caption" type="text" size="30" default="{$Title}" label="ASEXYBOX_IMGLIST_LABEL_CAPTION" description="ASEXYBOX_IMGLIST_DESCR_CAPTION" />
+  				<param name="flickr_source" type="groups" default="photoset" label="ASEXYBOX_FLICKR_LABEL_SOURCETYPE" description="">
+  					<group type="group" group_id="collection" default="" label="ASEXYBOX_FLICKR_LABEL_COLLECTIONS" description="">
+  						<param name="flickr_colsource_userId" type="text" size="20" default="" label="ASEXYBOX_FLICKR_LABEL_USERID" description="ASEXYBOX_FLICKR_LABEL_USERID" />
+  						<param name="flickr_colsource_collectionId" type="text" size="40" default="" label="ASEXYBOX_FLICKR_LABEL_COLLECTION" description="ASEXYBOX_FLICKR_DESCR_COLLECTION" />
+  					</group>
+  					<group type="group" group_id="group" default="" label="ASEXYBOX_FLICKR_LABEL_GROUPS" description="">
+  						<param name="flickr_grsource_groupId" type="text" size="40" default="" label="ASEXYBOX_FLICKR_LABEL_GROUP" description="ASEXYBOX_FLICKR_DESCR_GROUP" />
+  					</group>
+  					<group type="group" group_id="photoset" default="" label="ASEXYBOX_FLICKR_LABEL_PHOTOSETS" description="">
+  						<param name="flickr_pssource_photosetId" type="text" size="40" default="" label="ASEXYBOX_FLICKR_LABEL_PHOTOSETID" description="ASEXYBOX_FLICKR_DESCR_PHOTOSETID" />
+  					</group>
+  					<group type="group" group_id="user" default="" label="ASEXYBOX_FLICKR_LABEL_USERS" description="">
+  						<param name="flickr_usersource_userId" type="text" size="40" default="" label="ASEXYBOX_FLICKR_LABEL_USERID" description="ASEXYBOX_FLICKR_DESCR_USERID" />
+  					</group>
+  					<group type="group" group_id="recentphotos" default="" label="ASEXYBOX_FLICKR_LABEL_RECENTPHOTOS" description="">
+  						<param name="flickr_recentphotos_userId" type="text" size="40" default="" label="ASEXYBOX_FLICKR_LABEL_USERID" description="ASEXYBOX_FLICKR_DESCR_USERID" />
+  					</group>
+  				</param>
+  				<param name="flickr_type" type="groups" default="gallery" label="ASEXYBOX_FLICKR_LABEL_CHOOSETYPE" description="">
+  					<group type="group" group_id="gallery" default="" label="ASEXYBOX_IMGLIST_TYPE_GALLERY" description="">
+  						<param name="flickr_simplegallery_theme" type="list" default="none" label="ASEXYBOX_IMGLIST_LABEL_THEME" description="ASEXYBOX_IMGLIST_DESCR_THEME">
+  							<option value="none">ASEXYBOX_LABEL_NONE</option>
+  							<option value="shadow">ASEXYBOX_IMGLIST_LABEL_SHADOW</option>
+  							<option value="shadow pin">ASEXYBOX_IMGLIST_LABEL_PIN</option>
+  							<option value="shadow clip">ASEXYBOX_IMGLIST_LABEL_CLIP</option>
+  							<option value="shadow flora">ASEXYBOX_IMGLIST_LABEL_FLORA</option>
+  							<option value="fancy">ASEXYBOX_IMGLIST_LABEL_FANCY</option>
+  						</param>
+  						<param name="flickr_simplegallery_visibleItemCount" type="text" size="6" default="" label="ASEXYBOX_IMGLIST_LABEL_VISIBLEITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_VISIBLEITEMCOUNT" />
+						<param name="flickr_simplegallery_itemCount" type="text" size="6" default="3" label="ASEXYBOX_IMGLIST_LABEL_ITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_ITEMCOUNT" />  						
+						<param name="flickr_simplegallery_mainClass" type="text" size="30" default="" label="ASEXYBOX_IMGLIST_LABEL_MAINCLASS" description="ASEXYBOX_IMGLIST_DESCR_MAINCLASS" />
+						<param name="flickr_simplegallery_rowClasses" type="text" size="30" default="odd;even" label="ASEXYBOX_IMGLIST_LABEL_ROWCLASS" description="ASEXYBOX_IMGLIST_DESCR_ROWCLASS" />
+						<param name="flickr_simplegallery_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SHOWTITLE" description="ASEXYBOX_IMGLIST_DESCR_SHOWTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+						<param name="flickr_simplegallery_emptyText" type="textarea" cols="50" rows="6" default="" label="ASEXYBOX_IMGLIST_LABEL_EMPTYTEXT" description="ASEXYBOX_IMGLIST_DESCR_EMPTYTEXT" />
+  					</group>
+  					<group type="group" group_id="advgallery" default="" label="ASEXYBOX_IMGLIST_TYPE_ADVGALLERY" description="">
+  						<param name="flickr_advgallerytemplate" type="textarea" cols="50" rows="20" default="{repeater}&#13;&amp;nbsp;&amp;nbsp;{headertemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;table>&#13;&amp;nbsp;&amp;nbsp;{/headertemplate}&#13;&amp;nbsp;&amp;nbsp;{rowtemplate itemCount=&quot;2&quot; rowClass=&quot;odd;even&quot;}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;tr class=&quot;{$rowClass}&quot;>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{celltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;div>{$data:sexyimage}&lt;/div>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;div>{$data:Title}&lt;/div>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{/celltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{emptycelltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;td>&amp;nbsp;&lt;/td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{/emptycelltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tr>&#13;&amp;nbsp;&amp;nbsp;{/rowtemplate}&#13;&amp;nbsp;&amp;nbsp;{footertemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/table>&#13;&amp;nbsp;&amp;nbsp;{/footertemplate}&#13;&amp;nbsp;&amp;nbsp;{emptytemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;No items found&#13;&amp;nbsp;&amp;nbsp;{/emptytemplate}&#13;{/repeater}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="singleimage" default="" label="ASEXYBOX_IMGLIST_TYPE_SINGLE" description="">
+  						<param name="flickr_singletemplate" type="textarea" cols="50" rows="20" default="{$data:sexyimage}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="flickrimage" default="" label="ASEXYBOX_IMGLIST_TYPE_FLICKRSINGLE" description="">
+  						<param name="flickr_flickrimage_photoId" type="text" size="20" default="" label="ASEXYBOX_FLICKR_LABEL_FLICKRPHOTOID" description="ASEXYBOX_FLICKR_DESCR_FLICKRPHOTOID" />
+  						<param name="flickr_flickrimage_template" type="textarea" cols="50" rows="20" default="{$data:sexyimage}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="flickrphotosets" default="" label="ASEXYBOX_IMGLIST_TYPE_FLICKRPHOTOSETS" description="">
+  						<param name="flickr_flickrphotosets_itemCount" type="text" size="6" default="3" label="ASEXYBOX_IMGLIST_LABEL_ITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_ITEMCOUNT" />  						
+						<param name="flickr_flickrphotosets_mainClass" type="text" size="30" default="" label="ASEXYBOX_IMGLIST_LABEL_MAINCLASS" description="ASEXYBOX_IMGLIST_DESCR_MAINCLASS" />
+						<param name="flickr_flickrphotosets_rowClasses" type="text" size="30" default="odd;even" label="ASEXYBOX_IMGLIST_LABEL_ROWCLASS" description="ASEXYBOX_IMGLIST_DESCR_ROWCLASS" />
+						<param name="flickr_flickrphotosets_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SHOWTITLE" description="ASEXYBOX_IMGLIST_DESCR_SHOWTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  					</group>
+  					<group type="group" group_id="customtext" default="" label="ASEXYBOX_IMGLIST_TYPE_CUSTOMTEXT" description="">
+  						<param name="flickr_customtemplate" type="textarea" cols="50" rows="20" default="Show gallery" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="slickgallery" default="" label="ASEXYBOX_IMGLIST_TYPE_SLICKGALLERY" description="">
+  						<param name="flickr_slickgallery_width" type="text" size="6" default="300" label="ASEXYBOX_IMGLIST_LABEL_SLICKWIDTH" description="ASEXYBOX_IMGLIST_DESCR_SLICKWIDTH" />
+						<param name="flickr_slickgallery_height" type="text" size="6" default="400" label="ASEXYBOX_IMGLIST_LABEL_SLICKHEIGHT" description="ASEXYBOX_IMGLIST_DESCR_SLICKHEIGHT" />
+						<param name="flickr_slickgallery_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SLICKTITLE" description="ASEXYBOX_IMGLIST_DESCR_SLICKTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="flickr_slickgallery_operaSupport" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_SLICKOPERASUPPORT" description="ASEXYBOX_IMGLIST_DESCR_SLICKOPERASUPPORT">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="flickr_slickgallery_startDegree" type="text" size="6" default="-40" label="ASEXYBOX_IMGLIST_LABEL_SLICKSTARTDEGREE" description="ASEXYBOX_IMGLIST_DESCR_SLICKSTARTDEGREE" />
+  						<param name="flickr_slickgallery_endDegree" type="text" size="6" default="40" label="ASEXYBOX_IMGLIST_LABEL_SLICKENDDEGREE" description="ASEXYBOX_IMGLIST_DESCR_SLICKENDDEGREE" />
+  					</group>
+  				</param>
+  			</group>
+  			<group type="group" group_id="picasa" default="" label="ASEXYBOX_LABEL_PICASA" description="">
+  				<param name="picasa_keepSize" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_KEEPSIZE" description="ASEXYBOX_IMGLIST_DESCR_KEEPSIZE">
+  					<option value="0">ASEXYBOX_LABEL_NO</option> 
+  					<option value="1">ASEXYBOX_LABEL_YES</option> 
+  				</param>
+  				<param name="picasa_cachePeriod" type="text" size="6" default="600" label="ASEXYBOX_PICASA_LABEL_CACHEPERIOD" description="ASEXYBOX_PICASA_DESCR_CACHEPERIOD" />
+  				<param name="picasa_thumbSize" type="list" default="128" label="ASEXYBOX_PICASA_LABEL_THUMBSIZE" description="ASEXYBOX_PICASA_DESCR_THUMBSIZE">
+  					<option value="32">ASEXYBOX_PICASA_LABEL_ISIZE32</option> 
+  					<option value="48">ASEXYBOX_PICASA_LABEL_ISIZE48</option> 
+  					<option value="64">ASEXYBOX_PICASA_LABEL_ISIZE64</option> 
+  					<option value="72">ASEXYBOX_PICASA_LABEL_ISIZE72</option> 
+  					<option value="94">ASEXYBOX_PICASA_LABEL_ISIZE94</option>
+  					<option value="104">ASEXYBOX_PICASA_LABEL_ISIZE104</option> 
+  					<option value="110">ASEXYBOX_PICASA_LABEL_ISIZE110</option>
+  					<option value="128">ASEXYBOX_PICASA_LABEL_ISIZE128</option>
+  					<option value="144">ASEXYBOX_PICASA_LABEL_ISIZE144</option> 
+  					<option value="150">ASEXYBOX_PICASA_LABEL_ISIZE150</option> 
+  					<option value="200">ASEXYBOX_PICASA_LABEL_ISIZE200</option>
+  					<option value="220">ASEXYBOX_PICASA_LABEL_ISIZE220</option>
+  					<option value="288">ASEXYBOX_PICASA_LABEL_ISIZE288</option>
+  					<option value="320">ASEXYBOX_PICASA_LABEL_ISIZE320</option>
+  					<option value="400">ASEXYBOX_PICASA_LABEL_ISIZE400</option>
+  					<option value="512">ASEXYBOX_PICASA_LABEL_ISIZE512</option>
+  					<option value="576">ASEXYBOX_PICASA_LABEL_ISIZE576</option>
+  					<option value="640">ASEXYBOX_PICASA_LABEL_ISIZE640</option>
+  					<option value="720">ASEXYBOX_PICASA_LABEL_ISIZE720</option>
+  					<option value="800">ASEXYBOX_PICASA_LABEL_ISIZE800</option>
+  					<option value="912">ASEXYBOX_PICASA_LABEL_ISIZE912</option>
+  					<option value="1024">ASEXYBOX_PICASA_LABEL_ISIZE1024</option>
+  					<option value="1152">ASEXYBOX_PICASA_LABEL_ISIZE1152</option>
+  					<option value="1280">ASEXYBOX_PICASA_LABEL_ISIZE1280</option>
+  					<option value="1440">ASEXYBOX_PICASA_LABEL_ISIZE1440</option>
+  					<option value="1600">ASEXYBOX_PICASA_LABEL_ISIZE1600</option>
+  				</param>
+  				<param name="picasa_imgSize" type="list" default="1600" label="ASEXYBOX_PICASA_LABEL_IMGSIZE" description="ASEXYBOX_PICASA_DESCR_IMGSIZE">
+  					<option value="32">ASEXYBOX_PICASA_LABEL_ISIZE32</option> 
+  					<option value="48">ASEXYBOX_PICASA_LABEL_ISIZE48</option> 
+  					<option value="64">ASEXYBOX_PICASA_LABEL_ISIZE64</option> 
+  					<option value="72">ASEXYBOX_PICASA_LABEL_ISIZE72</option> 
+  					<option value="94">ASEXYBOX_PICASA_LABEL_ISIZE94</option>
+  					<option value="104">ASEXYBOX_PICASA_LABEL_ISIZE104</option> 
+  					<option value="110">ASEXYBOX_PICASA_LABEL_ISIZE110</option>
+  					<option value="128">ASEXYBOX_PICASA_LABEL_ISIZE128</option>
+  					<option value="144">ASEXYBOX_PICASA_LABEL_ISIZE144</option> 
+  					<option value="150">ASEXYBOX_PICASA_LABEL_ISIZE150</option> 
+  					<option value="200">ASEXYBOX_PICASA_LABEL_ISIZE200</option>
+  					<option value="220">ASEXYBOX_PICASA_LABEL_ISIZE220</option>
+  					<option value="288">ASEXYBOX_PICASA_LABEL_ISIZE288</option>
+  					<option value="320">ASEXYBOX_PICASA_LABEL_ISIZE320</option>
+  					<option value="400">ASEXYBOX_PICASA_LABEL_ISIZE400</option>
+  					<option value="512">ASEXYBOX_PICASA_LABEL_ISIZE512</option>
+  					<option value="576">ASEXYBOX_PICASA_LABEL_ISIZE576</option>
+  					<option value="640">ASEXYBOX_PICASA_LABEL_ISIZE640</option>
+  					<option value="720">ASEXYBOX_PICASA_LABEL_ISIZE720</option>
+  					<option value="800">ASEXYBOX_PICASA_LABEL_ISIZE800</option>
+  					<option value="912">ASEXYBOX_PICASA_LABEL_ISIZE912</option>
+  					<option value="1024">ASEXYBOX_PICASA_LABEL_ISIZE1024</option>
+  					<option value="1152">ASEXYBOX_PICASA_LABEL_ISIZE1152</option>
+  					<option value="1280">ASEXYBOX_PICASA_LABEL_ISIZE1280</option>
+  					<option value="1440">ASEXYBOX_PICASA_LABEL_ISIZE1440</option>
+  					<option value="1600">ASEXYBOX_PICASA_LABEL_ISIZE1600</option>
+  				</param>
+  				<param name="picasa_count" type="text" size="6" default="0" label="ASEXYBOX_PICASA_LABEL_COUNT" description="ASEXYBOX_PICASA_DESCR_COUNT" />
+  				<param name="picasa_offset" type="text" size="6" default="0" label="ASEXYBOX_PICASA_LABEL_OFFSET" description="ASEXYBOX_PICASA_DESCR_OFFSET" />
+  				<param name="picasa_caption" type="text" size="30" default="{$Title}" label="ASEXYBOX_IMGLIST_LABEL_CAPTION" description="ASEXYBOX_IMGLIST_DESCR_CAPTION" />
+  				<param name="picasa_albumsource_user" type="text" size="80" default="" label="ASEXYBOX_PICASA_LABEL_USER" description="ASEXYBOX_PICASA_DESCR_USER" />
+				<param name="picasa_albumsource_album" type="text" size="80" default="" label="ASEXYBOX_PICASA_LABEL_ALBUM" description="ASEXYBOX_PICASA_DESCR_ALBUM" />
+  				<param name="picasa_type" type="groups" default="gallery" label="ASEXYBOX_FLICKR_LABEL_CHOOSETYPE" description="">
+  					<group type="group" group_id="gallery" default="" label="ASEXYBOX_IMGLIST_TYPE_GALLERY" description="">
+  						<param name="picasa_simplegallery_theme" type="list" default="none" label="ASEXYBOX_IMGLIST_LABEL_THEME" description="ASEXYBOX_IMGLIST_DESCR_THEME">
+  							<option value="none">ASEXYBOX_LABEL_NONE</option>
+  							<option value="shadow">ASEXYBOX_IMGLIST_LABEL_SHADOW</option>
+  							<option value="shadow pin">ASEXYBOX_IMGLIST_LABEL_PIN</option>
+  							<option value="shadow clip">ASEXYBOX_IMGLIST_LABEL_CLIP</option>
+  							<option value="shadow flora">ASEXYBOX_IMGLIST_LABEL_FLORA</option>
+  							<option value="fancy">ASEXYBOX_IMGLIST_LABEL_FANCY</option>
+  						</param>
+  						<param name="picasa_simplegallery_visibleItemCount" type="text" size="6" default="" label="ASEXYBOX_IMGLIST_LABEL_VISIBLEITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_VISIBLEITEMCOUNT" />
+						<param name="picasa_simplegallery_itemCount" type="text" size="6" default="3" label="ASEXYBOX_IMGLIST_LABEL_ITEMCOUNT" description="ASEXYBOX_IMGLIST_DESCR_ITEMCOUNT" />  						
+						<param name="picasa_simplegallery_mainClass" type="text" size="30" default="" label="ASEXYBOX_IMGLIST_LABEL_MAINCLASS" description="ASEXYBOX_IMGLIST_DESCR_MAINCLASS" />
+						<param name="picasa_simplegallery_rowClasses" type="text" size="30" default="odd;even" label="ASEXYBOX_IMGLIST_LABEL_ROWCLASS" description="ASEXYBOX_IMGLIST_DESCR_ROWCLASS" />
+						<param name="picasa_simplegallery_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SHOWTITLE" description="ASEXYBOX_IMGLIST_DESCR_SHOWTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+						<param name="picasa_simplegallery_emptyText" type="textarea" cols="50" rows="6" default="" label="ASEXYBOX_IMGLIST_LABEL_EMPTYTEXT" description="ASEXYBOX_IMGLIST_DESCR_EMPTYTEXT" />
+  					</group>
+  					<group type="group" group_id="advgallery" default="" label="ASEXYBOX_IMGLIST_TYPE_ADVGALLERY" description="">
+  						<param name="picasa_advgallerytemplate" type="textarea" cols="50" rows="20" default="{repeater}&#13;&amp;nbsp;&amp;nbsp;{headertemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;table>&#13;&amp;nbsp;&amp;nbsp;{/headertemplate}&#13;&amp;nbsp;&amp;nbsp;{rowtemplate itemCount=&quot;2&quot; rowClass=&quot;odd;even&quot;}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;tr class=&quot;{$rowClass}&quot;>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{celltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;div>{$data:sexyimage}&lt;/div>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;div>{$data:Title}&lt;/div>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{/celltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{emptycelltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;td>&amp;nbsp;&lt;/td>&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{/emptycelltemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tr>&#13;&amp;nbsp;&amp;nbsp;{/rowtemplate}&#13;&amp;nbsp;&amp;nbsp;{footertemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/table>&#13;&amp;nbsp;&amp;nbsp;{/footertemplate}&#13;&amp;nbsp;&amp;nbsp;{emptytemplate}&#13;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;No items found&#13;&amp;nbsp;&amp;nbsp;{/emptytemplate}&#13;{/repeater}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="singleimage" default="" label="ASEXYBOX_IMGLIST_TYPE_SINGLE" description="">
+  						<param name="picasa_singletemplate" type="textarea" cols="50" rows="20" default="{$data:sexyimage}" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="customtext" default="" label="ASEXYBOX_IMGLIST_TYPE_CUSTOMTEXT" description="">
+  						<param name="picasa_customtemplate" type="textarea" cols="50" rows="20" default="Show gallery" label="ASEXYBOX_IMGLIST_LABEL_TEMPLATE" description="ASEXYBOX_IMGLIST_DESCR_TEMPLATE" />
+  					</group>
+  					<group type="group" group_id="slickgallery" default="" label="ASEXYBOX_IMGLIST_TYPE_SLICKGALLERY" description="">
+  						<param name="picasa_slickgallery_width" type="text" size="6" default="300" label="ASEXYBOX_IMGLIST_LABEL_SLICKWIDTH" description="ASEXYBOX_IMGLIST_DESCR_SLICKWIDTH" />
+						<param name="picasa_slickgallery_height" type="text" size="6" default="400" label="ASEXYBOX_IMGLIST_LABEL_SLICKHEIGHT" description="ASEXYBOX_IMGLIST_DESCR_SLICKHEIGHT" />
+						<param name="picasa_slickgallery_showTitle" type="list" default="1" label="ASEXYBOX_IMGLIST_LABEL_SLICKTITLE" description="ASEXYBOX_IMGLIST_DESCR_SLICKTITLE">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="picasa_slickgallery_operaSupport" type="list" default="0" label="ASEXYBOX_IMGLIST_LABEL_SLICKOPERASUPPORT" description="ASEXYBOX_IMGLIST_DESCR_SLICKOPERASUPPORT">
+  							<option value="0">ASEXYBOX_LABEL_NO</option> 
+  							<option value="1">ASEXYBOX_LABEL_YES</option> 
+  						</param>
+  						<param name="picasa_slickgallery_startDegree" type="text" size="6" default="-40" label="ASEXYBOX_IMGLIST_LABEL_SLICKSTARTDEGREE" description="ASEXYBOX_IMGLIST_DESCR_SLICKSTARTDEGREE" />
+  						<param name="picasa_slickgallery_endDegree" type="text" size="6" default="40" label="ASEXYBOX_IMGLIST_LABEL_SLICKENDDEGREE" description="ASEXYBOX_IMGLIST_DESCR_SLICKENDDEGREE" />
+  					</group>
+  				</param>
+  			</group>
+  			<group type="group" group_id="icontent" default="" label="ASEXYBOX_LABEL_ICONTENT" description="">
+  				<param name="icontent_width" type="text" size="6" default="350" label="ASEXYBOX_ICONTENT_LABEL_WIDTH" description="ASEXYBOX_ICONTENT_DESCR_WIDTH" />
+  				<param name="icontent_height" type="text" size="6" default="125" label="ASEXYBOX_ICONTENT_LABEL_HEIGHT" description="ASEXYBOX_ICONTENT_DESCR_HEIGHT" />
+  				<param name="icontent_class" type="text" size="40" default="" label="ASEXYBOX_ICONTENT_LABEL_CSSCLASS" description="ASEXYBOX_ICONTENT_DESCR_CSSCLASS" />
+  				<param name="icontent_link" type="text" size="40" default="" label="ASEXYBOX_ICONTENT_LABEL_LINK" description="ASEXYBOX_ICONTENT_DESCR_LINK" />
+  				<param name="icontent_title" type="text" size="40" default="" label="ASEXYBOX_ICONTENT_LABEL_TITLE" description="ASEXYBOX_ICONTENT_DESCR_TITLE" />
+  				<param name="icontent_text" type="textarea" cols="50" rows="10" default="" label="ASEXYBOX_ICONTENT_LABEL_TEXT" description="ASEXYBOX_ICONTENT_DESCR_TEXT" />
+  			</group>
+  			<group type="group" group_id="rcontent" default="" label="ASEXYBOX_LABEL_RCONTENT" description="">
+  				<param name="rcontent_width" type="text" size="6" default="350" label="ASEXYBOX_RCONTENT_LABEL_WIDTH" description="ASEXYBOX_RCONTENT_DESCR_WIDTH" />
+  				<param name="rcontent_height" type="text" size="6" default="125" label="ASEXYBOX_RCONTENT_LABEL_HEIGHT" description="ASEXYBOX_RCONTENT_DESCR_HEIGHT" />
+  				<param name="rcontent_class" type="text" size="40" default="" label="ASEXYBOX_ICONTENT_LABEL_CSSCLASS" description="ASEXYBOX_ICONTENT_DESCR_CSSCLASS" />
+  				<param name="rcontent_link" type="text" size="40" default="" label="ASEXYBOX_RCONTENT_LABEL_LINK" description="ASEXYBOX_RCONTENT_DESCR_LINK" />
+  				<param name="rcontent_title" type="text" size="40" default="" label="ASEXYBOX_RCONTENT_LABEL_TITLE" description="ASEXYBOX_RCONTENT_DESCR_TITLE" />
+  				<param name="rcontent_url" type="text" size="40" default="" label="ASEXYBOX_RCONTENT_LABEL_URL" description="ASEXYBOX_RCONTENT_DESCR_URL" />
+  			</group>
+  			<group type="group" group_id="module" default="" label="ASEXYBOX_LABEL_MODULE" description="">
+	  			<param name="module_width" type="text" size="6" default="350" label="ASEXYBOX_MODULE_LABEL_WIDTH" description="ASEXYBOX_MODULE_DESCR_WIDTH" />
+  				<param name="module_height" type="text" size="6" default="125" label="ASEXYBOX_MODULE_LABEL_HEIGHT" description="ASEXYBOX_MODULE_DESCR_HEIGHT" />
+  				<param name="module_class" type="text" size="40" default="" label="ASEXYBOX_ICONTENT_LABEL_CSSCLASS" description="ASEXYBOX_ICONTENT_DESCR_CSSCLASS" />
+  				<param name="module_link" type="text" size="40" default="" label="ASEXYBOX_MODULE_LABEL_LINK" description="ASEXYBOX_MODULE_DESCR_LINK" />
+  				<param name="module_title" type="text" size="40" default="" label="ASEXYBOX_MODULE_LABEL_TITLE" description="ASEXYBOX_MODULE_DESCR_TITLE" />
+  				<param name="module_id" type="module" default="" empty_item="ASEXYBOX_LABEL_NONE" label="ASEXYBOX_MODULE_LABEL_MODULE" description="ASEXYBOX_MODULE_DESCR_MODULE" />
+  			</group>
+  			<group type="group" group_id="article" default="" label="ASEXYBOX_LABEL_ARTICLE" description="">
+  				<param name="article_width" type="text" size="6" default="350" label="ASEXYBOX_RCONTENT_LABEL_WIDTH" description="ASEXYBOX_RCONTENT_DESCR_WIDTH" />
+  				<param name="article_height" type="text" size="6" default="125" label="ASEXYBOX_RCONTENT_LABEL_HEIGHT" description="ASEXYBOX_RCONTENT_DESCR_HEIGHT" />
+  				<param name="article_class" type="text" size="40" default="" label="ASEXYBOX_ICONTENT_LABEL_CSSCLASS" description="ASEXYBOX_ICONTENT_DESCR_CSSCLASS" />
+  				<param name="article_link" type="text" size="40" default="" label="ASEXYBOX_RCONTENT_LABEL_LINK" description="ASEXYBOX_RCONTENT_DESCR_LINK" />
+  				<param name="article_title" type="text" size="40" default="" label="ASEXYBOX_RCONTENT_LABEL_TITLE" description="ASEXYBOX_RCONTENT_DESCR_TITLE" />
+  				<param name="article_id" type="text" size="60" default="" label="ASEXYBOX_ARTICLE_LABEL_ID" description="ASEXYBOX_ARTICLE_DESCR_ID" />
+  			</group>
+  		</param>
+
+		<param type="modal" name="" label="" description="" />
+	</params>
+</install>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>RokNavMenu Bundle</name>
+	<creationDate>November 15, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.7</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		RokNavMenu Install Bundle
+	</description>
+	<installfile>installer/install.php</installfile>
+	<uninstallfile>installer/uninstall.php</uninstallfile>
+	<administration>
+		<files>
+			<folder>overrides</folder>
+			<folder>installer</folder>
+		</files>
+	</administration>
+	<cogs>
+		<module name="mod_roknavmenu" folder="mod_roknavmenu" published="false" access="0" core="true">RokNavMenu</module>
+		<plugin name="boost" group="roknavmenu" folder="plg_roknavmenu_boost" published="true" access="0" core="true">RokNavMenu Boost</plugin>
+		<plugin name="extendedlink" group="roknavmenu" folder="plg_roknavmenu_extendedlink" published="true" access="0" core="true">RokNavMenu Extended Link</plugin>
+	</cogs>
+</install>

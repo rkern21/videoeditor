@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>RokWeather</name>
+    <author>RocketTheme, LLC</author>
+    <creationDate>October 1, 2010</creationDate>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>1.0</version>
+	<description>RokWeather is a weather module based on Google data</description>
+	<files>
+		<filename module="mod_rokweather">mod_rokweather.php</filename>
+		<filename>RT-LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>googleweather.class.php</filename>
+		<filename>rokweather.css</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>grey</folder>
+		<folder>blue</folder>
+		<folder>elements</folder>
+		<folder>tmpl</folder>
+	</files>
+	<params addpath="/modules/mod_rokweather/elements">
+		<param name="" type="rokmodulecheck" default="" label="" description="" />
+		<param name="default_location" type="text" default="Golden, CO" label="Default Location" description="Valid location or US ZIP code" />
+		<param name="location_override" type="text" default="" label="Location Display Override" description="A Location in the form of Default Location that will be shown instead. Useful when your town is not picked up by the Google API and you have to use the nearest city but want to still show your town name. &lt;br /&gt;Leave blank if you don't want overrides." />
+		<param name="default_degree" type="radio" default="0" label="Default Degree Type" description="The default Degree Type to use">
+			<option value="1">°C</option>
+			<option value="0">°F</option>			
+		</param>
+		<param name="user_interaction" type="radio" default="1" label="User interaction" description="Gives to the user the ability to interact with RokWeather. Note: all modifications will be visible to the user only. If enabled cookies must be cleaned.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param name="units_switch" type="radio" default="1" label="Enable Units switch" description="Enable or disable the ability to switch between units temperatures. If disabled, will be kept the Default Degree Type unit.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>			
+		</param>
+		<param name="enable_cache" type="radio" default="1" label="Location Caching" description="Enable location cache">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="enable_location_cookie" type="radio" default="1" label="Enable Location Cookie" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="enable_icon" type="radio" default="1" label="Enable Icon Display" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="enable_humidity" type="radio" default="1" label="Enable Humidity Display" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="enable_wind" type="radio" default="0" label="Enable Wind Display" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="enable_forecast" type="radio" default="1" label="Enable 4 Day Forecast" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="forcast_show" type="list" default="4" label="Forecast items to show" description="">
+			<option value="1">1 day</option>
+			<option value="2">2 days</option>
+			<option value="3">3 days</option>
+			<option value="4">4 days</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="hidden" default="0"/>
+		<param name="module_ident" type="list" default="id" label="Module Indentification" description="Load module data by Name or ID (requires com_rokmodule v1.1 or later)">
+			<option value="name">Name</option>
+			<option value="id">ID</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

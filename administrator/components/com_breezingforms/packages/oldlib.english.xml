@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FacileFormsPackage id="FFOLD" type="autoincrement" version="1.4.6">
+	<name>oldlib.english</name>
+	<title>FacileForms - Standard pieces and scripts libs</title>
+	<version>1.4.6</version>
+	<creationDate>2006-06-28 13:41:53</creationDate>
+	<author>Peter Koch</author>
+	<authorEmail>use_the_forum@facileforms.biz</authorEmail>
+	<authorUrl>http://www.facileforms.biz</authorUrl>
+	<description>These are depreciated FacileForms script and piece libraries.</description>
+	<copyright>This FacileForms package is released under the GNU/GPL license</copyright>
+	<piece id="86">
+		<package>FFOLD</package>
+		<name>ff_getPageByName</name>
+		<title>Get page # by element name (depreciated)</title>
+		<description>Gets the page number by the name of an element. \r\nTypically used to redirect to a certain page in a before form piece \r\nas $this-\x3Epage = ff_getPageByName(\x27elementname\x27)\x3B</description>
+		<code>function ff_getPageByName(\x26$th\x2C $name)\r\n{\r\n    foreach($th-\x3Erows as $row)\r\n        if ($row-\x3Ename==$name)\r\n            return $row-\x3Epage\x3B\r\n    return NULL\x3B\r\n} // ff_getPageByName</code>
+	</piece>
+	<piece id="87">
+		<package>FFOLD</package>
+		<name>ff_InitUtilities</name>
+		<title>Init Utilities (depreciated)</title>
+		<type>Before Form</type>
+		<description>A collection of useful functions for use in form pieces. \r\n\r\nInclude by: \r\n\r\n    $this-\x3EexecPieceByName(\x27ff_InitUtilities\x27)\x3B</description>
+		<code>if (!function_exists(\x27ff_redirectParent\x27)) $this-\x3EexecPieceByName(\x27ff_redirectParent\x27)\x3B\r\nif (!function_exists(\x27ff_setChecked\x27))     $this-\x3EexecPieceByName(\x27ff_setChecked\x27)\x3B\r\nif (!function_exists(\x27ff_setSelected\x27))    $this-\x3EexecPieceByName(\x27ff_setSelected\x27)\x3B\r\nif (!function_exists(\x27ff_setValue\x27))       $this-\x3EexecPieceByName(\x27ff_setValue\x27)\x3B\r\nif (!function_exists(\x27ff_getPageByName\x27))  $this-\x3EexecPieceByName(\x27ff_getPageByName\x27)\x3B\r\nif (!function_exists(\x27ff_getParam\x27))       $this-\x3EexecPieceByName(\x27ff_getParam\x27)\x3B</code>
+	</piece>
+	<piece id="88">
+		<package>FFOLD</package>
+		<name>ff_redirectParent</name>
+		<title>Redirect to parent window (depreciated)</title>
+		<description>Redirects to the parent window (if any). Call: ff_redirectParent($this\x2C $url)\x3B</description>
+		<code>function ff_redirectParent(\x26$th\x2C $url)\r\n{\r\n    if ($th-\x3Einframe) $target = \x27parent\x27\x3B else $target=\x27document\x27\x3B\r\n    echo \x22\x3Cscript type=\x5C\x22text/javascript\x5C\x22\x3E\x5Cn\x22.\r\n         \x22\x3C!--\x5Cn\x22.\r\n         \x22onload=function() { \x22.$target.\x22.location.href=\x27\x22.$url.\x22\x27\x3B } \x5Cn\x22.\r\n         \x22--\x3E\x5Cn\x22.\r\n         \x22\x3C/script\x3E\x5Cn\x22.\r\n         \x22\x3C/body\x3E\x5Cn\x22\x3B\r\n    exit\x3B\r\n} // ff_redirectParent</code>
+	</piece>
+	<piece id="89">
+		<package>FFOLD</package>
+		<name>ff_setChecked</name>
+		<title>Set checkbox/radiobutton checked (depreciated)</title>
+		<description>Set a radio button or checkbox checked. \r\n\r\nCall: \r\n\r\n    ff_setChecked($this\x2C \x27name\x27\x2C \x27value\x27)\x3B</description>
+		<code>function ff_setChecked(\x26$th\x2C $name\x2C $value)\r\n{\r\n    for ($r = 0\x3B $r \x3C $th-\x3Erowcount\x3B $r++) {\r\n        $row =\x26 $th-\x3Erows[$r]\x3B\r\n        if ($row-\x3Ename==$name \x26\x26 $row-\x3Edata1==$value)\r\n            $row-\x3Eflag1 = 1\x3B\r\n        unset($row)\x3B\r\n    } // for\r\n} // ff_setChecked</code>
+	</piece>
+	<piece id="90">
+		<package>FFOLD</package>
+		<name>ff_setSelected</name>
+		<title>Select list option (depreciated)</title>
+		<description>Sets a select list option to selected. Call: ff_setSelected($this\x2C \x27name\x27\x2C \x27value\x27)\x3B</description>
+		<code>function ff_setSelected(\x26$th\x2C $name\x2C $value)\r\n{\r\n    for ($r = 0\x3B $r \x3C $th-\x3Erowcount\x3B $r++) {\r\n        $row =\x26 $th-\x3Erows[$r]\x3B\r\n        if ($row-\x3Ename==$name)\r\n            $row-\x3Edata2 =\r\n                preg_replace(\r\n                    \x27/(^|\x5Cr\x5Cn|\x5Cn)(0|1)\x3B([^\x3B]*)\x3B(\x27.$value.\x27)($|\x5Cr\x5Cn|\x5Cn)/\x27\x2C\r\n                    \x27${1}1\x3B${3}\x3B${4}${5}\x27\x2C\r\n                    $row-\x3Edata2\r\n                )\x3B\r\n        unset($row)\x3B\r\n    } // for\r\n} // ff_setSelected</code>
+	</piece>
+	<piece id="91">
+		<package>FFOLD</package>
+		<name>ff_setValue</name>
+		<title>Set value (depreciated)</title>
+		<description>Set value of a Static Text\x2C Text\x2C Textarea or Hidden Input. \r\nCall: ff_setValue($this\x2C \x27name\x27\x2C \x27value\x27)\x3B</description>
+		<code>function ff_setValue(\x26$th\x2C $name\x2C $value)\r\n{\r\n    for ($r = 0\x3B $r \x3C $th-\x3Erowcount\x3B $r++) {\r\n        $row =\x26 $th-\x3Erows[$r]\x3B\r\n        if ($row-\x3Ename==$name)\r\n            $row-\x3Edata1 = $value\x3B\r\n        unset($row)\x3B\r\n    } // for\r\n} // ff_setValue</code>
+	</piece>
+	<piece id="92">
+		<package>FFOLD</package>
+		<name>ff_SubmitLib</name>
+		<title>Submit Library (depreciated)</title>
+		<type>Begin Submit</type>
+		<description>A collection of useful functions for use in submit pieces. \r\n\r\nInclude by: \r\n\r\n    $this-\x3EexecPieceByName(\x27ff_SubmitLib\x27)\x3B</description>
+		<code>$this-\x3EexecPieceByName(\x27ff_InitLib\x27)\x3B</code>
+	</piece>
+	<piece id="93">
+		<package>FFOLD</package>
+		<name>ff_SubmitUtilities</name>
+		<title>Submit Utilities (depreciated)</title>
+		<type>Begin Submit</type>
+		<description>A collection of useful functions for use in submit pieces. \r\n\r\nInclude by: \r\n\r\n    $this-\x3EexecPieceByName(\x27ff_SubmitUtilities\x27)\x3B</description>
+		<code>if (!function_exists(\x27ff_redirectParent\x27)) $this-\x3EexecPieceByName(\x27ff_redirectParent\x27)\x3B</code>
+	</piece>
+</FacileFormsPackage>

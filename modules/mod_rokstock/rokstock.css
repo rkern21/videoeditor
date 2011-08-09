@@ -1,0 +1,48 @@
+/* RokStock */
+#rokstock {overflow:hidden;background:#fff;}
+
+#rokstock .rokstock-image {height: 154px;}
+#rokstock .rokstock-graph {width: 250px;text-align:center;}
+#rokstock .rokstock-timeaxis {margin-bottom: 1em;}
+#rokstock .name {cursor: pointer;}
+#rokstock .legend {background: url(images/circles.png) 0 0 no-repeat;margin-right: 5px;height: 25px;width: 10px;display: block;float: left;}
+#rokstock .legend small {display: none;}
+#rokstock .type0 {background-position: 0 8px;}
+#rokstock .type1 {background-position: 0 -11px;}
+#rokstock .type2 {background-position: 0 -30px;}
+#rokstock .type3 {background-position: 0 -49px;}
+#rokstock .type4 {background-position: 0 -68px;}
+
+#rokstock .rokstock-list .row, #rokstock .rokstock-add {display: block; height: 25px; line-height: 25px; border-top: 1px solid #fff;border-bottom: 1px solid #e0e0e0;background: #f2f2f2; color:#333;}
+#rokstock .rokstock-list .title {float:left; margin-left: 5px;font-weight:bold;}
+#rokstock .rokstock-list .values {float:right; margin-right: 5px;}
+
+#rokstock .rokstock-list .title span {font-size: 120%;display: inline-block;vertical-align: middle;}
+#rokstock .rokstock-list .title small {font-weight: normal;}
+#rokstock .rokstock-list .values .percentage {font-size: 85%;}
+
+#rokstock .row .delete {background: #f2f2f2 url(images/delete.png) center center no-repeat;width: 12px; height: 12px;cursor:pointer;}
+
+#rokstock .rokstock-list .plus, .rokstock-tip-inner .plus {color: #01A400;}
+#rokstock .rokstock-list .minus, .rokstock-tip-inner .minus {color: #AD070B;}
+#rokstock .rokstock-list .neutral, .rokstock-tip-inner .neutral {color: #aaa;}
+
+#rokstock .rokstock-add {padding: 0 5px 0 2px;position:relative;}
+#rokstock .loading {background: #fff url(images/spinner.gif) no-repeat scroll 98% 50%}
+#rokstock .centerloader, .rokstock-tip-inner .centerloader {background: #fff url(images/spinner.gif) no-repeat scroll 50% 50%}
+
+#rokstock .rokstock-reload {background: #f2f2f2 url(images/reload.png) center center no-repeat;width: 16px;height: 16px;position: absolute;right:4px;top:4px;cursor:pointer;}
+
+#rokstock button {display: none;}
+#rokstock input {width: 160px;height:17px;padding:2px;padding-bottom: 0;text-transform:uppercase;font-size:15px;line-height:17px;margin-top:2px;color: #555;outline:none;border:1px solid #ccc;vertical-align:top;}
+#rokstock input.rokstock-note {color: #bbb; font-size: 10px; line-height: 14px;height:14px; padding-top: 5px; text-transform: none;}
+
+.rokstock-tooltip {display: none;position: absolute;top: 200px;left: 200px;z-index:300;border:2px solid #ccc;}
+.rokstock-tip-inner .clr {clear:both;}
+.rokstock-tip-inner { padding: 15px; width: 400px;background: #fff; }
+.rokstock-tip-inner .content {float: left;width: 175px;}
+.rokstock-tip-inner h1 {margin: 0;font-size: 18px;}
+.rokstock-tip-inner h2 {color: #aaa; margin: 0 0 1em;font-size: 12px;}
+.rokstock-tip-inner .row span.title {font-weight: bold;}
+.rokstock-tip-inner .more-details {margin-top: 1em;text-transform:lowercase;}
+.rokstock-tip-inner .graph {text-align: center; float: left;margin-right: 1em;width: 212px;height:102px;}

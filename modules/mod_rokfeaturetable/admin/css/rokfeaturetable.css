@@ -1,0 +1,71 @@
+/*
+* RokFeatureTable Module
+*
+* @package RocketTheme
+* @subpackage rokfeaturetable
+* @version   1.1 September 13, 2010
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+* @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+*
+*/
+
+.rft-wrapper {}
+.rft-wrapper .status, .rft-wrapper .settings {float: left;height:25px;line-height:25px;position: relative;}
+.rft-wrapper .status span {font-size: 1.2em;color: #333;font-weight:bold;}
+.rft-wrapper .settings {display: block; width:38px;height:25px !important;background-image: url(../images/setup-button.png); background-repeat: no-repeat;background-position: 0 0;margin-left: 5px;}
+.rft-wrapper .settings:hover {background-position: 0 50%;}
+.rft-wrapper .settings:active {background-position: 0 100%;}
+.rft-wrapper div.active {background-position: 100% 100%;position:relative;z-index:30;}
+.rft-wrapper .settings.active:hover {background-position: 100% 50%;}
+
+#rft-data, #tabs .add-tab span, #panels .add span, #panels .remove span {display: none;}
+#rft-data {clear:both;}
+input:focus { outline: none; }
+
+#rft-layout {width: 569px;background: #f0f0f0;border: 1px solid #949494;position: absolute;top:-1000px;left:-1000px;-moz-border-radius:9px 0px 9px 9px;-moz-box-shadow:0 10px 30px rgba(120, 120, 120, 0.2);-webkit-border-radius:9px 0px 9px 9px;-webkit-box-shadow:0 10px 30px rgba(120, 120, 120, 0.2);border-radius:9px 0px 9px 9px;box-shadow:0 10px 30px rgba(120, 120, 120, 0.2);display:none;background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, rgb(240,240,240)), color-stop(1, rgb(220,220,220)));background: -moz-linear-gradient(center top, rgb(240,240,240) 50%, rgb(220,220,220) 100%)}
+
+#tabs {margin: 1em 5px 0;padding-bottom:10px;height:40px;border-bottom: 1px solid #c3c3c3;}
+#tabs .tab .inner-tab, #tabs .add-tab {background-image: url(../images/panel-buttons.png);background-repeat: no-repeat;background-position: 0 0; text-align: center;height: 32px;line-height:32px;font-size: 16px;font-weight: bold;text-shadow: 0 1px 0 #fff;color: #3f3f3f;cursor: default;}
+#tabs .tab, #tabs .add-tab {float: left;}
+#tabs .tab {width: 82px;margin: 0 2px;}
+#tabs .tab .remove-column {display:block;font-size:11px;margin-top:3px;color:#c20404;text-align:center;visibility:hidden;cursor:pointer;text-shadow: 0 1px 0 #fff;}
+#tabs .add-tab {background-position: 0 -32px; width: 32px;margin-left: 5px;}
+#tabs .tab-1 {margin-left:4px;}
+
+#panels {margin:0 5px 1em;border-top: 1px solid #f7f7f7;position:relative;}
+#panels .panel {position:absolute;display:none;}
+#panels .panel.active {position:relative;display:block;}
+#panels .row {padding: 1em;clear:both;height:32px;}
+#panels .row-title {color:#3f3f3f;text-shadow: 0 1px 0 #fff;font-size:14px;font-weight:bold;margin: 8px 5px 0 0;float:left;width:54px;}
+#panels .input-wrapper {width:184px;float:left;}
+#panels input {font-size:14px;padding:0 5px;width:172px;height:32px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;color:#3f3f3f;text-shadow: 0 1px 0 #fff;}
+#panels input:active, #panels input:focus {background:#f9f9f9;border-color: #9b9b9b;}
+
+#panels .row-action, .action-import {background-image: url(../images/panel-buttons.png);background-repeat: no-repeat;text-align:center;width: 20px;height: 20px;float:left;margin: 7px 3px 0;text-shadow: 0 1px 0 #fff;cursor: default;}
+#panels .action-button.active {font-weight:bold;}
+#panels .action-button, .action-import {background-position: 0 -64px;width:52px;height:22px;line-height: 22px;margin-top: 6px;}
+#panels .add {background-position: 0 -86px;}
+#panels .add:hover {background-position: -20px -86px;}
+#panels .add:active {background-position: -40px -86px;}
+#panels .remove {background-position: 0 -106px;}
+#panels .remove:hover {background-position: -20px -106px;}
+#panels .remove:active {background-position: -40px -106px;}
+#panels .action-button:hover, .action-import:hover {background-position: -52px -64px;}
+#panels .action-button:active, #panels .action-button.active, .action-import:active {background-position: -104px -64px;color:#0078bd;}
+
+#panels .input-wrapper .action-button, #panels .input-wrapper .action-button.active, #panels .input-wrapper .action-button:active, #panels .input-wrapper .action-button:hover {background-position: 0 -126px;width:auto;}
+
+#panels .action-input-wrapper {background: url(../images/panel-buttons.png) 0 -126px no-repeat; height: 22px;padding-left: 26px;margin: 6px 6px 12px;display:none;}
+#panels .action-input-wrapper input {height:22px;width:140px;font-size:12px;color:#bab2b2;font-style: italic;}
+#panels .action-input-wrapper input:active, #panels .action-input-wrapper input:focus {color: #888;font-style: normal;}
+
+.action-import {margin-top:0;}
+#templates {height:22px;line-height:22px;padding:3px;float:left;}
+
+/* hovers */
+#tabs .tab .inner-tab:hover {background-position: 50% 0;}
+#tabs .tab .inner-tab:active, #tabs .tab.active .inner-tab {background-position: 100% 0;color: #0078bd;}
+
+#tabs .add-tab:hover {background-position: -32px -32px;}
+#tabs .add-tab:active {background-position: -64px -32px;}

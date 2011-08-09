@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	System Restore Point definition for Akeeba Subscriptions by AkeebaBackup.com
+	
+	Copyright ©2011 Nicholas K. Dionysopoulos / AkeebaBackup.com
+	License: GNU General Public License version 3, or later
+-->
+<restorepoint>
+	<customdirs>
+		<dir>libraries/koowa</dir>
+		<dir>components/com_default</dir>
+		<dir>administrator/components/com_default</dir>
+		<dir>media/lib_koowa</dir>
+		<dir>media/com_default</dir>
+		<dir>modules/mod_default</dir>
+		<dir>administrator/modules/mod_default</dir>
+		<dir>plugins/koowa</dir>
+		<dir>plugins/system/koowa</dir>
+		
+		<dir>modules/mod_akslevels</dir>
+		<dir>modules/mod_aksubslist</dir>
+		<dir>plugins/akeebasubs/cb</dir>
+		<dir>plugins/akeebasubs/docman</dir>
+		<dir>plugins/akeebasubs/jce</dir>
+		<dir>plugins/akeebasubs/joomla</dir>
+		<dir>plugins/akeebasubs/juga</dir>
+		<dir>plugins/akeebasubs/k2</dir>
+		<dir>plugins/akeebasubs/ninjaboard</dir>
+		<dir>plugins/akeebasubs/subscriptionemails</dir>
+		<dir>plugins/akeebasubs/tienda</dir>
+		<dir>plugins/akeebasubs/vm</dir>
+		<dir>plugins/akpayment/none</dir>
+		<dir>plugins/akpayment/offline</dir>
+		<dir>plugins/akpayment/paypal</dir>
+		<dir>plugins/akpayment/worldpay</dir>
+		<dir>plugins/content/asrestricted</dir>
+		<dir>plugins/system/asexpirationcontrol</dir>
+		<dir>plugins/system/asexpirationnotify</dir>
+	</customdirs>
+	<customfiles>
+		<file>plugins/system/koowa.php</file>
+		<file>plugins/system/koowa.xml</file>
+		
+		<file>plugins/akeebasubs/cb.php</file>
+		<file>plugins/akeebasubs/cb.xml</file>
+		<file>plugins/akeebasubs/docman.php</file>
+		<file>plugins/akeebasubs/docman.xml</file>
+		<file>plugins/akeebasubs/jce.php</file>
+		<file>plugins/akeebasubs/jce.xml</file>
+		<file>plugins/akeebasubs/joomla.php</file>
+		<file>plugins/akeebasubs/joomla.xml</file>
+		<file>plugins/akeebasubs/juga.php</file>
+		<file>plugins/akeebasubs/juga.xml</file>
+		<file>plugins/akeebasubs/k2.php</file>
+		<file>plugins/akeebasubs/k2.xml</file>
+		<file>plugins/akeebasubs/ninjaboard.php</file>
+		<file>plugins/akeebasubs/ninjaboard.xml</file>
+		<file>plugins/akeebasubs/subscriptionemails.php</file>
+		<file>plugins/akeebasubs/subscriptionemails.xml</file>
+		<file>plugins/akeebasubs/tienda.php</file>
+		<file>plugins/akeebasubs/tienda.xml</file>
+		<file>plugins/akeebasubs/vm.php</file>
+		<file>plugins/akeebasubs/vm.xml</file>
+		<file>plugins/akpayment/none.php</file>
+		<file>plugins/akpayment/none.xml</file>
+		<file>plugins/akpayment/offline.php</file>
+		<file>plugins/akpayment/offline.xml</file>
+		<file>plugins/akpayment/paypal.php</file>
+		<file>plugins/akpayment/paypal.xml</file>
+		<file>plugins/akpayment/worldpay.php</file>
+		<file>plugins/akpayment/worldpay.xml</file>
+		<file>plugins/content/asrestricted.php</file>
+		<file>plugins/content/asrestricted.xml</file>
+		<file>plugins/system/asexpirationcontrol.php</file>
+		<file>plugins/system/asexpirationcontrol.xml</file>
+		<file>plugins/system/asexpirationnotify.php</file>
+		<file>plugins/system/asexpirationnotify.xml</file>
+	</customfiles>
+	<langfiles>
+		<lang>com_default</lang>
+		<lang>mod_default</lang>
+		
+		<lang>mod_akslevels</lang>
+		<lang>mod_aksubslist</lang>
+		<lang>plg_akeebasubs_cb</lang>
+		<lang>plg_akeebasubs_docman</lang>
+		<lang>plg_akeebasubs_jce</lang>
+		<lang>plg_akeebasubs_joomla</lang>
+		<lang>plg_akeebasubs_juga</lang>
+		<lang>plg_akeebasubs_k2</lang>
+		<lang>plg_akeebasubs_ninjaboard</lang>
+		<lang>plg_akeebasubs_subscriptionemails</lang>
+		<lang>plg_akeebasubs_tienda</lang>
+		<lang>plg_akeebasubs_vm</lang>
+		<lang>plg_akpayment_none</lang>
+		<lang>plg_akpayment_offline</lang>
+		<lang>plg_akpayment_paypal</lang>
+		<lang>plg_akpayment_worldpay</lang>
+		<lang>plg_content_asrestricted</lang>
+		<lang>plg_system_asexpirationcontrol</lang>
+		<lang>plg_system_asexpirationnotify</lang>
+	</langfiles>
+</restorepoint>

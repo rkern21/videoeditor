@@ -1,0 +1,52 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* JOMSOCIAL OVERRIDES */
+/* General */
+body.rtl #community-wrap div.greybox div div div.introduction {margin-left: 0;margin-right: 70px;float: right;}
+
+/* Photo Display */
+body.rtl #rt-main #community-wrap .cSubmenu ul.submenu li {float: right;}
+body.rtl #rt-main #community-wrap .cSubmenu ul.submenu li.action {float: left;}
+body.rtl #rt-main #community-wrap .album {float: right;}
+body.rtl #rt-main #community-wrap .album-cover {float: right;}
+body.rtl #rt-main #community-wrap .album-actions {margin-left: 8px;}
+
+/* Main Profile */
+body.rtl #rt-main #community-wrap .app-box-title {float: right;}
+body.rtl #rt-main #community-wrap .app-box-menus {float: left;position: relative;margin: 7px 0;}
+body.rtl #rt-main #community-wrap .app-box-menu {margin-left: 0;}
+body.rtl #rt-main #community-wrap .cModule h3 {text-align: right;}
+body.rtl #community-wrap div.ctitle {text-align: right;}
+body.rtl #community-wrap div.filterlink div {float: left !important;}
+body.rtl #community-wrap .app-box-footer {text-align: left;}
+body.rtl #community-wrap .cThumbList li {float: right;}
+body.rtl #rt-main #community-wrap .cModule div {text-align: left !important;}
+body.rtl #community-wrap .edit-this {right: 0;}
+
+/* Groups */
+body.rtl #community-groups-wrap h3 {text-align: right !important;}
+body.rtl #community-wrap #cFilterBar #cFilterType_Sort.filterGroup {text-align: left;}
+body.rtl div.community-groups-results-left {float: right;}
+body.rtl div.community-groups-results-right {float: left;text-align: right;}
+
+/* Friends Page */
+body.rtl #community-wrap div.mini-profile-avatar {float: right;}
+body.rtl #community-wrap div.mini-profile-details h3.name {text-align: right;}
+body.rtl #community-wrap div.mini-profile-details-status {text-align: right;}
+body.rtl #community-wrap .icon-online-overlay {left: 0;right: 90%;}
+body.rtl .mini-profile-details .icon-user, body.rtl .mini-profile-details .icon-calendar, body.rtl .mini-profile-details .icon-remove,
+body.rtl .mini-profile-details .icon-write, body.rtl .mini-profile-details .icon-group, body.rtl .mini-profile-details body.rtl .mini-profile-details .icon-leave,
+body.rtl .mini-profile-details .icon-online, body.rtl .mini-profile-details .icon-offline, body.rtl .mini-profile-details .icon-add-friend,
+body.rtl .mini-profile-details .icon-remove-friend, body.rtl .mini-profile-details .icon-approve, body.rtl .mini-profile-details .icon-unapprove,
+body.rtl .mini-profile-details .icon-discuss, body.rtl .mini-profile-details .icon-wall, body.rtl .mini-profile-details .icon-edit,
+body.rtl .mini-profile-details .icon-replies, body.rtl .mini-profile-details .icon-bubble, body.rtl .mini-profile-details .icon-photos,
+body.rtl .mini-profile-details .icon-report, body.rtl .mini-profile-details .icon-videos, body.rtl .mini-profile-details .icon-edit2,
+body.rtl .mini-profile-details .icon-save, body.rtl .mini-profile-details .icon-blog, body.rtl .mini-profile-details .icon-addfeatured,
+body.rtl .mini-profile-details .icon-removefeatured, body.rtl .mini-profile-details .icon-bookmark {float: right;}
+body.rtl #community-wrap a.remove:link, body.rtl #community-wrap a.remove:visited {float: left !important;background: none !important;}

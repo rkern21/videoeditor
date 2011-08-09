@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+<name>BreezingForms:options</name>
+<author>Markus Bopp</author>
+<version>1.5.1</version>
+<description>Definition for the form elements</description>
+<reference>
+<table name="facileforms_elements">
+<field type="referenceid" name="id" translate="0">ID</field>
+<field type="text" name="title" translate="1">Title</field>
+<field type="textarea" name="data1" translate="1">Data 1</field>
+<field type="textarea" name="data2" translate="1">Data 2</field>
+<field type="textarea" name="data3" translate="1">Data 3</field>
+</table>
+
+</reference>
+
+<translationfilters>
+  	  <fformoptions_empty>title</fformoptions_empty>
+  	  <fform>id</fform>
+</translationfilters> 
+
+</joomfish>

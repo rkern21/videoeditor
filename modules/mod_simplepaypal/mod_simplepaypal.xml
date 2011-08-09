@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>SimplePayPal</name>
+    <author>Fabrizio Albonico</author>
+	<creationDate>April 20, 2009</creationDate>
+	<authorEmail>software@albonico.ch</authorEmail>
+	<authorUrl>http://software.albonico.ch/</authorUrl>
+    <version>0.5.2</version>
+    <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
+	<description>
+    	<![CDATA[<p>Module for displaying a simple PayPal Donate button<br />
+    		(c) 2009 Fabrizio Albonico]]>
+	</description>
+	
+    <files>
+        <filename module="mod_simplepaypal">mod_simplepaypal.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    
+    <params>
+    	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    	<param name="business" type="text" size="32" default="" label="E-Mail/PayPal ID" description="Your registered PayPal e-mail address or PayPal ID" />
+    	<param name="item_name" type="text" size="64" default="" label="Reason" description="The reason of your donations. Will be printed on the PayPal confirmation" />
+    	<param name="currencies" type="text" size="64" maxlength="100" default="EUR,USD,GBP,CHF,AUD,HKD,CAD,JPY,NZD,SGD,SEK,DKK,PLN,NOK,HUF,CZK,ILS,MXN" label="Currencies" description="Displays a combo so that users can select the preferred currency. Separate with comma , symbol, first currency will be the default one. Valid currencies: EUR,USD,GBP,CHF,AUD,HKD,CAD,JPY, NZD,SGD,SEK,DKK,PLN,NOK,HUF,CZK, ILS,MXN" />
+		<param name="show_amount" type="radio" default="1" label="Show amount field" description="Shows an editable amount field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="amount" type="text" size="5" default="" label="Amount" description="Sets the amount for the donation. Leave empty if user has to write the amount himself" />
+		<param name="return" type="text" size="64" default="http://" label="Success return page" description="Full path to the return page after a correct payment" />
+		<param name="cancel_return" type="text" size="64" default="http://" label="Cancel return page" description="Full path to the return page after a failed payment" />
+		<param name="image_url" type="text" size="64" default="" label="Company Logo URL" description="Full path to the company logo image" />
+		<param name="pp_image" type="text"  size="64" default="x-click-butcc-donate.gif" label="Paypal button image" description="Sets the PayPal button image. Full list can be found here: http://www.rocketgranny.com/codeclips/pp_button_images.php" />
+		<param name="locale" type="list" default="en_US" label="Locale" description="Sets the locale for redirecting to the correct language paypal">
+			<option value="en_US">en_US</option>
+			<option value="it_IT">it_IT</option>
+			<option value="de_DE">de_DE</option>
+			<option value="fr_FR">fr_FR</option>
+			<option value="es_ES">es_ES</option>
+		</param>
+		<param name="show_text" type="radio" default="1" label="Show intro text" description="Shows an introductory text">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="intro_text" label="Introductory text" type="textarea" rows="3" cols="35" default="Thank you for your donation." />
+		<param name="open_new_window" type="radio" default="1" label="Open new window" description="Opens the PayPal site as a new window">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+    </params>
+    
+	<languages folder="lang">
+		<language tag="en-GB">en-GB.mod_simplepaypal.ini</language>
+		<language tag="it-IT">it-IT.mod_simplepaypal.ini</language>
+		<language tag="de-DE">de-DE.mod_simplepaypal.ini</language>
+		<language tag="ca-AD">ca-AD.mod_simplepaypal.ini</language>
+		<language tag="fr-FR">fr-FR.mod_simplepaypal.ini</language>
+		<language tag="nl-NL">nl-NL.mod_simplepaypal.ini</language>
+		<language tag="pl-PL">pl-PL.mod_simplepaypal.ini</language>
+  </languages>
+  
+</install>

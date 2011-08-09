@@ -1,0 +1,51 @@
+/**
+ * @package   Hybrid Template - RocketTheme
+ * @version   1.5.4 November 16, 2010
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Menus */
+.menutop .fusion-submenu-wrapper {box-shadow: 0 0 10px rgba(0,0,0,0.7);}
+.menutop .fusion-submenu-wrapper.level2 {box-shadow: 0 5px 10px rgba(0,0,0,0.7);}
+.menutop ul li > .item:hover, .menutop li.f-menuparent-itemfocus .item {box-shadow: 0 0 15px rgba(0,0,0,0.3);}
+.menutop li.root:hover > .item, .menutop li.root.f-mainparent-itemfocus > .item {box-shadow: 0 0 10px rgba(0,0,0,0.6);}
+
+/* Module Variations */
+#roksearch_results {box-shadow: 0 0 14px rgba(0,0,0,0.4);}
+.box1 .rt-module-surround, .box2 .rt-module-surround, .box3 .rt-module-surround, .box4 .rt-module-surround  {box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+.title4 .title, .title5 .title, .title6 .title {box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+.bodystyle-body2 .box1 .rt-module-surround, .bodystyle-body2 .box2 .rt-module-surround, .bodystyle-body2 .box3  .rt-module-surround, .bodystyle-body2 .box4 .rt-module-surround {box-shadow: none;}
+.bodystyle-body2 .title4 .title, .bodystyle-body2 .title5 .title, .bodystyle-body2 .title6 .title {box-shadow: none;}
+
+/* Text Shadows */
+.menutop li.root, .menu-type-splitmenu .menutop li, .menutop ul li, .step-text {text-shadow: -1px -1px 1px rgba(0,0,0,0.4);}
+.readon span, .readon .button, .roktabs .roktabs-links ul li.active span {text-shadow: -1px -1px 1px rgba(0,0,0,0.6);}
+.bodystyle-body1 .roktabs .roktabs-links ul li.active span, .bodystyle-body2 .roktabs .roktabs-links ul li.active span, .bodystyle-body3 .roktabs .roktabs-links ul li.active span, .bodystyle-body4 .roktabs .roktabs-links ul li.active span {text-shadow: 1px 1px 1px rgba(255,255,255,0.6);}
+.headerstyle-header1 .readon span, .headerstyle-header1 .readon .button, .headerstyle-header1 .roktabs .roktabs-links ul li.active span, .footerstyle-footer1 .readon span, .footerstyle-footer1 .readon .button, .footerstyle-footer1 .roktabs .roktabs-links ul li.active span, .headerstyle-header3 .readon span, .headerstyle-header3 .readon .button, .headerstyle-header3 .roktabs .roktabs-links ul li.active span, .footerstyle-footer3 .readon span, .footerstyle-footer3 .readon .button, .footerstyle-footer3 .roktabs .roktabs-links ul li.active span {text-shadow: 1px 1px 1px rgba(255,255,255,0.6);}
+.bodyaccent-accent1 .readon span, .bodyaccent-accent1 .readon .button, .bodyaccent-accent3 .readon span, .bodyaccent-accent3 .readon .button {text-shadow: 1px 1px 1px rgba(255,255,255,0.6);}
+.bodyaccent-accent2 .readon span, .bodyaccent-accent2 .readon .button {text-shadow: 1px 1px 1px rgba(0,0,0,0.3);}
+.bodyaccent-accent4 .readon span, .bodyaccent-accent4 .readon .button, .bodyaccent-accent5 .readon span, .bodyaccent-accent5 .readon .button, .bodyaccent-accent6 .readon span, .bodyaccent-accent6 .readon .button, .bodyaccent-accent7 .readon span, .bodyaccent-accent7 .readon .button, .bodyaccent-accent8 .readon span, .bodyaccent-accent8 .readon .button {text-shadow: -1px -1px 1px rgba(0,0,0,0.5);}
+
+/* RokTabs */
+.roktabs .roktabs-links, .roktabs-wrapper .top .active-arrows, .roktabs-wrapper .bottom .active-arrows {box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+.bodystyle-body2 .roktabs .roktabs-links, .bodystyle-body2 .roktabs-wrapper .top .active-arrows, .bodystyle-body2 .roktabs-wrapper .bottom .active-arrows {box-shadow: none;}
+.roktabs .active-arrows .roktabs-links {box-shadow: none;}
+
+/* RokStories */
+#rt-header-surround .rokstories-layout5 .vertical-list li {text-shadow: 1px 1px 1px rgba(0,0,0,0.9);}
+
+/* RokFeatureTable */
+.featuretable-border {box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+.featuretable .featuretable-col.highlight {box-shadow: 0 0 30px rgba(0,0,0,0.2);}
+.featuretable .name {text-shadow: -1px -1px 1px rgba(0,0,0,0.2);}
+.featuretable .head-text {text-shadow: 1px 1px 1px rgba(255,255,255,0.8);}
+
+/* Transitions */
+a {transition: color .3s ease-out;}
+.roksearch_odd:hover, .roksearch_even:hover {transition: background 0.3s ease-out;}
+#rt-header-surround .rokstories-layout5 .vertical-list li {transition: background 0.3s ease-out;}
+.menutop li.active.root > .item, .menutop li.active.root.f-mainparent-itemfocus > .item,
+.menutop li.root:hover > .item, .menutop li.root.f-mainparent-itemfocus > .item, .menu-type-splitmenu .menutop li.active > .item, .menu-type-splitmenu .menutop li:hover > .item, .menutop ul li > .item:hover, .menutop li.f-menuparent-itemfocus > .item, .menutop li.active > .item {transition: background 0.2s ease-out;}
+.featuretable-col.highlight {transition: background 0.2s ease-out;}

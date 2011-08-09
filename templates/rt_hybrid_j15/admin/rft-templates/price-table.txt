@@ -1,0 +1,26 @@
+name::Free
+price::$0
+row-3::<b>2</b> Users
+row-4::<b>1 GB</b> Storage
+button-text::Sign Up Now
+button-text-classes::button4
+---
+name::Basic
+price::$29
+row-3::<b>10</b> Users
+row-4::<b>5GB</b> Storage
+button-text::Sign Up Now
+button-text-classes::button4
+---
+name::Pro
+price::$49
+row-3::<b>50</b> Users
+row-4::<b>25GB</b> Storage
+button-text::Sign Up Now
+---
+name::Enterprise
+price::$199
+row-3::<b>Unlimited</b> Users
+row-4::<b>100GB</b> Storage
+button-text::Sign Up Now
+button-text-classes::button4

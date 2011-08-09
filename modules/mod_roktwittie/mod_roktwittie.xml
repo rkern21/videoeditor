@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>RokTwittie</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>October 1, 2010</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.0</version>
+	<description>RokTwittie is a Twitter module that let you display up to 100 tweets, as permitted by the Twitter search api.</description>
+	<files>
+		<filename module="mod_roktwittie">mod_roktwittie.php</filename>
+		<filename>RT-LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>roktwittie.class.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>api.php</filename>
+		<folder>admin/</folder>
+		<folder>css/</folder>
+		<folder>elements/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+		<folder>libs/</folder>
+		<folder>tmpl/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_roktwittie.ini</language>
+	</languages>
+	<params addpath="/modules/mod_roktwittie/elements">
+		<param name="@status" type="status" default="" label="Status" description="" />
+		<param name="use_oauth" type="oauth" default="0" label="Use OAuth" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="consumer_key" type="text" default="" label="Twitter APP consumer key" description="" />
+		<param name="consumer_secret" type="text" default="" label="Twitter APP consumer secret" description="" />
+		<param name="@signin" type="signin" default="" label="Authenticate" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="load_css" type="radio" default="1" label="Load built-in StyleSheet" description="whether to load builtin CSS files. Useful when you want to write your own style and don't want to overwrite.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_cache" type="radio" default="1" label="Output Caching" description="Enable output cache">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="timeout_connect" type="text" default="3" label="Timeout on connect (secs)" description="The number of seconds to wait while trying to connect to Twitter. User 0 to wait indefinitely." />
+		<param name="timeout_response" type="text" default="6" label="Timeout on response (secs)" description="The maximum number of seconds to allow cURL functions to execute." />
+		<param name="enable_cache_time" type="text" default="5" label="Cache time (mins)" description="Cache time in minutes." />
+		<param name="usernames" type="text" default="rockettheme" label="Usernames, separated by comma" description="One or more Twitter usernames. If more than one, separate by comma." />
+		<param name="inactive_opacity" type="text" default="0.5" label="Inactive users opacity" description="When multiple users, how much opacity to be given to the inactive users." />
+		<param name="@spacer" type="spacer" default="" label="Usernames Statuses" />
+		<param name="show_default_avatar" type="radio" default="1" label="Show default avatars" description="whether to enable show default avatar when not provided">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="header_style" type="radio" default="dark" label="Show default avatars" description="whether to show the header background in a light or dark style">
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+		</param>
+		<param name="include_rts" type="radio" default="1" label="Include ReTweets" description="whether to include RT's to users' tweets list">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="enable_statuses" type="radio" default="1" label="Enable usernames statuses" description="whether to enable the usernames statuses">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="status_external" type="radio" default="1" label="Open links in new window" description="whether to open in a new window the links.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_feed" type="radio" default="1" label="Show the RSS Feed link" description="whether to show the RSS Feed link">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_follow_updates" type="radio" default="1" label="Show follow updates link" description="whether to show the follow updates link">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_bio" type="radio" default="1" label="Show the bio description" description="whether to show the bio description">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_web" type="radio" default="1" label="Show the URL" description="whether to show the URL">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_location" type="radio" default="1" label="Show the location" description="whether to show the location">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_updates" type="radio" default="1" label="Show user updates count" description="whether to show user updates count">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_followers" type="radio" default="1" label="Show user followers count" description="whether to show user followers count">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_following" type="radio" default="1" label="Show user following count" description="whether to show user following count">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="show_following_icons" type="radio" default="1" label="Show following icons" description="whether to show following icons">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="following_icons_count" type="text" default="10" label="Icons count to show" description="Following icons count to show." />
+		<param name="show_viewall" type="radio" default="1" label="Show View all after icons" description="whether to show view all after icons when the count is lesser than the actual amount of following users">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Usernames Tweets" />
+		<param name="enable_usernames" type="radio" default="1" label="Enable usernames tweets" description="whether to enable the usernames tweets">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="enable_usernames_avatar" type="radio" default="1" label="Show usernames avatars" description="whether to show usernames avatar">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="usernames_avatar_size" type="text" default="48" label="Size in pixel of the avatar" description="Size in pixels of the avatar. Maximum allowed by Twitter is 48." />
+		<param name="usernames_count_size" type="text" default="4" label="Tweets count" description="Number of tweets to show. Maximum allowed by the API is 100." />
+		<param name="usernames_count_merged" type="radio" default="1" label="Merge Tweets" description="If enabled, the number of tweets will always be relative to the count, otherwise it will be COUNT * NUMBER_OF_USERS">
+			<option value="0">No</option>
+			<option value="1">Yes</option>			
+		</param>
+		<param name="enable_usernames_externals" type="radio" default="1" label="Open links in new window" description="whether to open in a new window the links.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_usernames_source" type="radio" default="1" label="Show tweets sources" description="whether to show the source of the tweets.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_usernames_user" type="radio" default="1" label="Show usernames as prepended text" description="whether to show the tweets's username before the tweets.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Search Tweets" />
+		<param name="enable_search" type="radio" default="1" label="Enable search tweets" description="whether to enable the search tweets">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="search" type="text" default="@rockettheme" label="Search string" description="Search string or query for filtering tweets." />
+		<param name="enable_search_avatar" type="radio" default="1" label="Show search avatars" description="whether to show search avatars">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="search_avatar_size" type="text" default="48" label="Size in pixel of the avatar" description="Size in pixels of the avatar. Maximum allowed by Twitter is 48." />
+		<param name="search_count_size" type="text" default="4" label="Tweets count" description="Number of tweets to show. Maximum allowed by the API is 100." />
+		<param name="enable_search_externals" type="radio" default="1" label="Open links in new window" description="whether to open in a new window the links.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_search_source" type="radio" default="1" label="Show tweets sources" description="whether to show the source of the tweets.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_search_user" type="radio" default="1" label="Show usernames as prepended text" description="whether to show the tweets's username before the tweets.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<!-- Hidden params -->
+		<param name="oauth_token" type="hidden" default="" label="" description="" />
+		<param name="oauth_token_secret" type="hidden" default="" label="" description="" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="hidden" default="0"/>
+		<param name="module_cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

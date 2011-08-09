@@ -1,0 +1,10 @@
+/* Here go all IE6 CSS Tweaks/Hacks */
+
+#roktwittie .roktwittie-surround, #roktwittie .roktwittie-t1, #roktwittie .roktwittie-t2, #roktwittie .roktwittie-t3, #roktwittie .roktwittie-m1, #roktwittie .roktwittie-m2, #roktwittie .roktwittie-m3, #roktwittie .roktwittie-b1, #roktwittie .roktwittie-b2, #roktwittie .roktwittie-b3, #roktwittie .status .header {zoom: 1;position:relative;}
+#roktwittie .user .content .content { float: left; margin-left: 5px;}
+#roktwittie .user .content ul {margin-left: 0;}
+#roktwittie .user .content .subscribe {margin-top: 12px;}
+#roktwittie .roktwittie-surround {margin-top:-17px;}
+#roktwittie .tweets-wrapper .roktwittie-avatar {margin-right: 0;}
+#roktwittie .tweets-wrapper .roktwittie-avatar, #roktwittie .query-wrapper .roktwittie-avatar {position: relative; z-index: 5;}
+#roktwittie .roktwittie-t3, #roktwittie .roktwittie-b3 {font-size: 1px;}

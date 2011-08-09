@@ -1,0 +1,34 @@
+<?xml version="1.1" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade">
+    <name>Fade Gallery</name>
+    <author>DesignCompass corp</author>
+    <creationDate>December 2010</creationDate>
+    <copyright>Copyright (C) 2010 DesignCompassCorp. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://www.designcompasscorp.com/</authorUrl>
+    <version>1.3.0</version>
+    <description>A module to show fade style javascript gallery.</description>
+    <files>
+        <filename module="mod_fadegallery">mod_fadegallery.php</filename>
+		<filename>mod_fadegallery.xml</filename>
+
+    </files>
+    <params addpath="/components/com_fadegallery/elements">
+		<param type="fadegalleryoptional" name="galleryid" default="0" label="Select Gallery" description="Select Fade Gallery. This will overwrite all below." />
+		
+		
+		<param type="spacer" />
+		
+        <param name="folder" type="text" default="images/stories" label="Folder" />
+        <param name="width" type="text" default="320" label="Width" />
+        <param name="height" type="text" default="240" label="Height" />
+        <param name="interval" type="text" default="1000" label="Slide Interval" />
+        <param name="fadetime" type="text" default="100" label="Fade Time" />
+        <param name="fadestep" type="text" default="10" label="Fade Step" />
+		
+        <param name="cssstyle" type="text" default="" label="CSS Style" />
+        
+        
+	</params>
+</install>

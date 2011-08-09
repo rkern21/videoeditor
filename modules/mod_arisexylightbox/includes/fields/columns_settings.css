@@ -1,0 +1,61 @@
+TABLE.ari-dt-columns
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+TABLE.ari-dt-columns THEAD TH,
+TABLE.ari-dt-columns TBODY TD
+{
+	border: 1px solid #FFF;
+	text-align: center;
+	padding: 2px;
+}
+
+TABLE.ari-dt-columns THEAD TH
+{
+	background-color: #7CC4FF;
+}
+
+TABLE.ari-dt-columns TR.ec-first-item .ec-ctrl-up
+{
+	display: none;
+}
+
+TABLE.ari-dt-columns TR.ec-last-item .ec-ctrl-down
+{
+	display: none;
+}
+
+TABLE.ari-dt-columns .ec-ctrl-item-ico
+{
+	display: block;
+	float: left;
+	width: 14px;
+	height: 14px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: relative;
+}
+
+TABLE.ari-dt-columns .ec-ctrl-up
+{
+	background: transparent url(elementscloner/up.gif) no-repeat center center;
+}
+
+TABLE.ari-dt-columns .ec-ctrl-down
+{
+	background: transparent url(elementscloner/down.gif) no-repeat center center;
+}
+
+TABLE.ari-dt-columns-hideorder .ec-ctrl-up,
+TABLE.ari-dt-columns-hideorder .ec-ctrl-down
+{
+	display: none;
+}
+
+.ec-ctrl-remove
+{
+	background: transparent url(elementscloner/remove.gif) no-repeat center center;
+}
+

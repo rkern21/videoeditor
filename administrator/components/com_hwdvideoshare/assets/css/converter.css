@@ -1,0 +1,106 @@
+body{
+	background : #FFFFFF;
+	font : 12px Arial,Helvetica,Verdana,Sans-Serif;
+	color: #413F3F;
+	margin : 0;
+	padding : 5px;
+}
+
+h2{
+	margin : 0;
+	padding : 5px 0 5px 0;
+}
+
+
+td {
+	font-size: 11px;
+}
+
+
+input, textarea, select {
+	z-index : -3;
+	font-size: 11px;
+}
+
+form {
+	margin: 0px 0px 0px 0px;
+}
+
+/* ************************************* */
+
+a:link    {color : #413F3F; text-decoration : none;}
+a:active  {color : #413F3F; text-decoration : none;}
+a:visited {color : #413F3F; text-decoration : none;}
+a:hover   {color : #FF0000; text-decoration : underline;}
+a:focus   {color : #FF0000; text-decoration : underline;}
+
+
+
+.error{
+	color: red;
+	font-weight: bold;
+}
+
+.success{
+	color: green;
+	font-weight: bold;
+}
+
+.box{
+	width: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: solid 1px #333;
+}   
+
+.abortbox{
+	width: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: solid 1px #333;
+	background: red;
+	color: white;
+}   
+ 
+.inputbox {
+	border-top : solid 1px #d5d5d5;
+	border-right : solid 1px #d5d5d5;
+	border-bottom : solid 1px #d5d5d5;
+	border-left : solid 1px #d5d5d5;
+	color : #333;
+	padding: 5px;
+}
+
+/* standard form style table */
+table.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+table.adminform tr.row0 {
+	background-color: #f9f9f9;
+}
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+table.adminform th {
+	font-size: 11px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	background: url(../images/background.jpg);
+	color: #000;
+	background-repeat: repeat;
+}
+table.adminform td {
+	padding: 3px;
+	text-align: left;
+}
+table.adminform td.editor {
+	font-size: 9px;
+}

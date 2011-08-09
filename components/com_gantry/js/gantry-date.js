@@ -1,0 +1,18 @@
+/*
+ * Date Format 1.2.3
+ * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
+ * MIT license
+ *
+ * Includes enhancements by Scott Trenda <scott.trenda.net>
+ * and Kris Kowal <cixar.com/~kris.kowal/>
+ *
+ * Includes PHP strftime flags, prefixed via $ rather than %
+ * by Djamil Legato @ RocketTheme, LLC.
+ *
+ * Accepts a date, a mask, or a date and a mask.
+ * Returns a formatted version of the given date.
+ * The date defaults to the current date/time.
+ * The mask defaults to dateFormat.masks.default.
+ */
+
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('C n=q(){C g=/d{1,4}|(\\$[a-1h-Z]){1}|m{1,4}|E(?:E)?|([1i])\\1?|[1j]|"[^"]*"|\'[^\']*\'/g,X=/\\b(?:[1k][1l]T|(?:1m|1n|1o|1p|1q) (?:1r|1s|1t) 1u|(?:1v|F)(?:[-+]\\d{4})?)\\b/g,11=/[^-+\\1w-Z]/g,5=q(a,b){a=k(a);b=b||2;1x(a.O<b)a="0"+a;r a};r q(b,c,e){C f=n;Q(1y.O==1&&1z.13.1A.1B(b)=="[1C k]"&&!/\\d/.1D(b)){c=b;b=1E}b=b?14 G(b):14 G;Q(1F(b))1G 1H("1I 1J");c=k(f.R[c]||c||f.R["15"]);Q(c.u(0,4)=="F:"){c=c.u(4);e=1K}C 6=e?"1L":"1M",d=b[6+"G"](),D=b[6+"1N"](),m=b[6+"1O"](),y=b[6+"1P"](),H=b[6+"1Q"](),M=b[6+"1R"](),s=b[6+"1S"](),L=b[6+"1T"](),o=e?0:b.1U(),U={d:d,$e:d,v:5(d),$d:5(d),16:f.8.w[D],$a:f.8.w[D],17:f.8.w[D+7],$A:f.8.w[D+7],m:m+1,J:5(m+1),$m:5(m+1),V:f.8.x[m],$h:f.8.x[m],W:f.8.x[m+12],$B:f.8.x[m+12],E:k(y).u(2),$y:k(y).u(2),9:y,$Y:y,h:H%12||12,$l:H%12||12,1V:5(H%12||12),$I:5(H%12||12),H:H,$H:H,z:5(H),M:M,i:5(M),$M:5(M),s:s,j:5(s),$S:5(s),l:5(L,3),L:5(L>1W?K.1X(L/10):L),t:H<12?"a":"p",1Y:H<12?"18":"19",$P:H<12?"18":"19",T:H<12?"A":"P",N:H<12?"1a":"1b",$p:H<12?"1a":"1b",Z:e?"F":(k(b).1Z(X)||[""]).20().1c(11,""),o:(o>0?"-":"+")+5(K.21(K.1d(o)/1e)*1f+K.1d(o)%1e,4),S:["22","23","24","25"][d%10>3?0:(d%1f-d%10!=10)*d%10]};r c.1c(g,q(a){r a 26 U?U[a]:a.u(1,a.O-1)})}}();n.R={"15":"16 V v 9 z:i:j",27:"m/d/E",28:"V d, 9",29:"W d, 9",2a:"17, W d, 9",2b:"h:i N",2c:"h:i:j N",2d:"h:i:j N Z",2e:"9-J-v",2f:"z:i:j",2g:"9-J-v\'T\'z:i:j",2h:"F:9-J-v\'T\'z:i:j\'Z\'"};n.8={w:["2i","2j","2k","2l","2m","2n","2o","2p","2q","2r","2s","2t","2u","2v"],x:["2w","2x","2y","2z","1g","2A","2B","2C","2D","2E","2F","2G","2H","2I","2J","2K","1g","2L","2M","2N","2O","2P","2Q","2R"]};G.13.2S=q(a,b){r n(2T,a,b)};',62,180,'|||||pad|_||i18n|yyyy|||||||||MM|ss|String|||dateFormat|||function|return|||slice|dd|dayNames|monthNames||HH|||var||yy|UTC|Date|||mm|Math|||TT|length||if|masks|||flags|mmm|mmmm|timezone||||timezoneClip||prototype|new|default|ddd|dddd|am|pm|AM|PM|replace|abs|60|100|May|zA|HhMsTt|LloSZ|PMCEA|SDP|Pacific|Mountain|Central|Eastern|Atlantic|Standard|Daylight|Prevailing|Time|GMT|dA|while|arguments|Object|toString|call|object|test|undefined|isNaN|throw|SyntaxError|invalid|date|true|getUTC|get|Day|Month|FullYear|Hours|Minutes|Seconds|Milliseconds|getTimezoneOffset|hh|99|round|tt|match|pop|floor|th|st|nd|rd|in|shortDate|mediumDate|longDate|fullDate|shortTime|mediumTime|longTime|isoDate|isoTime|isoDateTime|isoUtcDateTime|Sun|Mon|Tue|Wed|Thu|Fri|Sat|Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|June|July|August|September|October|November|December|format|this'.split('|'),0,{}))

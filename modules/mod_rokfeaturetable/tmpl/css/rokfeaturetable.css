@@ -1,0 +1,41 @@
+/**
+ * @version		1.1 September 13, 2010
+ * @author		RocketTheme http://www.rockettheme.com
+ * @copyright 	Copyright (C) 2007 - 2010 RocketTheme, LLC
+ * @license		http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+.featuretable-col {float: left;margin-bottom:30px;}
+.col1 .featuretable-col {width: 100%;}
+.col2 .featuretable-col {width: 50%;}
+.col3 .featuretable-col {width: 33.33%;}
+.featuretable-col, .col4 .featuretable-col {width: 25%;}
+.col5 .featuretable-col {width: 20%;}
+.col6 .featuretable-col {width: 16.66%;}
+.featuretable-cell {padding: 10px;text-align: center;}
+.featuretable-cell.bottom {border-bottom: 0;}
+.featuretable-col.highlight {z-index: 2;position: relative;}
+.featuretable .featuretable-cell {font-size: 1.1em;display: block;text-align:center;}
+.featuretable .featuretable-cell-sub {font-size: 0.9em;font-style: italic;}
+.featuretable ul {margin-bottom:0 !important;}
+.featuretable ul li {margin-bottom:0 !important;text-align:left;display:inline-block;}
+.featuretable div {text-align: center !important;}
+
+.featuretable-cell {border-top: 1px solid #ddd;border-right: 1px solid #ddd;background:#f9f9f9;text-shadow: 0 1px 0 #fff;}
+.ft-row-even {background: #f1f1f1;}
+.ft-column-first .featuretable-cell {border-left: 1px solid #ddd;}
+.ft-row-bottom {border-bottom: 1px solid #ddd;}
+.featuretable .ft-cell-name .featuretable-cell-data {font-size: 25px;line-height: 40px;}
+
+.ft-column-first .ft-row-top {-moz-border-radius: 12px 0 0 0;-webkit-border-radius: 12px 0 0;border-radius: 12px 0 0;}
+.ft-column-first .ft-row-bottom {-moz-border-radius: 0 0 0 12px;-webkit-border-radius: 0 0 0 12px;border-radius: 0 0 0 12px;}
+.ft-column-last .ft-row-top {-moz-border-radius: 0 12px 0 0;-webkit-border-radius: 0 12px 0 0;border-radius: 0 12px 0 0;}
+.ft-column-last .ft-row-bottom {-moz-border-radius: 0 0 12px 0;-webkit-border-radius: 0 0 12px 0;border-radius: 0 0 12px 0;}
+
+.ft-highlight .featuretable-cell {background: #135CAE;color: #fff;text-shadow: 0 1px 0 #333;border-top: 1px solid #0c3c73;}
+.ft-highlight .ft-row-even {background: #104d92;}
+.ft-highlight .ft-row-bottom {border-bottom: 1px solid #0c3c73;}
+.ft-highlight.ft-column-first .featuretable-cell {border-left: 1px solid #0c3c73;}
+.ft-highlight.ft-column-last .featuretable-cell {border-right: 1px solid #0c3c73;}
+.ft-highlight a:link, .ft-highlight a:visited {color: #3bd3ff;}
+.ft-highlight a:hover {color: #00aeff;}
